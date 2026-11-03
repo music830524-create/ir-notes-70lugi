@@ -12,7 +12,7 @@ CONF = ROOT / "data" / "conferences.json"
 DETAIL = ROOT / "data" / "detail"
 WORK = Path(os.environ.get("RUNNER_TEMP", "/tmp")) / "ir_work"
 API = "https://generativelanguage.googleapis.com/v1beta"
-DEFAULT_MODELS = ["gemini-2.5-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash-lite"]
+DEFAULT_MODELS = ["gemini-2.5-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
 SECTIONS = ("highlights", "financials", "outlook", "qa")
 TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}$")
 
