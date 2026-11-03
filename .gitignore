@@ -1,0 +1,5 @@
+shots/
+shots.py
+__pycache__/
+*.pyc
+.reponame

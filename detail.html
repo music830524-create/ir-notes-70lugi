@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><title>Tim 法說逐字稿</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><div class="wrap">
+<a class="back" href="index.html">← 返回列表</a>
+<div id="head"></div>
+<nav class="toc" id="toc"></nav>
+<main id="body"></main>
+<p class="foot">資料僅供個人研究參考，不構成投資建議。</p>
+</div>
+<script src="common.js"></script>
+<script>
+const SECS=[["hl","重點摘要"],["fin","財務數字"],["out","展望／指引"],["qa","Q&A"],["tr","完整逐字稿"],["src","簡報與影片"]];
+const q=new URLSearchParams(location.search).get("id");
+const ph=t=>el("div",{class:"ph",text:t});
+function sec(id,title,...kids){return el("section",{class:"sec",id},el("h2",{text:title}),...kids);}
+function ts(x){return x.ts?el("span",{class:"ts",text:"["+x.ts+"]"}):null;}
+async function main(){
+  const d=await loadConfs();const c=d.conferences.find(x=>x.id===q);
+  if(!c){document.getElementById("head").append(el("div",{class:"empty",text:"找不到這場法說會"}));return;}
+  document.title=`${c.name} ${c.code} 法說會｜Tim 法說逐字稿`;
+  const meta=[c.market,c.industry].filter(Boolean).join("・");
+  const when=[fmtDate(c.date),c.time].filter(Boolean).join(" ");
+  const head=document.getElementById("head");
+  head.append(...[el("h1",{class:"dtitle"},c.name,el("span",{class:"code",text:c.code})),
+    el("div",{class:"meta",text:when}),meta?el("div",{class:"meta",text:meta}):null,
+    c.host?el("div",{class:"meta",text:"主辦券商："+c.host}):null,badges(c),
+    el("div",{class:"btns"},
+      btn("簡報（中文）",c.slides.zh),btn("簡報（英文）",c.slides.en),btn("影片",c.video.url),
+      c.website?btn("公司法說頁",c.website):null)].filter(Boolean));
+  document.getElementById("toc").append(...SECS.map(([i,t])=>el("a",{href:"#"+i,text:t})));
+  let det=null;
+  if(c.detail){try{const r=await fetch("data/"+c.detail,{cache:"no-cache"});if(r.ok)det=await r.json();}catch(e){}}
+  const none=()=>ph("逐字稿尚未產生");
+  const B=document.getElementById("body");
+  B.append(
+    sec("hl","重點摘要",det&&det.highlights&&det.highlights.length?el("ul",{class:"hl"},det.highlights.map(h=>el("li",{},h.text,ts(h)))):none()),
+    sec("fin","財務數字",det&&det.financials&&det.financials.length?el("div",{class:"kv"},det.financials.flatMap(f=>[el("div",{text:f.label}),el("div",{class:"v",text:f.value})])):none()),
+    sec("out","展望／指引",det&&det.outlook&&det.outlook.length?el("ul",{class:"hl"},det.outlook.map(h=>el("li",{},h.text,ts(h)))):none()),
+    sec("qa","Q&A",det&&det.qa&&det.qa.length?det.qa.map(x=>el("div",{class:"qa"},el("div",{class:"q"},"Q：",x.q,ts(x)),el("div",{class:"a"},"A：",x.a))):none()),
+    el("section",{class:"sec",id:"tr"},el("details",{class:"tr"},el("summary",{text:"完整逐字稿"}),
+      el("div",{style:"margin-top:10px"},det&&det.transcript&&det.transcript.length?det.transcript.map(s=>el("div",{class:"seg-line"},
+        el("div",{class:"sp",text:(s.speaker||"")+(s.ts?" · "+s.ts:"")}),el("div",{text:s.zh||""}),s.en?el("div",{class:"en",text:s.en}):null)):none()))),
+    sec("src","簡報與影片",
+      el("div",{class:"btns",style:"margin-top:0"},btn("簡報（中文）",c.slides.zh),btn("簡報（英文）",c.slides.en),btn("影片",c.video.url)),
+      c.mops_summary?el("p",{class:"src",text:"公告擇要訊息："+c.mops_summary}):null,
+      c.place?el("p",{class:"src",text:"地點："+c.place}):null,
+      el("p",{class:"src",text:"來源："+[c.in_twse_vod?"證交所影音平台":null,c.in_mops?"公開資訊觀測站":null].filter(Boolean).join("、")})));
+}
+function btn(t,u){return u?el("a",{class:"btn on",href:u,target:"_blank",rel:"noopener noreferrer",text:t}):el("span",{class:"btn off",text:t+"（無）"});}
+main().catch(e=>{document.getElementById("head").append(el("div",{class:"empty",text:"載入失敗："+e.message}));});
+</script></body></html>

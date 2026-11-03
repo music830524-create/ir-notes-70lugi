@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow"><title>Tim 法說逐字稿</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><div class="wrap">
+<header class="top"><div class="brand"><div class="logo">法</div><h1>Tim 法說逐字稿</h1></div>
+<p class="sub" id="sub">載入中…</p></header>
+<div class="tools">
+<input id="q" class="search" type="search" placeholder="搜尋代號或名稱，例如 2330、台積電" autocomplete="off" enterkeyhint="search">
+<div class="chips" id="chips"></div>
+<div class="seg" id="seg"><button data-v="past" aria-pressed="true">已舉行</button><button data-v="future" aria-pressed="false">即將舉行</button></div>
+</div>
+<main id="list"></main>
+<p class="foot">法說會場次、影片連結來自證交所影音平台與公開資訊觀測站，僅供個人研究參考，不構成投資建議。</p>
+</div>
+<script src="common.js"></script>
+<script>
+const FILTERS=[["all","全部"],["tr","有逐字稿"],["vid","有影片"],["sii","上市"],["otc","上櫃"]];
+const st={f:"all",q:"",view:"past"};let DATA=null;
+const chips=document.getElementById("chips");
+FILTERS.forEach(([k,t])=>chips.append(el("button",{class:"chip","data-k":k,"aria-pressed":k==="all",text:t})));
+chips.onclick=e=>{const k=e.target.dataset.k;if(!k)return;st.f=k;[...chips.children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===k));render();};
+document.getElementById("seg").onclick=e=>{const v=e.target.dataset.v;if(!v)return;st.view=v;[...e.currentTarget.children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.v===v));render();};
+document.getElementById("q").oninput=e=>{st.q=e.target.value.trim().toLowerCase();render();};
+function match(c,today){
+  if(st.view==="past"?c.date>today:c.date<=today)return false;
+  if(st.f==="tr"&&c.transcript_status!=="done")return false;
+  if(st.f==="vid"&&!c.has_video)return false;
+  if(st.f==="sii"&&c.market!=="上市")return false;
+  if(st.f==="otc"&&c.market!=="上櫃")return false;
+  if(st.q&&!(c.code.toLowerCase().includes(st.q)||c.name.toLowerCase().includes(st.q)))return false;
+  return true;}
+function card(c){
+  const meta=[c.market,c.industry,c.host?("主辦 "+c.host):null].filter(Boolean).join("・");
+  return el("a",{class:"card",href:"detail.html?id="+encodeURIComponent(c.id)},
+    el("div",{class:"row1"},el("div",{class:"nm"},c.name,el("span",{class:"code",text:c.code})),el("div",{class:"tm",text:c.time||""})),
+    meta?el("div",{class:"meta",text:meta}):null,badges(c));}
+function render(){
+  const today=taipeiToday(),main=document.getElementById("list");main.replaceChildren();
+  let rows=DATA.conferences.filter(c=>match(c,today));
+  if(st.view==="future")rows.sort((a,b)=>(a.date+(a.time||"")).localeCompare(b.date+(b.time||"")));
+  if(!rows.length){main.append(el("div",{class:"empty",text:st.f==="tr"?"還沒有完成的逐字稿（轉文字功能之後接上）":"沒有符合的場次"}));return;}
+  const groups=new Map();rows.forEach(c=>{if(!groups.has(c.date))groups.set(c.date,[]);groups.get(c.date).push(c);});
+  for(const[d,list]of groups){
+    const done=list.filter(c=>c.transcript_status==="done").length;
+    const h=el("div",{class:"dayhead"},el("h2",{text:fmtDate(d)}),d===today?el("span",{class:"tag",text:"今天"}):null,
+      el("span",{class:"cnt",text:`${list.length} 場・${done} 篇有逐字稿`}));
+    main.append(h,...list.map(card));}
+}
+loadConfs().then(d=>{DATA=d;const g=new Date(d.generated_at);
+  document.getElementById("sub").textContent=`台股法說會・${d.conferences.length} 場・資料更新 ${d.generated_at.slice(0,16).replace("T"," ")}`;render();})
+ .catch(e=>{document.getElementById("sub").textContent="資料載入失敗："+e.message;});
+</script></body></html>
