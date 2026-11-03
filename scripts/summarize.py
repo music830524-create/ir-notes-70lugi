@@ -12,7 +12,7 @@ CONF = ROOT / "data" / "conferences.json"
 DETAIL = ROOT / "data" / "detail"
 WORK = Path(os.environ.get("RUNNER_TEMP", "/tmp")) / "ir_work"
 API = "https://generativelanguage.googleapis.com/v1beta"
-DEFAULT_MODELS = ["gemini-2.5-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+DEFAULT_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.5-flash"]
 SECTIONS = ("highlights", "financials", "outlook", "qa")
 TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}$")
 
@@ -93,10 +93,11 @@ PROMPT = """你是台灣股市研究助理。下面是「{name}（{code}）{date
 2. 逐字稿是語音辨識結果，專有名詞與數字可能有誤（例如把公司名、產品名聽錯）。遇到明顯與簡報不一致的詞，以簡報為準；無法確定的人名、公司名請在文字後加「（逐字稿辨識，待確認）」；數字不清楚就不要寫。
 3. 使用繁體中文、台灣慣用語（例如「營收」「毛利率」「年增」「季增」「晶片」「資料中心」）；英文專有名詞保留原文。不要用簡體字或大陸用語。
 4. 各區塊要求：
-   - highlights：5 到 8 條最重要的重點，每條 1～2 句，ts 填對應逐字稿時間點（格式 hh:mm:ss，必須是逐字稿中出現過的時間）。
-   - financials：營收、營業毛利、毛利率、營業費用、營業利益、營益率、稅後淨利、淨利率、EPS（單季與累計）、現金、存貨、權益、現金流、股利政策等，凡簡報或逐字稿有提到者都列；12 到 20 項。value 要包含數值與年增／季增（若有）；簡報單位為百萬元時，請寫成「X.XX 億元（原值 N,NNN 百萬）」以便核對；每個數字必須能在原文逐字找到（或是百萬換算億元）。src 填出處：簡報頁碼寫「簡報 p.N」（N 為下方標示的頁碼），逐字稿寫「逐字稿 hh:mm:ss」，兩者皆有可用「；」連接。
-   - outlook：管理層對下季、明年的說法、產品時程（Tape-out、量產、各產品線）、毛利率與費用指引，6 到 12 條，每條附 ts。
-   - qa：法說會 Q&A 的每一組提問與回覆，q 與 a 各一段精簡文字（各不超過 120 字），依時間順序，ts 為提問開始的時間點。主持人宣讀的流程說明不算問答。
+   - highlights：6 到 8 條最重要的重點，每條 1～2 句，需涵蓋：營收與獲利表現、毛利率變化與原因、各產品線進展、成本壓力、下一季展望。ts 填對應逐字稿時間點（格式 hh:mm:ss，必須是逐字稿中出現過的時間）。
+   - financials：凡簡報或逐字稿有提到的財務數字都列，15 到 22 項，涵蓋：營收、營業毛利、毛利率、營業費用、營業利益、營益率、稅後淨利、淨利率、EPS（單季與前三季累計）、前三季毛利率、前三季營業費用年增、現金、存貨與週轉天數、權益、營業現金流、股利政策（payout ratio）。每一項的 value 必須同時寫出「數值＋年增＋季增」（若原文有），例如「69.42 億元（原值 6,942 百萬）；年增 +23.3%、季增 +10.4%」，不要把年增、季增拆成獨立項目。簡報單位為百萬元時，寫成「X.XX 億元（原值 N,NNN 百萬）」以便核對；每個數字必須能在原文逐字找到（或是百萬換算億元），不可自行計算新數字。src 填出處：簡報頁碼寫「簡報 p.N」（N 為下方標示的頁碼），逐字稿寫「逐字稿 hh:mm:ss」，兩者皆有用「；」連接。
+   - outlook：管理層對下季、明年的說法、產品時程（Tape-out、量產、各產品線）、毛利率與費用指引、產能與漲價說法，8 到 14 條，每條附 ts。
+   - qa：法說會 Q&A 的「每一組」提問與回覆都要列，不可合併、不可遺漏（逐字稿中每個「下一個提問」「線上提問」都是一組；通常 20 組以上）。q 與 a 各一段精簡文字（各不超過 120 字），依時間順序，ts 為該提問開始的時間點（必須是該題實際出現的時間）。主持人宣讀的流程說明不算問答。
+   - 逐字稿中不通順、疑似辨識錯誤的詞（例如記憶體種類、公司名、人名），不要自行猜測更正；請保留原文並加「（逐字稿辨識，待確認）」，或略過該細節。
 5. 不要輸出投資建議或評價。
 
 【術語提示（來自簡報）】
@@ -191,6 +192,7 @@ def validate(data, slides_nums, tr_nums, ts_list):
         ts = snap_ts(it.get("ts"), ts_list)
         if ts: e["ts"] = ts
         out["qa"].append(e)
+    out["qa"].sort(key=lambda x: x.get("ts", "99:99:99"))
     return out, rep
 
 def parse_json(text):
@@ -255,7 +257,7 @@ def summarize_one(c, key, models, opt):
             "text_numbers_unverified": len(rep["text_unverified"])}
     log("REPORT " + json.dumps({**meta, "unverified_detail": rep["text_unverified"]}, ensure_ascii=False))
     if opt.dry:
-        log("dry-run：不寫檔"); return True
+        log("dry-run：不寫檔"); print("RESULT " + json.dumps(result, ensure_ascii=False)); return True
     for k in SECTIONS: det[k] = result[k]
     det["model"] = {**(det.get("model") or {}), "llm": used}
     det["sections_meta"] = meta
