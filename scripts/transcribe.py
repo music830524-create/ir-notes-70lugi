@@ -117,6 +117,17 @@ def run_one(c, model_name, model_obj, cc, opt):
                        "termfix_global": len(gl), "termfix_company": len(cl), "homophone": not opt.no_homophone,
                        "fixstats": stats, "dropped_segments": n_raw - len(cleaned)}
     suffix = f".{opt.tag}" if opt.tag else ""
+    # 重跑時保留既有的 重點/財務/展望/問答(由 summarize.py 或人工產生)，不可清空
+    _old = DETAIL / f"{cid}{suffix}.json"
+    if _old.exists():
+        try:
+            _o = json.loads(_old.read_text(encoding="utf-8"))
+            if any(_o.get(k) for k in ("highlights", "financials", "outlook", "qa")):
+                for k in ("highlights", "financials", "outlook", "qa", "sections_note", "sections_meta"):
+                    if k in _o: det[k] = _o[k]
+                log("KEEP existing highlights/financials/outlook/qa")
+        except Exception as e:
+            log(f"keep-sections failed: {e}")
     (DETAIL / f"{cid}{suffix}.json").write_text(json.dumps(det, ensure_ascii=False, indent=1), encoding="utf-8")
     txt = "\n".join(f"[{s['ts']}] {s['zh']}" for s in transcript)
     (DETAIL / f"{cid}{suffix}.txt").write_text(txt + "\n", encoding="utf-8")

@@ -1,0 +1,56 @@
+name: summarize
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "conference ids, comma-separated (e.g. 6526-20261103)"
+        required: true
+      model:
+        description: "Gemini 模型(留空=預設備援順序)，逗號分隔可多個"
+        default: ""
+      dry:
+        description: "只跑不寫檔"
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+      list_models:
+        description: "只列出可用 flash 模型名稱"
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+permissions:
+  contents: write
+concurrency:
+  group: summarize
+  cancel-in-progress: false
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: List models
+        if: github.event.inputs.list_models == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/summarize.py --list-models
+      - name: Summarize
+        if: github.event.inputs.list_models != 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 scripts/summarize.py --ids "${{ github.event.inputs.ids }}" --model "${{ github.event.inputs.model }}" ${{ github.event.inputs.dry == 'true' && '--dry' || '' }}
+      - name: Commit results
+        if: always() && github.event.inputs.dry != 'true' && github.event.inputs.list_models != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/detail
+          git diff --cached --quiet && exit 0
+          git commit -m "summarize (Gemini): ${{ github.event.inputs.ids }}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1

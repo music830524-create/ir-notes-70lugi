@@ -16,6 +16,11 @@ on:
       extra:
         description: "額外參數，例如 --no-company 或 --no-termfix"
         default: ""
+      summarize:
+        description: "轉完後用 Gemini 整理 重點/財務/展望/問答(僅正式版 tag 留空時)"
+        default: "true"
+        type: choice
+        options: ["true", "false"]
 permissions:
   contents: write
 concurrency:
@@ -42,6 +47,12 @@ jobs:
           key: hf-${{ github.event.inputs.model }}
       - name: Transcribe
         run: python scripts/transcribe.py --ids "${{ github.event.inputs.ids }}" --model "${{ github.event.inputs.model }}" --tag "${{ github.event.inputs.tag }}" ${{ github.event.inputs.extra }}
+      - name: Summarize (Gemini)
+        if: github.event.inputs.summarize == 'true' && github.event.inputs.tag == ''
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/summarize.py --ids "${{ github.event.inputs.ids }}"
       - name: Commit results
         if: always()
         run: |
