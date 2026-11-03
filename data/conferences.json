@@ -3482,8 +3482,8 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null
+   "transcript_status": "done",
+   "detail": "detail/6526-20261103.json"
   },
   {
    "id": "2344-20261103",
