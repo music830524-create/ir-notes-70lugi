@@ -63,3 +63,5 @@ details.tr summary{cursor:pointer;font-weight:650;font-size:17px;list-style:none
 details.tr summary::after{content:"＋";color:var(--mute)}details.tr[open] summary::after{content:"－"}
 .seg-line{margin:10px 0;font-size:15px}.seg-line .sp{font-weight:650;font-size:13px;color:var(--accent)}.seg-line .en{color:var(--mute);font-size:14px}
 @media(min-width:760px){.wrap{padding:0 20px 80px}h1{font-size:24px}.nm{font-size:18px}.card:hover{border-color:var(--accent)}}
+
+.fin .fc{border-top:1px solid var(--line);padding:9px 0}.fin .fc:first-child{border-top:0}.fin .fl{font-weight:600}.fin .fv{margin-top:2px}.fin .fs{margin-top:2px;color:var(--mute);font-size:12px}
