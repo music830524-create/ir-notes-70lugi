@@ -1,0 +1,10 @@
+# 達發 6526 專用（光通訊 / 寬頻 PON / 藍牙音訊）。只在有 data/company/6526.json 時啟用。
+# 「聯合科技」只在後面接「整個集團」時才換成聯發科（避免誤傷）
+聯合科技(?=整個集團)	聯發科	re
+研發科技(?=的?\s*5G\s*FWA)	聯發科技	re
+# PON：POM 在這家公司的語境只可能是 PON
+\bPOM\b	PON	re
+(\d*G)-?Pone\b	\1PON	re
+PAN\s*4	PAM4	re
+(?:Pump\s*board|Pumper|Pumple|PanBo|斑鋪|潘迫)\s*DSP	PAM4 DSP	re!
+碰(?=晶片|技術|市場|方案|產品|營收|的比重)	PON	re

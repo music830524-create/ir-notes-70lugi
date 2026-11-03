@@ -1,0 +1,7 @@
+# 全域術語校正：wrong<TAB>right[<TAB>exact|ci|re]；依檔案順序套用；若套用後句中數字改變則跳過該條
+# 只放「唯一合理讀法」的規則。註：這些規則的起點是 6526 v1 逐字稿裡觀察到的錯誤，量測時另列「不含 termfix」版本。
+Save\s*(?:Power|Harbor)\s*Statement	Safe Harbor Statement	re
+寬[佈布]\s*DSP	Combo DSP	re
+HEP\s*HOT	Tape-out	re
+藍芽	藍牙	exact
+三通[道到](?=\s*\d+G)	單通道	re

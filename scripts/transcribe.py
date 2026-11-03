@@ -2,14 +2,13 @@
 """下載法說影片 -> 16kHz 單聲道音檔 -> faster-whisper(CPU, int8) -> 繁體 -> data/detail/<id>.json + .txt"""
 import argparse, json, os, re, subprocess, sys, time, datetime, urllib.request
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import irtext
 
 ROOT = Path(__file__).resolve().parent.parent
 CONF = ROOT / "data" / "conferences.json"
 DETAIL = ROOT / "data" / "detail"
 WORK = Path(os.environ.get("RUNNER_TEMP", "/tmp")) / "ir_work"
-
-JUNK = re.compile(r"字幕|訂閱|订阅|明鏡|明镜|點贊|点赞|打賞|打赏|感謝觀看|感谢观看|謝謝收看|謝謝觀看|下集再見|"
-                  r"請不吝|李宗盛|中文字幕志願者|Amara|subscribe|Thanks for watching", re.I)
 
 def log(msg):
     print(f"[{datetime.datetime.now():%H:%M:%S}] {msg}", flush=True)
@@ -48,45 +47,41 @@ def download(url, dst, tries=5):
         time.sleep(5 * i)
     raise RuntimeError("download failed")
 
-def clean(segs):
-    out, last, rep = [], None, 0
-    for s in segs:
-        t = s["text"].strip()
-        if not t or JUNK.search(t):
-            continue
-        if t == last:
-            rep += 1
-            if rep >= 2:  # 同一句連續重複超過 2 次 => 幻覺
-                continue
-        else:
-            last, rep = t, 0
-        s["text"] = t
-        out.append(s)
-    return out
-
-def run_one(c, model_name, model_obj, cc):
+def run_one(c, model_name, model_obj, cc, opt):
     cid = c["id"]
     WORK.mkdir(parents=True, exist_ok=True)
     mp4, wav = WORK / f"{cid}.mp4", WORK / f"{cid}.wav"
     T = {}
     t0 = time.time()
-    set_status(cid, "processing")
+    if not opt.tag: set_status(cid, "processing")
     download(c["video"]["url"], mp4)
     T["download_s"] = round(time.time() - t0, 1)
     log(f"STAGE download done {T['download_s']}s size={mp4.stat().st_size/1e6:.1f}MB")
 
     t1 = time.time()
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp4), "-vn", "-ac", "1", "-ar", "16000", str(wav)], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp4), *(["-t", str(opt.max_seconds)] if opt.max_seconds else []), "-vn", "-ac", "1", "-ar", "16000", str(wav)], check=True)
     T["extract_s"] = round(time.time() - t1, 1)
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(wav)]).decode().strip())
     log(f"STAGE extract done {T['extract_s']}s audio_duration={dur:.1f}s ({hms(dur)})")
 
+    # ── 詞彙表：投影片(zh/en) -> 名詞/英文術語 -> prompt + hotwords ──
+    tg = time.time()
+    sl = c.get("slides") or {}
+    zh_txt = irtext.pdf_text(sl.get("zh"), WORK / f"{cid}_zh.pdf")
+    en_txt = irtext.pdf_text(sl.get("en"), WORK / f"{cid}_en.pdf")
+    company = {} if opt.no_company else irtext.load_company(c["code"])
+    ind = json.loads((ROOT / "data" / "terms_industry.json").read_text(encoding="utf-8")).get(c.get("industry"), [])
+    g = irtext.build_glossary(c, zh_txt, en_txt, ind, company)
+    prompt, hotwords = irtext.build_prompt_hotwords(g)
+    log(f"GLOSSARY slides_zh={len(zh_txt)}ch slides_en={len(en_txt)}ch company_file={bool(company)}")
+    log(f"PROMPT({len(prompt)}) {prompt}")
+    log(f"HOTWORDS({len(hotwords)}) {hotwords}")
+    T["glossary_s"] = round(time.time() - tg, 1)
+
     t2 = time.time()
-    prompt = (f"以下是台灣上市公司{c['name']}（股票代號{c['code']}）的法人說明會，使用繁體中文。"
-              "內容包含營收、毛利率、營業費用、營業利益、稅後淨利、每股盈餘EPS、季增、年增、庫存、資本支出、"
-              "AI、半導體、客戶、產品組合、展望與指引，以及法人問答。")
     seg_iter, info = model_obj.transcribe(str(wav), language="zh", beam_size=5, vad_filter=True,
-                                          initial_prompt=prompt, condition_on_previous_text=False)
+                                          initial_prompt=prompt, hotwords=hotwords,
+                                          condition_on_previous_text=False)
     raw, n = [], 0
     for s in seg_iter:
         raw.append({"start": s.start, "end": s.end, "text": s.text})
@@ -98,8 +93,15 @@ def run_one(c, model_name, model_obj, cc):
 
     t3 = time.time()
     for s in raw:
-        s["text"] = cc.convert(s["text"])
-    segs = clean(raw)
+        s["text"] = irtext.to_tw(cc, s["text"])
+    n_raw = len(raw)
+    cleaned = irtext.clean(raw, prompt, hotwords)
+    log(f"CLEAN dropped {n_raw - len(cleaned)} of {n_raw} segments (junk/echo/repeat)")
+    stats = {}
+    gl = [] if opt.no_termfix else irtext.load_termfix(ROOT / "data" / "termfix.tsv")
+    cl = [] if (opt.no_termfix or opt.no_company) else irtext.load_termfix(ROOT / "data" / "termfix.d" / f"{c['code']}.tsv")
+    segs = irtext.postfix(cleaned, g, gl, cl, homophone=not opt.no_homophone, stats=stats)
+    log("FIXSTATS " + json.dumps(stats, ensure_ascii=False))
     transcript = [{"speaker": "發言人", "ts": hms(s["start"]), "start": round(s["start"], 2),
                    "end": round(s["end"], 2), "zh": s["text"], "en": None} for s in segs]
     chars = sum(len(s["zh"]) for s in transcript)
@@ -111,10 +113,17 @@ def run_one(c, model_name, model_obj, cc):
            "generated_at": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).isoformat(timespec="seconds"),
            "audio_duration_s": round(dur, 1), "timing": T, "rtf": round(T["transcribe_s"] / dur, 3),
            "char_count": chars, "highlights": [], "financials": [], "outlook": [], "qa": [], "transcript": transcript}
-    (DETAIL / f"{cid}.json").write_text(json.dumps(det, ensure_ascii=False, indent=1), encoding="utf-8")
+    det["pipeline"] = {"prompt": prompt, "hotwords": hotwords, "opencc": "s2tw+臺->台", "company_file": bool(company),
+                       "termfix_global": len(gl), "termfix_company": len(cl), "homophone": not opt.no_homophone,
+                       "fixstats": stats, "dropped_segments": n_raw - len(cleaned)}
+    suffix = f".{opt.tag}" if opt.tag else ""
+    (DETAIL / f"{cid}{suffix}.json").write_text(json.dumps(det, ensure_ascii=False, indent=1), encoding="utf-8")
     txt = "\n".join(f"[{s['ts']}] {s['zh']}" for s in transcript)
-    (DETAIL / f"{cid}.txt").write_text(txt + "\n", encoding="utf-8")
-    set_status(cid, "done", f"detail/{cid}.json")
+    (DETAIL / f"{cid}{suffix}.txt").write_text(txt + "\n", encoding="utf-8")
+    # 修正前的原始(已轉繁體、已過濾)分段，供離線比較各修正階段的貢獻
+    (DETAIL / f"{cid}{suffix}.raw.json").write_text(json.dumps({"glossary": g, "segments": cleaned}, ensure_ascii=False), encoding="utf-8")
+    if not opt.tag:
+        set_status(cid, "done", f"detail/{cid}.json")
     log(f"STAGE postprocess done {T['postprocess_s']}s chars={chars} total={T['total_s']}s")
     log("SUMMARY " + json.dumps({"id": cid, "model": model_name, "audio_s": round(dur, 1), **T, "rtf": det["rtf"], "chars": chars}, ensure_ascii=False))
     mp4.unlink(missing_ok=True); wav.unlink(missing_ok=True)
@@ -122,13 +131,18 @@ def run_one(c, model_name, model_obj, cc):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ids", required=True)
-    ap.add_argument("--model", default="medium")
+    ap.add_argument("--model", default="medium", help="small|medium|large-v3|large-v3-turbo")
+    ap.add_argument("--tag", default="", help="輸出加後綴(不改 conferences.json 狀態)，例如 medium-v2")
+    ap.add_argument("--no-company", action="store_true", help="不讀 data/company/<code>.json 與 data/termfix.d/<code>.tsv")
+    ap.add_argument("--no-termfix", action="store_true", help="不套用 TSV 術語校正")
+    ap.add_argument("--max-seconds", type=int, default=0, help="測試用：只轉前 N 秒")
+    ap.add_argument("--no-homophone", action="store_true", help="不做 pypinyin 同音校正")
     a = ap.parse_args()
     ids = [x.strip() for x in a.ids.split(",") if x.strip()]
     confs = {c["id"]: c for c in load()["conferences"]}
     from faster_whisper import WhisperModel
     from opencc import OpenCC
-    cc = OpenCC("s2twp")
+    cc = OpenCC("s2tw")
     t = time.time()
     model = WhisperModel(a.model, device="cpu", compute_type="int8", cpu_threads=os.cpu_count() or 4)
     log(f"STAGE model_load done {time.time()-t:.1f}s (cpu_threads={os.cpu_count()})")
@@ -138,9 +152,10 @@ def main():
         if not c or not c.get("video", {}).get("url"):
             log(f"skip {cid}: no video"); fail += 1; continue
         try:
-            run_one(c, a.model, model, cc)
+            run_one(c, a.model, model, cc, a)
         except Exception as e:
-            log(f"FAILED {cid}: {e}"); set_status(cid, "pending"); fail += 1
+            log(f"FAILED {cid}: {e}"); fail += 1
+            if not a.tag: set_status(cid, "pending")
     sys.exit(1 if fail else 0)
 
 if __name__ == "__main__":
