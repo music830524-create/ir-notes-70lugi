@@ -1,0 +1,44 @@
+{
+ "id": "7769-20261028",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": null
+ },
+ "generated_at": "2026-11-04T16:15:39+08:00",
+ "audio_duration_s": 2.8,
+ "timing": {
+  "download_s": 254.7,
+  "extract_s": 0.3,
+  "glossary_s": 2093.4,
+  "transcribe_s": 3.6,
+  "postprocess_s": 0.2,
+  "total_s": 2352.2
+ },
+ "rtf": 1.278,
+ "char_count": 16,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:00",
+   "start": 0.0,
+   "end": 2.8,
+   "zh": "各位投資先進午安,歡迎參加郵滾。",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "鴻勁法說會。Tape-out、DSP、PAM4、PON、Wi-Fi、FWA、PHY、TWSE、HON、AGENDA、EPS、AP、AI、HPC、ASIC、MEMS、SiP、AR、DRAM、MCU、OTA、LCD、CIS。",
+  "hotwords": "鴻勁 Tape-out DSP PAM4 PON Wi-Fi FWA PHY TWSE HON AGENDA EPS AP AI HPC ASIC MEMS SiP AR DRAM MCU OTA LCD LiDAR PMIC CIS APU GPU CPU",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ }
+}
