@@ -23,7 +23,8 @@ async function history(c,confs){
   confs.filter(x=>x.code===c.code&&x.id!==c.id).forEach(x=>map.set(x.date,{date:x.date,time:x.time,id:x.id,detail:x.detail,sum:!!x.summarized,
     video:x.video&&x.video.url,zh:x.slides&&x.slides.zh,en:x.slides&&x.slides.en}));
   try{const r=await fetch("data/history/"+encodeURIComponent(c.code)+".json",{cache:"no-cache"});
-    if(r.ok)(await r.json()).forEach(h=>{if(h.d!==c.date&&!map.has(h.d))map.set(h.d,{date:h.d,time:h.t,video:h.v,zh:h.z,en:h.e});});}catch(e){}
+    const today=new Date(Date.now()+288e5).toISOString().slice(0,10);
+    if(r.ok)(await r.json()).forEach(h=>{if(h.d!==c.date&&h.d<=today&&!map.has(h.d))map.set(h.d,{date:h.d,time:h.t,video:h.v,zh:h.z,en:h.e});});}catch(e){}
   const L=[...map.values()].sort((a,b)=>a.date<b.date?1:-1);
   if(!L.length)return ph("尚無其他法說紀錄");
   const row=h=>{

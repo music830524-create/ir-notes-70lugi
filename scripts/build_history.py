@@ -49,6 +49,7 @@ def main():
     try:                                              # 1) 證交所影音清單：穩定，涵蓋約 2 年的影片連結
         for x in b.get_vod(a.vod):
             code, date = x["agentUserName"], x["eventDate"][:10]
+            if date > datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d"): continue   # 尚未舉行的場次不放
             e = rows.setdefault((code, date), {"name": x["agentSimpleName"], "d": date, "t": None})
             if x.get("webLinkPath"): e["v"], e["k"] = b.https(x["webLinkPath"]), "mp4"
         print(f"VOD 後共 {len(rows)} 筆", flush=True)
