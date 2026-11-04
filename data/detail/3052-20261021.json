@@ -1,0 +1,230 @@
+{
+ "id": "3052-20261021",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": null
+ },
+ "generated_at": "2026-11-04T18:53:37+08:00",
+ "audio_duration_s": 118.7,
+ "timing": {
+  "download_s": 112.1,
+  "extract_s": 0.3,
+  "glossary_s": 215.5,
+  "transcribe_s": 73.4,
+  "postprocess_s": 0.2,
+  "total_s": 401.6
+ },
+ "rtf": 0.618,
+ "char_count": 426,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:04",
+   "start": 4.46,
+   "end": 12.46,
+   "zh": "歡迎各位出席元大產業座談 夆典科技開發股份有限公司說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:12",
+   "start": 12.46,
+   "end": 18.46,
+   "zh": "今天由夆典公司就公司產業狀況營運成果及未來展望為各位簡報說明。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:18",
+   "start": 18.46,
+   "end": 22.46,
+   "zh": "現在為各位介紹公司與會的經營團隊。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:22",
+   "start": 22.46,
+   "end": 30.46,
+   "zh": "郭國華董事長、黃傑董事長事協理、吳秀玲財務會計部協理。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:30",
+   "start": 30.46,
+   "end": 35.46,
+   "zh": "接下來我們把時間交給黃傑董事長協理 黃協理請",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:36",
+   "start": 36.46,
+   "end": 38.46,
+   "zh": "OK 謝謝四姨",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:38",
+   "start": 38.46,
+   "end": 41.46,
+   "zh": "各位投資及媒體先進 大家好",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:41",
+   "start": 41.46,
+   "end": 45.46,
+   "zh": "歡迎參加逢典2026年的法人說明會",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:45",
+   "start": 45.46,
+   "end": 49.46,
+   "zh": "首先感謝各位長期以來對夆典的關心",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:49",
+   "start": 49.46,
+   "end": 51.46,
+   "zh": "今天由我來代表公司",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:51",
+   "start": 51.46,
+   "end": 55.46,
+   "zh": "向各位說明逢典近期的概況 財務表現",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:55",
+   "start": 55.46,
+   "end": 57.46,
+   "zh": "及各事業部營運情形",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:57",
+   "start": 57.46,
+   "end": 63.84,
+   "zh": "在簡報開始之前先做免責聲明",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:03",
+   "start": 63.84,
+   "end": 68.34,
+   "zh": "今天簡報內容依公司目前可取得的資訊編制",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:08",
+   "start": 68.34,
+   "end": 74.34,
+   "zh": "其中包含對未來營運、開發時程或市場狀況的前瞻性說明",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:14",
+   "start": 74.34,
+   "end": 78.84,
+   "zh": "但是因實際結果會受到其他不確定性的因素影響",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:18",
+   "start": 78.84,
+   "end": 84.34,
+   "zh": "故簡報內容僅供資訊交流使用 不構成任何投資建議",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:24",
+   "start": 84.34,
+   "end": 87.84,
+   "zh": "仍請各位依照公開資訊自行判斷",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:27",
+   "start": 87.84,
+   "end": 94.34,
+   "zh": "今天簡報的內容分成三個部分",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:34",
+   "start": 94.34,
+   "end": 97.74,
+   "zh": "首先介紹夆典集團及經營願景",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:37",
+   "start": 97.74,
+   "end": 103.34,
+   "zh": "第二部分說明近幾個年度與2026年上半年的財務概況",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:43",
+   "start": 103.34,
+   "end": 110.74,
+   "zh": "第三部分依序報告工程、光電、建設及園區開發事業的營運狀況",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:50",
+   "start": 110.74,
+   "end": 114.34,
+   "zh": "最後會保留時間回答各位的問題",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:54",
+   "start": 114.34,
+   "end": 119.28,
+   "zh": "關於縫點",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "本報告係由夆典科技法說會。夆典、XINDIN、APEX、SCIENCE、CHANG、JI、EPS、II、GIS、EPC、MEP、ISO、LCD、OLED、TFT、LED、TN、STN、FSTN、RoHS、REACH。",
+  "hotwords": "本報告係由夆典科技 夆典 XINDIN APEX SCIENCE CHANG JI EPS II GIS EPC MEP ISO LCD OLED TFT LED TN STN FSTN RoHS REACH B5 TMC FAR BCR B1 PING B4",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {
+   "逢典->夆典": 1
+  },
+  "dropped_segments": 0
+ }
+}
