@@ -1,0 +1,84 @@
+{
+ "id": "6271-20261030",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": null
+ },
+ "generated_at": "2026-11-04T15:42:07+08:00",
+ "audio_duration_s": 39.9,
+ "timing": {
+  "download_s": 188.4,
+  "extract_s": 0.2,
+  "glossary_s": 125.8,
+  "transcribe_s": 27.5,
+  "postprocess_s": 0.2,
+  "total_s": 342.1
+ },
+ "rtf": 0.689,
+ "char_count": 165,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:05",
+   "start": 5.14,
+   "end": 13.74,
+   "zh": "各位投資先進大家午安,歡迎大家參加永豐清證券主辦的同欣電2026年第三季線上法人說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:13",
+   "start": 13.74,
+   "end": 25.24,
+   "zh": "今天法說會主講人為呂紹平總經理及黃佳麗營運長,會議開始首先先請同欣電幫我們簡報2026年第三季公司營運成果。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:25",
+   "start": 25.24,
+   "end": 34.34,
+   "zh": "請注意本次會議僅提公文字提問,若投資先進有問題要提問,請與聊天室上方點選所有答疑者選項,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:34",
+   "start": 34.34,
+   "end": 36.14,
+   "zh": "才能進一步留言",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:36",
+   "start": 36.14,
+   "end": 38.94,
+   "zh": "若選所有人 問題無法送出",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:38",
+   "start": 38.94,
+   "end": 39.94,
+   "zh": "謝謝大家",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "同欣電子法說會。同欣電、Tape-out、DSP、PAM4、PON、Wi-Fi、FWA、PHY、C-TH、TONG、HSING、IND、P1、EPS、P4、P5、Y2026、Y2025、P6、EBITDA、P7、P8。",
+  "hotwords": "同欣電子 同欣電 Tape-out DSP PAM4 PON Wi-Fi FWA PHY C-TH TONG HSING IND P1 EPS P4 P5 Y2026 Y2025 P6 EBITDA P7 P8 P10 P11 RF P12 P13 P14",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ }
+}
