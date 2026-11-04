@@ -1,7 +1,7 @@
 :root{--bg:#f6f7f9;--card:#fff;--ink:#1c2230;--mute:#6b7385;--line:#e5e8ee;--accent:#0f766e;--accent-bg:#e1f3f1;--warn:#b45309;--warn-bg:#fdf1de;--ok:#15803d;--ok-bg:#e2f5e8;--blue:#1d4ed8;--blue-bg:#e6edfd;--gray-bg:#eef0f4}
 @media(prefers-color-scheme:dark){:root{--bg:#0f131a;--card:#171c26;--ink:#e8ebf2;--mute:#8d96a8;--line:#262d3b;--accent:#4fd1c5;--accent-bg:#12312f;--warn:#f0b35a;--warn-bg:#33270f;--ok:#6ee7a0;--ok-bg:#12301f;--blue:#8fb0ff;--blue-bg:#1a2646;--gray-bg:#212838}}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;overflow-anchor:none}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:720px;margin:0 auto;padding:0 14px 60px}
@@ -67,8 +67,7 @@ details.tr summary::after{content:"＋";color:var(--mute)}details.tr[open] summa
  h1{font-size:24px}
  .nm{font-size:18px}
  .card:hover{border-color:var(--accent)}
- #list{display:grid;grid-template-columns:1fr 1fr;column-gap:16px;align-items:start}
- #list>.dayhead,#list>.empty{grid-column:1 / -1}
+ .day-cards{display:grid;grid-template-columns:1fr 1fr;column-gap:16px;align-items:start}
  .fin{display:grid;grid-template-columns:1fr 1fr;column-gap:22px}
  .fin .fc:nth-child(-n+2){border-top:0}
 }

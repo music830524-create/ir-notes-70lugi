@@ -52,7 +52,7 @@ function render(){
     const done=list.filter(c=>c.transcript_status==="done").length;
     const h=el("div",{class:"dayhead",id:"d-"+d},el("h2",{text:fmtDate(d)}),d===today?el("span",{class:"tag",text:"今天"}):null,
       el("span",{class:"cnt",text:`${list.length} 場・${done} 篇有逐字稿`}));
-    main.append(h,...list.map(card));}
+    main.append(el("section",{class:"day"},h,el("div",{class:"day-cards"},...list.map(card))));}
   renderTabs(rows);
 }
 let CUR=null;
@@ -63,7 +63,13 @@ function renderTabs(rows){const box=document.getElementById("dtabs");box.replace
 document.getElementById("dtabs").onclick=e=>{const b=e.target.closest(".dtab");if(b)jump(b.dataset.d,true);};
 function toast(t){const x=document.getElementById("toast");x.textContent=t;x.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>x.hidden=true,2600);}
 function setView(v){if(st.view===v)return;st.view=v;[...document.getElementById("seg").children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.v===v));render();}
-function pageTop(el){let y=0,n=el;while(n){y+=n.offsetTop;n=n.offsetParent;}return y;}
+function pageTop(el){
+  const prev=el.style.position;
+  el.style.position="static";
+  const y=el.getBoundingClientRect().top+window.scrollY;
+  el.style.position=prev;
+  return y;
+}
 function centerTab(tab){const box=tab.parentElement;if(!box)return;const left=tab.offsetLeft-(box.clientWidth-tab.offsetWidth)/2;box.scrollTo({left:Math.max(0,left),behavior:"smooth"});}
 function jump(d,exact){const today=taipeiToday();setView(d>today?"future":"past");
   let ds=allDates();
