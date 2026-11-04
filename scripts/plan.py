@@ -33,15 +33,19 @@ def main():
     ap.add_argument("--max", type=int, default=6, help="每次最多處理幾場")
     ap.add_argument("--max-fails", type=int, default=3)
     ap.add_argument("--ids", default="", help="手動指定(略過日期範圍與下載檢查以外的條件)")
+    ap.add_argument("--skip-recent", type=int, default=0, help="略過最近幾天(留給每 2 小時排程)")
+    ap.add_argument("--asr-only", action="store_true", help="只挑還沒轉逐字稿的")
+    ap.add_argument("--no-check", action="store_true", help="不檢查影片可下載(只計數)")
     a = ap.parse_args()
     today = datetime.datetime.now(TPE).date()
     since = (today - datetime.timedelta(days=a.days)).isoformat()
+    until = (today - datetime.timedelta(days=a.skip_recent)).isoformat()
     confs = json.loads((ROOT / "data" / "conferences.json").read_text(encoding="utf-8"))["conferences"]
     forced = [x.strip() for x in a.ids.split(",") if x.strip()]
     cands = []
     for c in confs:
         if forced and c["id"] not in forced: continue
-        if not forced and not (since <= c["date"] <= today.isoformat()): continue
+        if not forced and not (since <= c["date"] <= min(until, today.isoformat())): continue
         if not (c.get("video") or {}).get("url") or c["video"].get("kind") != "mp4": continue
         det = ROOT / "data" / "detail" / f"{c['id']}.json"
         r = retry_of(c["id"])
@@ -55,13 +59,14 @@ def main():
                 need_asr = True
         if need_asr and r.get("asr_fails", 0) >= a.max_fails: print(f"skip {c['id']}: 轉寫已失敗 {r['asr_fails']} 次"); continue
         if need_sum and not need_asr and r.get("sum_fails", 0) >= a.max_fails: print(f"skip {c['id']}: 整理已失敗 {r['sum_fails']} 次"); continue
+        if a.asr_only and not need_asr: continue
         if need_asr or need_sum:
             cands.append((c, need_asr))
     cands.sort(key=lambda x: (x[0]["date"], x[0]["time"] or ""), reverse=True)
     pick = []
     for c, need_asr in cands:
         if len(pick) >= a.max: break
-        if need_asr:
+        if need_asr and not a.no_check:
             ok, info = downloadable(c["video"]["url"])
             print(f"{'OK  ' if ok else 'SKIP'} {c['id']} {c['date']} 影片檢查: {info}")
             if not ok: continue

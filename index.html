@@ -10,7 +10,13 @@
 <input id="q" class="search" type="search" placeholder="搜尋代號或名稱，例如 2330、台積電" autocomplete="off" enterkeyhint="search">
 <div class="chips" id="chips"></div>
 <div class="seg" id="seg"><button data-v="past" aria-pressed="true">已舉行</button><button data-v="future" aria-pressed="false">即將舉行</button></div>
+<div class="datebar">
+<button id="cal" class="dbtn" aria-label="選擇日期">📅</button><input id="dpick" type="date" class="dpick" tabindex="-1" aria-hidden="true">
+<button id="dprev" class="dbtn" aria-label="上一日">‹</button><button id="dtoday" class="dbtn txt">今天</button><button id="dnext" class="dbtn" aria-label="下一日">›</button>
 </div>
+<div class="dtabs" id="dtabs"></div>
+</div>
+<div id="toast" class="toast" hidden></div>
 <main id="list"></main>
 <p class="foot">法說會場次、影片連結來自證交所影音平台與公開資訊觀測站，僅供個人研究參考，不構成投資建議。</p>
 </div>
@@ -44,11 +50,40 @@ function render(){
   const groups=new Map();rows.forEach(c=>{if(!groups.has(c.date))groups.set(c.date,[]);groups.get(c.date).push(c);});
   for(const[d,list]of groups){
     const done=list.filter(c=>c.transcript_status==="done").length;
-    const h=el("div",{class:"dayhead"},el("h2",{text:fmtDate(d)}),d===today?el("span",{class:"tag",text:"今天"}):null,
+    const h=el("div",{class:"dayhead",id:"d-"+d},el("h2",{text:fmtDate(d)}),d===today?el("span",{class:"tag",text:"今天"}):null,
       el("span",{class:"cnt",text:`${list.length} 場・${done} 篇有逐字稿`}));
     main.append(h,...list.map(card));}
+  renderTabs(rows);
 }
+let CUR=null;
+function shortD(iso){const[y,m,d]=iso.split("-").map(Number);return `${String(m).padStart(2,"0")}/${String(d).padStart(2,"0")} 週${WD[new Date(Date.UTC(y,m-1,d)).getUTCDay()]}`;}
+function allDates(){return [...new Set(DATA.conferences.filter(c=>match(c,taipeiToday())).map(c=>c.date))];}
+function renderTabs(rows){const box=document.getElementById("dtabs");box.replaceChildren();const cnt=new Map();rows.forEach(c=>cnt.set(c.date,(cnt.get(c.date)||0)+1));
+  for(const[d,n]of cnt)box.append(el("button",{class:"dtab","data-d":d,"aria-pressed":d===CUR},shortD(d),el("small",{text:` ${n}場`})));}
+document.getElementById("dtabs").onclick=e=>{const b=e.target.closest(".dtab");if(b)jump(b.dataset.d,true);};
+function toast(t){const x=document.getElementById("toast");x.textContent=t;x.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>x.hidden=true,2600);}
+function setView(v){if(st.view===v)return;st.view=v;[...document.getElementById("seg").children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.v===v));render();}
+function jump(d,exact){const today=taipeiToday();setView(d>today?"future":"past");
+  let ds=allDates();
+  if(!ds.length){toast("目前篩選下沒有場次");return;}
+  let t=d;if(!ds.includes(d)){t=ds.reduce((a,b)=>Math.abs(Date.parse(b)-Date.parse(d))<Math.abs(Date.parse(a)-Date.parse(d))?b:a);if(!exact)toast(`${shortD(d)} 沒有場次，已跳到最近的 ${shortD(t)}`);}
+  CUR=t;document.getElementById("dpick").value=t;
+  document.querySelectorAll(".dtab").forEach(b=>b.setAttribute("aria-pressed",b.dataset.d===t));
+  const tab=document.querySelector(`.dtab[data-d="${t}"]`);if(tab)tab.scrollIntoView({inline:"center",block:"nearest",behavior:"smooth"});
+  const h=document.getElementById("d-"+t);if(h){const off=document.querySelector(".tools").offsetHeight;window.scrollTo({top:h.getBoundingClientRect().top+scrollY-off-4,behavior:"smooth"});}}
+function step(k){const all=[...new Set(DATA.conferences.filter(c=>{const v=st.view;st.view="past";const a=match(c,"9999");st.view=v;return a;}).map(c=>c.date))].sort();
+  if(!all.length)return;const cur=CUR||taipeiToday();let i;
+  if(k>0){i=all.find(x=>x>cur);}else{i=[...all].reverse().find(x=>x<cur);}
+  if(!i){toast(k>0?"已經是最後一天":"已經是最早一天");return;}jump(i,true);}
+const dp=document.getElementById("dpick");
+document.getElementById("cal").onclick=()=>{try{dp.showPicker();}catch(e){dp.focus();dp.click();}};
+dp.onchange=()=>{if(dp.value)jump(dp.value,false);};
+document.getElementById("dtoday").onclick=()=>jump(taipeiToday(),false);
+document.getElementById("dprev").onclick=()=>step(-1);
+document.getElementById("dnext").onclick=()=>step(1);
+function setStick(){document.documentElement.style.setProperty("--toolsH",document.querySelector(".tools").offsetHeight+"px");}
+addEventListener("resize",setStick);
 loadConfs().then(d=>{DATA=d;const g=new Date(d.generated_at);
-  document.getElementById("sub").textContent=`台股法說會・${d.conferences.length} 場・資料更新 ${d.generated_at.slice(0,16).replace("T"," ")}`;render();})
+  document.getElementById("sub").textContent=`台股法說會・${d.conferences.length} 場・資料更新 ${d.generated_at.slice(0,16).replace("T"," ")}`;render();setStick();})
  .catch(e=>{document.getElementById("sub").textContent="資料載入失敗："+e.message;});
 </script></body></html>

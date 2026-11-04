@@ -1,0 +1,143 @@
+name: backfill
+# 連續回補：近 90 天(略過最近 4 天，那些交給 auto)還沒轉逐字稿、有 mp4 的場次，
+# 由新到舊每輪平行 BATCH 場；每場轉完立刻整理(Gemini)並 push、更新清單狀態；
+# finalize 依序補整理沒整理成功的場次，若還有剩就自動觸發下一輪，直到轉完。
+# 失敗場次記在 data/retry，3 次後跳過，不會無限迴圈。
+on:
+  workflow_dispatch:
+    inputs:
+      days: {description: "回補最近幾天", default: "90"}
+      batch: {description: "每輪平行幾場", default: "18"}
+      chain: {description: "還有剩是否自動接下一輪", default: "true"}
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: backfill
+  cancel-in-progress: false
+env:
+  DAYS: ${{ github.event.inputs.days || '90' }}
+  BATCH: ${{ github.event.inputs.batch || '18' }}
+  CHAIN: ${{ github.event.inputs.chain || 'true' }}
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      ids: ${{ steps.plan.outputs.ids }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Plan
+        id: plan
+        run: python scripts/plan.py --days "$DAYS" --skip-recent 4 --asr-only --max "$BATCH"
+  run:
+    needs: plan
+    if: needs.plan.outputs.count != '0' && needs.plan.outputs.count != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 18
+      matrix:
+        id: ${{ fromJSON(needs.plan.outputs.ids) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg poppler-utils
+          pip install -q faster-whisper "av<16" opencc-python-reimplemented pypinyin requests beautifulsoup4 lxml
+      - uses: actions/cache@v4
+        with: {path: ~/.cache/huggingface, key: hf-medium}
+      - name: Transcribe (medium)
+        id: asr
+        continue-on-error: true
+        run: python scripts/transcribe.py --ids "${{ matrix.id }}" --model medium
+      - name: Summarize (Gemini)
+        if: steps.asr.outcome == 'success'
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: sleep $((RANDOM % 60)); python scripts/summarize.py --ids "${{ matrix.id }}"
+      - name: Record result
+        if: always()
+        run: python scripts/record.py "${{ matrix.id }}"
+      - name: Commit + 更新清單狀態
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -- data/conferences.json 2>/dev/null || true
+          git add data/detail data/retry
+          git diff --cached --quiet || git commit -m "backfill: ${{ matrix.id }}"
+          for i in $(seq 1 10); do
+            git pull --rebase --autostash -X theirs origin main || { git rebase --abort; sleep 5; continue; }
+            python build_data.py --no-fetch
+            git add data/conferences.json
+            git diff --cached --quiet || git commit -m "status: ${{ matrix.id }}"
+            git push && exit 0
+            sleep $((RANDOM % 15 + 3))
+          done
+          exit 1
+  finalize:
+    needs: [plan, run]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: 依序補整理(最多 15 場，避免 Gemini 429)
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          IDS=$(python3 - <<'PY'
+          import json,datetime,pathlib
+          since=(datetime.date.today()-datetime.timedelta(days=int("${{ env.DAYS }}"))).isoformat()
+          c=json.load(open("data/conferences.json"))["conferences"]
+          out=[]
+          for x in c:
+              if x["date"]<since or x["transcript_status"]!="done" or x.get("summarized"): continue
+              r=pathlib.Path(f"data/retry/{x['id']}.json")
+              if r.exists() and json.loads(r.read_text()).get("sum_fails",0)>=3: continue
+              out.append(x["id"])
+          print(",".join(out[:15]))
+          PY
+          )
+          echo "補整理: $IDS"
+          [ -z "$IDS" ] && exit 0
+          for id in ${IDS//,/ }; do python scripts/summarize.py --ids "$id" || true; python scripts/record.py "$id"; sleep 20; done
+      - name: Commit
+        run: |
+          pip install -q requests beautifulsoup4 lxml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/detail data/retry
+          git diff --cached --quiet || git commit -m "backfill: summaries"
+          for i in $(seq 1 8); do
+            git pull --rebase --autostash -X theirs origin main || { git rebase --abort; sleep 5; continue; }
+            python build_data.py --no-fetch; git add data/conferences.json
+            git diff --cached --quiet || git commit -m "backfill: update status"
+            git push && exit 0; sleep 7
+          done
+          exit 1
+      - name: 還有剩就接下一輪
+        if: env.CHAIN == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q origin main || true
+          GITHUB_OUTPUT=/tmp/left python scripts/plan.py --days "$DAYS" --skip-recent 4 --asr-only --no-check --max 9999 | tail -1
+          N=$(grep '^count=' /tmp/left | cut -d= -f2)
+          echo "剩餘 $N 場"
+          if [ "$N" != "0" ] && [ "${{ needs.plan.outputs.count }}" != "0" ]; then
+            gh workflow run backfill.yml --ref main -f days="$DAYS" -f batch="$BATCH" -f chain=true
+          fi

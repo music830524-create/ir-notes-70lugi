@@ -21,7 +21,7 @@ concurrency:
   group: auto
   cancel-in-progress: false
 env:
-  DAYS: ${{ github.event.inputs.days || '7' }}
+  DAYS: ${{ github.event.inputs.days || '3' }}
   MAXN: ${{ github.event.inputs.max || '6' }}
   FORCE_IDS: ${{ github.event.inputs.ids || '' }}
 jobs:
