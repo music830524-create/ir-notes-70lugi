@@ -160,8 +160,10 @@ def main():
     fail = 0
     for cid in ids:
         c = confs.get(cid)
-        if not c or not c.get("video", {}).get("url"):
-            log(f"skip {cid}: no video"); fail += 1; continue
+        vurl = ((c or {}).get("video") or {}).get("url") or ""
+        vpath = vurl.split("?", 1)[0].split("#", 1)[0]
+        if not c or (c.get("video") or {}).get("kind") != "mp4" or not vpath.lower().endswith(".mp4"):
+            log(f"skip {cid}: 不是直接 mp4"); fail += 1; continue
         try:
             run_one(c, a.model, model, cc, a)
         except Exception as e:

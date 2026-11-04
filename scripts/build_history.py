@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""從證交所/公開資訊觀測站公開資料，建立各公司「歷次法說」的公開連結(約 2 年)：data/history/<代號>.json。
-只放日期、簡報 PDF 連結、影片連結(證交所 mp4 或公司公告的 YouTube)，不下載、不轉檔舊影片。
+"""從證交所三個影音分類與公開資訊觀測站，建立各公司「歷次法說」公開連結(約 2 年)：data/history/<代號>.json。
+影片：148/101 只收直接 mp4；170（站外）保留 webLinkPath，以 ext=1 標記。MOPS 只補時間與簡報，不寫入影片。不下載、不轉檔。
 用法: python3 scripts/build_history.py [--months 25] [--vod 6000]"""
 import argparse, datetime, json, sys, time
 from pathlib import Path
@@ -46,12 +46,25 @@ def main():
     a = ap.parse_args()
     rows = {}
     load_existing(rows)
-    try:                                              # 1) 證交所影音清單：穩定，涵蓋約 2 年的影片連結
-        for x in b.get_vod(a.vod):
-            code, date = x["agentUserName"], x["eventDate"][:10]
-            if date > datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d"): continue   # 尚未舉行的場次不放
-            e = rows.setdefault((code, date), {"name": x["agentSimpleName"], "d": date, "t": None})
-            if x.get("webLinkPath"): e["v"], e["k"] = b.https(x["webLinkPath"]), "mp4"
+    for e in rows.values():                           # 沒標站外、又不是直接 mp4 的舊連結拿掉
+        if e.get("v") and not b.is_direct_mp4(e["v"]) and e.get("k") != "offsite" and not e.get("ext"):
+            e.pop("v", None); e.pop("k", None); e.pop("ext", None)
+    today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d")
+    try:                                              # 1) 148/101 的 mp4，否則 170 的站外連結
+        vod_by, all_failed = b.fetch_vod_videos(a.vod)
+        if all_failed:
+            print("VOD 三個分類都失敗，保留既有證交所 mp4 與站外連結", flush=True)
+        else:
+            for x in vod_by.values():
+                if x["date"] > today: continue        # 尚未舉行的場次不放
+                e = rows.setdefault((x["code"], x["date"]), {"name": x["name"], "d": x["date"], "t": None})
+                e["v"] = x["url"]
+                if x["offsite"]:
+                    e["ext"] = 1                      # 分類 170：有影片 (站外)
+                    e["k"] = "mp4" if b.is_direct_mp4(x["url"]) else "offsite"
+                else:
+                    e.pop("ext", None)
+                    e["k"] = "mp4"
         print(f"VOD 後共 {len(rows)} 筆", flush=True)
     except Exception as ex:
         print("VOD 失敗:", ex, file=sys.stderr)
@@ -71,11 +84,9 @@ def main():
                 code = td[0].get_text(strip=True)
                 date = b.roc_to_iso(td[2].get_text(strip=True))
                 if not date: continue
-                vurl, vkind = b.video_from_mops(td[9])
                 e = rows.setdefault((code, date), {"name": td[1].get_text(strip=True), "d": date, "t": None})
                 e["t"] = e.get("t") or b.clean(td[3].get_text()) or None
                 e["z"] = e.get("z") or b.pdf_of(td[6]); e["e"] = e.get("e") or b.pdf_of(td[7])
-                if vurl and not e.get("v"): e["v"], e["k"] = vurl, vkind
                 n += 1
         if n: fails = 0
         print(f"{y}/{m}: {n}", flush=True)

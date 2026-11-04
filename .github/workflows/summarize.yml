@@ -6,7 +6,7 @@ on:
         description: "conference ids, comma-separated (e.g. 6526-20261103)"
         required: true
       model:
-        description: "Gemini 模型(留空=預設備援順序)，逗號分隔可多個"
+        description: "Gemini 模型（留空=gemini-3.5-flash-lite，只打一個；不要加 --force）"
         default: ""
       dry:
         description: "只跑不寫檔"

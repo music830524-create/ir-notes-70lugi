@@ -46,7 +46,9 @@ def main():
     for c in confs:
         if forced and c["id"] not in forced: continue
         if not forced and not (since <= c["date"] <= min(until, today.isoformat())): continue
-        if not (c.get("video") or {}).get("url") or c["video"].get("kind") != "mp4": continue
+        url = ((c.get("video") or {}).get("url") or "")
+        if c.get("video", {}).get("kind") != "mp4" or not url.split("?", 1)[0].split("#", 1)[0].lower().endswith(".mp4"):
+            continue   # 站外的 YouTube／網頁不下載；分類 170 的直接 mp4 仍可轉寫
         det = ROOT / "data" / "detail" / f"{c['id']}.json"
         r = retry_of(c["id"])
         need_asr = c["transcript_status"] != "done"

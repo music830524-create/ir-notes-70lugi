@@ -21,10 +21,10 @@ const dot=(on,t)=>el("span",{class:"hb "+(on?"on":"off"),text:(on?"✓ ":"－ ")
 async function history(c,confs){
   const map=new Map();
   confs.filter(x=>x.code===c.code&&x.id!==c.id).forEach(x=>map.set(x.date,{date:x.date,time:x.time,id:x.id,detail:x.detail,sum:!!x.summarized,
-    video:x.video&&x.video.url,zh:x.slides&&x.slides.zh,en:x.slides&&x.slides.en}));
+    video:x.video&&x.video.url,offsite:!!(x.video&&x.video.offsite),zh:x.slides&&x.slides.zh,en:x.slides&&x.slides.en}));
   try{const r=await fetch("data/history/"+encodeURIComponent(c.code)+".json",{cache:"no-cache"});
     const today=new Date(Date.now()+288e5).toISOString().slice(0,10);
-    if(r.ok)(await r.json()).forEach(h=>{if(h.d!==c.date&&h.d<=today&&!map.has(h.d))map.set(h.d,{date:h.d,time:h.t,video:h.v,zh:h.z,en:h.e});});}catch(e){}
+    if(r.ok)(await r.json()).forEach(h=>{if(h.d!==c.date&&h.d<=today&&!map.has(h.d))map.set(h.d,{date:h.d,time:h.t,video:h.v,offsite:h.ext===1||h.k==="offsite",zh:h.z,en:h.e});});}catch(e){}
   const L=[...map.values()].sort((a,b)=>a.date<b.date?1:-1);
   if(!L.length)return ph("尚無其他法說紀錄");
   const row=h=>{
@@ -33,9 +33,9 @@ async function history(c,confs){
     const t=fmtDate(h.date)+(h.time?" "+h.time:"");
     return el("div",{class:"hrow"},
       main?el("a",{class:"hd",href:main,target:page?null:"_blank",rel:page?null:"noopener noreferrer",text:t}):el("span",{class:"hd off",text:t}),
-      el("div",{class:"hbs"},dot(!!h.video,"影片"),dot(!!slide,"簡報"),dot(!!h.detail,"逐字稿"),dot(h.sum,"整理")),
+      el("div",{class:"hbs"},dot(!!h.video,h.offsite?"有影片 (站外)":"影片"),dot(!!slide,"簡報"),dot(!!h.detail,"逐字稿"),dot(h.sum,"整理")),
       el("div",{class:"hl2"},page?el("a",{href:page,text:"明細頁"}):null,h.zh?el("a",{href:h.zh,target:"_blank",rel:"noopener noreferrer",text:"簡報"}):h.en?el("a",{href:h.en,target:"_blank",rel:"noopener noreferrer",text:"簡報(英)"}):null,
-        h.video?el("a",{href:h.video,target:"_blank",rel:"noopener noreferrer",text:"影片"}):null));};
+        h.video?el("a",{href:h.video,target:"_blank",rel:"noopener noreferrer",text:h.offsite?"有影片 (站外)":"影片"}):null));};
   const top=L.slice(0,8),rest=L.slice(8);
   return el("div",{},top.map(row),rest.length?el("details",{class:"more"},el("summary",{text:`更早 ${rest.length} 場`}),rest.map(row)):null,
     el("p",{class:"src",text:"資料來自證交所／公開資訊觀測站公開資料與本站已整理的場次；舊場次只提供原始公開連結。"}));
@@ -46,12 +46,13 @@ async function main(){
   document.title=`${c.name} ${c.code} 法說會｜Tim 法說逐字稿`;
   const meta=[c.market,c.industry].filter(Boolean).join("・");
   const when=[fmtDate(c.date),c.time].filter(Boolean).join(" ");
+  const vlabel=c.video&&c.video.offsite?"有影片 (站外)":"影片";
   const head=document.getElementById("head");
   head.append(...[el("h1",{class:"dtitle"},c.name,el("span",{class:"code",text:c.code})),
     el("div",{class:"meta",text:when}),meta?el("div",{class:"meta",text:meta}):null,
     c.host?el("div",{class:"meta",text:"主辦券商："+c.host}):null,badges(c),
     el("div",{class:"btns"},
-      btn("簡報（中文）",c.slides.zh),btn("簡報（英文）",c.slides.en),btn("影片",c.video.url),
+      btn("簡報（中文）",c.slides.zh),btn("簡報（英文）",c.slides.en),btn(vlabel,c.video&&c.video.url),
       c.website?btn("公司法說頁",c.website):null)].filter(Boolean));
   document.getElementById("toc").append(...SECS.map(([i,t])=>el("a",{href:"#"+i,text:t})));
   let det=null;
@@ -68,7 +69,7 @@ async function main(){
       el("div",{style:"margin-top:10px"},det&&det.transcript&&det.transcript.length?det.transcript.map(s=>el("div",{class:"seg-line"},
         el("div",{class:"sp",text:(s.ts?"["+s.ts+"] ":"")+(s.speaker||"")}),el("div",{text:s.zh||""}),s.en?el("div",{class:"en",text:s.en}):null)):none()))),
     sec("src","簡報與影片",
-      el("div",{class:"btns",style:"margin-top:0"},btn("簡報（中文）",c.slides.zh),btn("簡報（英文）",c.slides.en),btn("影片",c.video.url)),
+      el("div",{class:"btns",style:"margin-top:0"},btn("簡報（中文）",c.slides.zh),btn("簡報（英文）",c.slides.en),btn(vlabel,c.video&&c.video.url)),
       c.mops_summary?el("p",{class:"src",text:"公告擇要訊息："+c.mops_summary}):null,
       c.place?el("p",{class:"src",text:"地點："+c.place}):null,
       el("p",{class:"src",text:"來源："+[c.in_twse_vod?"證交所影音平台":null,c.in_mops?"公開資訊觀測站":null].filter(Boolean).join("、")})),
