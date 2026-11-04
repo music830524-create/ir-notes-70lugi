@@ -1,0 +1,68 @@
+{
+ "id": "7715-20261023",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": null
+ },
+ "generated_at": "2026-11-04T16:03:33+08:00",
+ "audio_duration_s": 27.5,
+ "timing": {
+  "download_s": 262.5,
+  "extract_s": 0.1,
+  "glossary_s": 1358.6,
+  "transcribe_s": 13.1,
+  "postprocess_s": 0.2,
+  "total_s": 1634.6
+ },
+ "rtf": 0.477,
+ "char_count": 130,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:01",
+   "start": 1.68,
+   "end": 16.57,
+   "zh": "各位投資先進午安,歡迎參加裕山環境工程股份有限公司線上法人說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:16",
+   "start": 16.57,
+   "end": 21.57,
+   "zh": "首先為大家介紹今天與會的主項人,關長勝營運長。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:21",
+   "start": 21.57,
+   "end": 26.57,
+   "zh": "會議的程序將先由營運長進行公司營運警方簡報的說明。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:26",
+   "start": 26.57,
+   "end": 28.57,
+   "zh": "EPS AI SRF HAMF ESG YOU 營收 毛利率 稅後淨利 每股盈餘 季增 年增 展望",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "裕山法說會。兼任、艾奕康中、會計主管、蔡文賢、EPS、AI、SRF、HAMF、ESG、YOU、Safe Harbor Statement、YoY、QoQ、營收、毛利率、營業利益、稅後淨利、每股盈餘、季增、年增、展望。",
+  "hotwords": "裕山 兼任 艾奕康中 會計主管 蔡文賢 EPS AI SRF HAMF ESG YOU Safe Harbor Statement YoY QoQ 營收 毛利率 營業利益 稅後淨利 每股盈餘 季增 年增 展望",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ }
+}
