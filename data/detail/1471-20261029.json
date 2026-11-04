@@ -1,0 +1,212 @@
+{
+ "id": "1471-20261029",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": null
+ },
+ "generated_at": "2026-11-04T18:53:54+08:00",
+ "audio_duration_s": 323.3,
+ "timing": {
+  "download_s": 71.4,
+  "extract_s": 0.7,
+  "glossary_s": 136.7,
+  "transcribe_s": 254.8,
+  "postprocess_s": 0.2,
+  "total_s": 463.8
+ },
+ "rtf": 0.788,
+ "char_count": 375,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:02:30",
+   "start": 150.53,
+   "end": 153.23,
+   "zh": "在辦公桌的車用的隨身攜帶",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:33",
+   "start": 153.23,
+   "end": 155.99,
+   "zh": "以及在家庭空間使用的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:35",
+   "start": 155.99,
+   "end": 158.87,
+   "zh": "奈米光速煤空清淨機",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:38",
+   "start": 158.87,
+   "end": 164.32,
+   "zh": "還有,這是我們的目前 四項發明專利",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:44",
+   "start": 164.32,
+   "end": 166.78,
+   "zh": "以及八項新型的專利",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:46",
+   "start": 166.78,
+   "end": 170.72,
+   "zh": "在人工智能 電源供應機上面的專利",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:50",
+   "start": 170.72,
+   "end": 179.18,
+   "zh": "在概括隨著AI應用及高效能運算需求的成長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:59",
+   "start": 179.18,
+   "end": 181.16,
+   "zh": "硬體對於電源散熱",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:01",
+   "start": 181.16,
+   "end": 183.34,
+   "zh": "以及相互性的需求日益提升",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:03",
+   "start": 183.34,
+   "end": 192.34,
+   "zh": "電源供應器產品 散熱佈局 水空雙軌併進",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:12",
+   "start": 192.34,
+   "end": 202.54,
+   "zh": "透明經營環境保護 社會議題 員工福利",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:22",
+   "start": 202.54,
+   "end": 217.54,
+   "zh": "首利預計將在2027年在子公司內部盤查與115年度揭露合併子公司的盤查資料",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:37",
+   "start": 217.54,
+   "end": 224.88,
+   "zh": "2026年上半年的損益及資產負債表裡面",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:44",
+   "start": 224.88,
+   "end": 231.88,
+   "zh": "2026年營業收入為4,734萬8千元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:51",
+   "start": 231.88,
+   "end": 237.88,
+   "zh": "而營業毛利為虧損負910萬",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:57",
+   "start": 237.88,
+   "end": 243.88,
+   "zh": "而本期淨利為2,345萬7千元 EPS為0.16",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:03",
+   "start": 243.88,
+   "end": 253.28,
+   "zh": "在合併資產方面 在流動資產還有139萬9千8百67千元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:13",
+   "start": 253.28,
+   "end": 261.28,
+   "zh": "總計資產為1691,326元 6,000元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:21",
+   "start": 261.28,
+   "end": 269.28,
+   "zh": "全益總計為1566,775元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:29",
+   "start": 269.28,
+   "end": 277.08,
+   "zh": "未來展望將會強化與AI技術創建與智慧電源佈局",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:37",
+   "start": 277.08,
+   "end": 281.08,
+   "zh": "持續優化產品組合拓展市場商機",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:41",
+   "start": 281.08,
+   "end": 286.08,
+   "zh": "優化資金配置 提升財務運用效益",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "首利法說會。PART、PSU、PC、ZT、AI、HPC、GHG、ESG、EPS、Safe Harbor Statement、YoY、QoQ、營收、毛利率、營業利益、稅後淨利、每股盈餘、季增、年增、展望。",
+  "hotwords": "首利 PART PSU PC ZT AI HPC GHG ESG EPS Safe Harbor Statement YoY QoQ 營收 毛利率 營業利益 稅後淨利 每股盈餘 季增 年增 展望",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ }
+}

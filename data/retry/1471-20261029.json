@@ -1,5 +1,6 @@
 {
  "asr_fails": 1,
- "last_fail": "2026-11-04T15:40:58+08:00",
- "stage": "asr"
+ "last_fail": "2026-11-04T19:01:45+08:00",
+ "stage": "summarize",
+ "sum_fails": 1
 }
