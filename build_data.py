@@ -75,13 +75,45 @@ def video_from_mops(td):
         if re.search(r"youtu", u): return https(u), "youtube"
     return None, None
 
+def derive(c, root=None):
+    """衍生欄位。逐字稿狀態以 data/detail/<id>.json 是否存在且有逐字稿為準(不靠暫存狀態，避免平行作業互相覆蓋)。"""
+    import os
+    root = root or os.path.dirname(os.path.abspath(__file__))
+    today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()
+    c["held"] = c["date"] <= today
+    c["has_video"] = bool(c["video"]["url"])
+    c["has_slides"] = bool(c["slides"]["zh"] or c["slides"]["en"])
+    c["transcript_status"] = "pending" if c["has_video"] else "none"
+    c["detail"] = None
+    c["summarized"] = False
+    f = os.path.join(root, "data", "detail", c["id"] + ".json")
+    if os.path.exists(f):
+        try:
+            dj = json.load(open(f, encoding="utf-8"))
+            if dj.get("transcript"):
+                c["transcript_status"], c["detail"] = "done", f"detail/{c['id']}.json"
+                c["summarized"] = bool(dj.get("highlights"))
+        except Exception:
+            pass
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--months", default="115/10,115/11")
+    ap.add_argument("--months", default="auto", help="auto=本月與上月(民國年/月，台北時間)，或 115/10,115/11")
+    ap.add_argument("--no-fetch", action="store_true", help="不連網，只依 data/detail 重算既有 conferences.json 的狀態")
     ap.add_argument("--vod", type=int, default=60)
     ap.add_argument("--out", default="data/conferences.json")
     a = ap.parse_args()
 
+    if a.no_fetch:
+        d = json.load(open(a.out))
+        for c in d["conferences"]: derive(c)
+        d["conferences"] = sorted(d["conferences"], key=lambda c: (c["date"], c["time"] or "", c["code"]), reverse=True)
+        json.dump(d, open(a.out, "w"), ensure_ascii=False, indent=1)
+        print("status refreshed", len(d["conferences"])); return
+    if a.months == "auto":
+        t = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8)))
+        pm = (t.replace(day=1) - datetime.timedelta(days=1))
+        a.months = f"{pm.year-1911}/{pm.month},{t.year-1911}/{t.month}"
     confs = {}
     # 1) MOPS announcements
     for ym in a.months.split(","):
@@ -117,25 +149,23 @@ def main():
         c["industry"] = x.get("industryName1") or c["industry"]
         if x.get("webLinkPath"):
             c["video"] = dict(url=https(x["webLinkPath"]), kind="mp4", source="twse_vod")
-    # 3) status fields + detail placeholders
-    today = datetime.date.today().isoformat()
-    for c in confs.values():
-        c["held"] = c["date"] <= today
-        c["has_video"] = bool(c["video"]["url"])
-        c["has_slides"] = bool(c["slides"]["zh"] or c["slides"]["en"])
-        # transcript_status: none | pending | processing | done   (set by later pipeline)
-        c["transcript_status"] = "pending" if c["has_video"] else "none"
-        c["detail"] = None  # later: "detail/<id>.json" (see SCHEMA.md)
-    rows = sorted(confs.values(), key=lambda c: (c["date"], c["time"] or "", c["code"]), reverse=True)
-    # keep prior transcript fields if a refresh runs after the pipeline exists
+    # 3) 併入既有清單裡這次沒抓到的場次(較舊的、不在本月/上月/最近 N 筆影音的)，不讓它們消失
     try:
         old = {c["id"]: c for c in json.load(open(a.out))["conferences"]}
-        for c in rows:
-            o = old.get(c["id"])
-            if o and o.get("transcript_status") in ("processing", "done"):
-                c["transcript_status"], c["detail"] = o["transcript_status"], o.get("detail")
     except Exception:
-        pass
+        old = {}
+    for cid, o in old.items():
+        if cid not in confs: confs[cid] = o
+        else:  # 新抓到的缺的欄位用舊值補(例如舊的簡報連結)
+            n = confs[cid]
+            for k in ("slides",):
+                for kk in ("zh", "en"):
+                    if not n[k].get(kk) and (o.get(k) or {}).get(kk): n[k][kk] = o[k][kk]
+            if not n["video"]["url"] and o["video"]["url"]: n["video"] = o["video"]
+            for k in ("time", "market", "industry", "host", "host_source", "place", "mops_summary", "website"):
+                if not n.get(k) and o.get(k): n[k] = o[k]
+    for c in confs.values(): derive(c)
+    rows = sorted(confs.values(), key=lambda c: (c["date"], c["time"] or "", c["code"]), reverse=True)
     json.dump(dict(generated_at=datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
         sources=["TWSE WebPro 法人說明會影音", "MOPS 法人說明會公告 (t100sb02_1)"], conferences=rows),
         open(a.out, "w"), ensure_ascii=False, indent=1)

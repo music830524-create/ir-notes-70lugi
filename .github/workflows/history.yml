@@ -1,0 +1,37 @@
+name: history
+# 從證交所/公開資訊觀測站公開資料補「歷次法說」(約 2 年的日期、簡報與影片公開連結)，寫入 data/history/<代號>.json。不下載、不轉檔舊影片。
+on:
+  workflow_dispatch:
+    inputs:
+      months:
+        description: "往前抓幾個月"
+        default: "25"
+permissions:
+  contents: write
+concurrency:
+  group: history
+  cancel-in-progress: false
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q requests beautifulsoup4 lxml
+      - name: Build history
+        run: python scripts/build_history.py --months "${{ github.event.inputs.months }}"
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history
+          git diff --cached --quiet && exit 0
+          git commit -m "history: 歷次法說公開連結"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1

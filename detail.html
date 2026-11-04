@@ -12,11 +12,33 @@
 </div>
 <script src="common.js"></script>
 <script>
-const SECS=[["hl","重點摘要"],["fin","財務數字"],["out","展望／指引"],["qa","Q&A"],["tr","完整逐字稿"],["src","簡報與影片"]];
+const SECS=[["hl","重點摘要"],["fin","財務數字"],["out","展望／指引"],["qa","Q&A"],["tr","完整逐字稿"],["src","簡報與影片"],["hist","歷次法說"]];
 const q=new URLSearchParams(location.search).get("id");
 const ph=t=>el("div",{class:"ph",text:t});
 function sec(id,title,...kids){return el("section",{class:"sec",id},el("h2",{text:title}),...kids);}
 function ts(x){return x.ts?el("span",{class:"ts",text:"["+x.ts+"]"}):null;}
+const dot=(on,t)=>el("span",{class:"hb "+(on?"on":"off"),text:(on?"✓ ":"－ ")+t});
+async function history(c,confs){
+  const map=new Map();
+  confs.filter(x=>x.code===c.code&&x.id!==c.id).forEach(x=>map.set(x.date,{date:x.date,time:x.time,id:x.id,detail:x.detail,sum:!!x.summarized,
+    video:x.video&&x.video.url,zh:x.slides&&x.slides.zh,en:x.slides&&x.slides.en}));
+  try{const r=await fetch("data/history/"+encodeURIComponent(c.code)+".json",{cache:"no-cache"});
+    if(r.ok)(await r.json()).forEach(h=>{if(h.d!==c.date&&!map.has(h.d))map.set(h.d,{date:h.d,time:h.t,video:h.v,zh:h.z,en:h.e});});}catch(e){}
+  const L=[...map.values()].sort((a,b)=>a.date<b.date?1:-1);
+  if(!L.length)return ph("尚無其他法說紀錄");
+  const row=h=>{
+    const slide=h.zh||h.en, page=h.detail?"detail.html?id="+encodeURIComponent(h.id):null;
+    const main=page||slide||h.video;
+    const t=fmtDate(h.date)+(h.time?" "+h.time:"");
+    return el("div",{class:"hrow"},
+      main?el("a",{class:"hd",href:main,target:page?null:"_blank",rel:page?null:"noopener noreferrer",text:t}):el("span",{class:"hd off",text:t}),
+      el("div",{class:"hbs"},dot(!!h.video,"影片"),dot(!!slide,"簡報"),dot(!!h.detail,"逐字稿"),dot(h.sum,"整理")),
+      el("div",{class:"hl2"},page?el("a",{href:page,text:"明細頁"}):null,h.zh?el("a",{href:h.zh,target:"_blank",rel:"noopener noreferrer",text:"簡報"}):h.en?el("a",{href:h.en,target:"_blank",rel:"noopener noreferrer",text:"簡報(英)"}):null,
+        h.video?el("a",{href:h.video,target:"_blank",rel:"noopener noreferrer",text:"影片"}):null));};
+  const top=L.slice(0,8),rest=L.slice(8);
+  return el("div",{},top.map(row),rest.length?el("details",{class:"more"},el("summary",{text:`更早 ${rest.length} 場`}),rest.map(row)):null,
+    el("p",{class:"src",text:"資料來自證交所／公開資訊觀測站公開資料與本站已整理的場次；舊場次只提供原始公開連結。"}));
+}
 async function main(){
   const d=await loadConfs();const c=d.conferences.find(x=>x.id===q);
   if(!c){document.getElementById("head").append(el("div",{class:"empty",text:"找不到這場法說會"}));return;}
@@ -48,7 +70,8 @@ async function main(){
       el("div",{class:"btns",style:"margin-top:0"},btn("簡報（中文）",c.slides.zh),btn("簡報（英文）",c.slides.en),btn("影片",c.video.url)),
       c.mops_summary?el("p",{class:"src",text:"公告擇要訊息："+c.mops_summary}):null,
       c.place?el("p",{class:"src",text:"地點："+c.place}):null,
-      el("p",{class:"src",text:"來源："+[c.in_twse_vod?"證交所影音平台":null,c.in_mops?"公開資訊觀測站":null].filter(Boolean).join("、")})));
+      el("p",{class:"src",text:"來源："+[c.in_twse_vod?"證交所影音平台":null,c.in_mops?"公開資訊觀測站":null].filter(Boolean).join("、")})),
+    sec("hist","歷次法說",await history(c,d.conferences)));
 }
 function btn(t,u){return u?el("a",{class:"btn on",href:u,target:"_blank",rel:"noopener noreferrer",text:t}):el("span",{class:"btn off",text:t+"（無）"});}
 main().catch(e=>{document.getElementById("head").append(el("div",{class:"empty",text:"載入失敗："+e.message}));});

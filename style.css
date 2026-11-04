@@ -65,3 +65,10 @@ details.tr summary::after{content:"＋";color:var(--mute)}details.tr[open] summa
 @media(min-width:760px){.wrap{padding:0 20px 80px}h1{font-size:24px}.nm{font-size:18px}.card:hover{border-color:var(--accent)}}
 
 .fin .fc{border-top:1px solid var(--line);padding:9px 0}.fin .fc:first-child{border-top:0}.fin .fl{font-weight:600}.fin .fv{margin-top:2px}.fin .fs{margin-top:2px;color:var(--mute);font-size:12px}
+
+.hrow{padding:10px 0;border-top:1px solid var(--line)}.hrow:first-child{border-top:0;padding-top:2px}
+.hd{display:inline-block;font-weight:600;font-size:15px;color:var(--accent)}.hd.off{color:var(--ink)}
+.hbs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.hb{font-size:12px;border-radius:6px;padding:2px 8px}.hb.on{background:var(--ok-bg);color:var(--ok)}.hb.off{background:var(--gray-bg);color:var(--mute)}
+.hl2{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px;font-size:14px}.hl2 a{color:var(--blue);padding:2px 0}
+details.more summary{cursor:pointer;color:var(--accent);font-size:14px;padding:10px 0 2px}

@@ -1,0 +1,148 @@
+name: auto
+# 每 2 小時(UTC 偶數時 :17 = 台北 偶數時 :17；GitHub 排程可能延遲數分鐘)：
+# 更新 conferences.json -> 挑最近幾天、有可下載 mp4、未轉完的場次 -> 每場一個平行 job(medium 轉寫 -> Gemini 整理) -> 更新狀態
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "只看最近幾天"
+        default: "7"
+      max:
+        description: "本次最多處理幾場(0=只更新清單與乾跑挑選，不轉寫)"
+        default: "6"
+      ids:
+        description: "手動指定場次 id(逗號分隔，留空=自動挑選)"
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: auto
+  cancel-in-progress: false
+env:
+  DAYS: ${{ github.event.inputs.days || '7' }}
+  MAXN: ${{ github.event.inputs.max || '6' }}
+  FORCE_IDS: ${{ github.event.inputs.ids || '' }}
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      ids: ${{ steps.plan.outputs.ids }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Refresh conferences.json
+        continue-on-error: true
+        run: |
+          pip install -q requests beautifulsoup4 lxml
+          python build_data.py
+      - name: Plan
+        id: plan
+        run: python scripts/plan.py --days "$DAYS" --max "$MAXN" --ids "$FORCE_IDS"
+      - name: Commit conferences.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/conferences.json
+          git diff --cached --quiet && exit 0
+          git commit -m "auto: refresh conferences.json"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
+  run:
+    needs: plan
+    if: needs.plan.outputs.count != '0' && needs.plan.outputs.count != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        id: ${{ fromJSON(needs.plan.outputs.ids) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check what is needed
+        id: chk
+        run: |
+          if python3 -c "import json,sys;d=json.load(open('data/detail/${{ matrix.id }}.json'));sys.exit(0 if d.get('transcript') else 1)" 2>/dev/null; then
+            echo "need_asr=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "need_asr=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg poppler-utils
+          pip install -q faster-whisper "av<16" opencc-python-reimplemented pypinyin
+      - name: Cache models
+        if: steps.chk.outputs.need_asr == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-medium
+      - name: Transcribe (medium)
+        id: asr
+        if: steps.chk.outputs.need_asr == 'true'
+        continue-on-error: true
+        run: python scripts/transcribe.py --ids "${{ matrix.id }}" --model medium
+      - name: Summarize (Gemini)
+        id: sum
+        if: steps.chk.outputs.need_asr == 'false' || steps.asr.outcome == 'success'
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/summarize.py --ids "${{ matrix.id }}"
+      - name: Record result
+        if: always()
+        run: python scripts/record.py "${{ matrix.id }}"
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/detail data/retry
+          git diff --cached --quiet && exit 0
+          git commit -m "auto: ${{ matrix.id }}"
+          for i in 1 2 3 4 5 6; do
+            git pull --rebase origin main && git push && exit 0
+            sleep $((RANDOM % 10 + 3))
+          done
+          exit 1
+  finalize:
+    needs: [plan, run]
+    if: always() && needs.plan.outputs.count != '0' && needs.plan.outputs.count != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Refresh transcript status
+        run: |
+          pip install -q requests beautifulsoup4 lxml
+          python build_data.py --no-fetch
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/conferences.json
+          git diff --cached --quiet && exit 0
+          git commit -m "auto: update transcript status"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
