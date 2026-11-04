@@ -4930,8 +4930,8 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
+   "transcript_status": "done",
+   "detail": "detail/6271-20261030.json",
    "summarized": false
   },
   {
