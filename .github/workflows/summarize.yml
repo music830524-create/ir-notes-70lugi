@@ -50,7 +50,7 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "summarize (Gemini): ${{ github.event.inputs.ids }}"
           for i in 1 2 3 4 5; do
-            git pull --rebase -X theirs origin main && git push && exit 0
+            git pull --rebase --autostash -X theirs origin main && git push && exit 0
             sleep 5
           done
           exit 1

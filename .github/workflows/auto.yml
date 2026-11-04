@@ -52,7 +52,7 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "auto: refresh conferences.json"
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
+            git pull --rebase --autostash origin main && git push && exit 0
             sleep 5
           done
           exit 1
@@ -113,8 +113,10 @@ jobs:
           git add data/detail data/retry
           git diff --cached --quiet && exit 0
           git commit -m "auto: ${{ matrix.id }}"
+          # transcribe.py 會順手改 conferences.json（狀態由 finalize 統一重算），這裡丟掉避免 rebase 被未暫存變更擋住
+          git checkout -- data/conferences.json 2>/dev/null || true
           for i in 1 2 3 4 5 6; do
-            git pull --rebase origin main && git push && exit 0
+            git pull --rebase --autostash origin main && git push && exit 0
             sleep $((RANDOM % 10 + 3))
           done
           exit 1
@@ -142,7 +144,7 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "auto: update transcript status"
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
+            git pull --rebase --autostash origin main && git push && exit 0
             sleep 5
           done
           exit 1
