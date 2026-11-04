@@ -6480,9 +6480,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/6239-20261027.json",
+   "summarized": true
   },
   {
    "id": "6226-20261027",
