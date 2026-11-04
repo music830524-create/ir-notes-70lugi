@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T00:34:46+00:00",
+ "generated_at": "2026-11-04T01:53:24+00:00",
  "sources": [
   "TWSE WebPro 法人說明會影音",
   "MOPS 法人說明會公告 (t100sb02_1)"
@@ -2667,6 +2667,37 @@
    "held": false,
    "has_video": false,
    "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "1721-20261106",
+   "code": "1721",
+   "name": "國慶科技",
+   "date": "2026-11-06",
+   "time": "14:00",
+   "market": "上市",
+   "industry": null,
+   "host": "永豐金證券",
+   "host_source": "mops_summary",
+   "place": "線上法人說明會",
+   "mops_summary": "本公司受邀參加永豐金證券線上法人說明會",
+   "slides": {
+    "zh": "https://mopsov.twse.com.tw/nas/STR/172120261104M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/172120261104E001.pdf"
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.sunko.com.tw",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
