@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T20:45:21+08:00",
+ "generated_at": "2026-11-04T00:32:09+00:00",
  "sources": [
   "TWSE WebPro 法人說明會影音",
   "MOPS 法人說明會公告 (t100sb02_1)"
@@ -1081,6 +1081,37 @@
     "source": null
    },
    "website": "https://www.honhai.com/zh-tw/investor-relations/investor-relations-activities/investor-conference",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "8069-20261112",
+   "code": "8069",
+   "name": "元太",
+   "date": "2026-11-12",
+   "time": "14:30",
+   "market": "上櫃",
+   "industry": null,
+   "host": null,
+   "host_source": null,
+   "place": "線上法人說明會",
+   "mops_summary": "說明本公司115年第3季財務及業務相關資訊。 日程及網路會議網址： 時間: 2:30 – 3:30 p.m. 語言: 中文 網址: https://attendee.gotowebinar.com/register/6950363102960315739 Webinar ID: 119-174-763 時間: 4:00 – 5:00 p.m. 語言: 英文 網址: https://attendee.gotowebinar.com/register/2152658408811021655 Webinar ID: 118-699-411 本次法人說明會將使用GoToWebinar平台。建議與會者使用電腦網頁登入，並通過會議連結參加。如使用行動裝置登入，請下載 \"GoTo\" APP 並輸入會議Webinar ID。",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://tw.eink.com/",
    "in_mops": true,
    "in_twse_vod": false,
    "held": false,
@@ -3676,8 +3707,8 @@
    "place": "台北君悅酒店三樓凱悅廳Ⅱ區(臺北市信義區松壽路2號)",
    "mops_summary": "本次上櫃前業績發表會將由公司經營團隊說明產業發展、財務業務狀況、未來風險、財團法人中華民國證券櫃檯買賣中心董 事會暨上櫃審議委員會要求補充揭露事項。",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/788920261103M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/788920261103E001.pdf"
    },
    "video": {
     "url": null,
@@ -3689,7 +3720,7 @@
    "in_twse_vod": false,
    "held": true,
    "has_video": false,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
@@ -3856,7 +3887,7 @@
    "date": "2026-11-03",
    "time": "13:30",
    "market": "上市",
-   "industry": null,
+   "industry": "半導體業",
    "host": "玉山證券",
    "host_source": "mops_summary",
    "place": "台北市松山區敦化北路315號3樓東昇廳",
@@ -3868,11 +3899,11 @@
    "video": {
     "url": "https://irconference.twse.com.tw/8261_22_20261103_ch.mp4",
     "kind": "mp4",
-    "source": "mops"
+    "source": "twse_vod"
    },
    "website": "https://www.a-power.com.tw/tw/financial/investor",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
    "has_video": true,
    "has_slides": true,
@@ -9355,11 +9386,11 @@
    "video": {
     "url": "https://irconference.twse.com.tw/5309_24_20261007_ch.MP4",
     "kind": "mp4",
-    "source": "twse_vod"
+    "source": "mops"
    },
    "website": "https://www.sysgration.com/zh-tw/investor-conference",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
    "has_video": true,
    "has_slides": true,
