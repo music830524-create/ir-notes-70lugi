@@ -63,14 +63,18 @@ function renderTabs(rows){const box=document.getElementById("dtabs");box.replace
 document.getElementById("dtabs").onclick=e=>{const b=e.target.closest(".dtab");if(b)jump(b.dataset.d,true);};
 function toast(t){const x=document.getElementById("toast");x.textContent=t;x.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>x.hidden=true,2600);}
 function setView(v){if(st.view===v)return;st.view=v;[...document.getElementById("seg").children].forEach(c=>c.setAttribute("aria-pressed",c.dataset.v===v));render();}
+function pageTop(el){let y=0,n=el;while(n){y+=n.offsetTop;n=n.offsetParent;}return y;}
+function centerTab(tab){const box=tab.parentElement;if(!box)return;const left=tab.offsetLeft-(box.clientWidth-tab.offsetWidth)/2;box.scrollTo({left:Math.max(0,left),behavior:"smooth"});}
 function jump(d,exact){const today=taipeiToday();setView(d>today?"future":"past");
   let ds=allDates();
   if(!ds.length){toast("目前篩選下沒有場次");return;}
   let t=d;if(!ds.includes(d)){t=ds.reduce((a,b)=>Math.abs(Date.parse(b)-Date.parse(d))<Math.abs(Date.parse(a)-Date.parse(d))?b:a);if(!exact)toast(`${shortD(d)} 沒有場次，已跳到最近的 ${shortD(t)}`);}
-  CUR=t;document.getElementById("dpick").value=t;
-  document.querySelectorAll(".dtab").forEach(b=>b.setAttribute("aria-pressed",b.dataset.d===t));
-  const tab=document.querySelector(`.dtab[data-d="${t}"]`);if(tab)tab.scrollIntoView({inline:"center",block:"nearest",behavior:"smooth"});
-  const h=document.getElementById("d-"+t);if(h){const off=document.querySelector(".tools").offsetHeight;window.scrollTo({top:h.getBoundingClientRect().top+scrollY-off-4,behavior:"smooth"});}}
+  CUR=t;document.getElementById("dpick").value=t;render();
+  const tab=document.querySelector(`.dtab[data-d="${t}"]`);if(tab)centerTab(tab);
+  const h=document.getElementById("d-"+t);if(!h)return;
+  const off=document.querySelector(".tools").offsetHeight;
+  window.scrollTo({top:Math.max(0,pageTop(h)-off-8),behavior:"smooth"});
+}
 function step(k){const all=[...new Set(DATA.conferences.filter(c=>{const v=st.view;st.view="past";const a=match(c,"9999");st.view=v;return a;}).map(c=>c.date))].sort();
   if(!all.length)return;const cur=CUR||taipeiToday();let i;
   if(k>0){i=all.find(x=>x>cur);}else{i=[...all].reverse().find(x=>x<cur);}
