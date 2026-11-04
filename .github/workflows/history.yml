@@ -1,6 +1,8 @@
 name: history
 # 從證交所/公開資訊觀測站公開資料補「歷次法說」(約 2 年的日期、簡報與影片公開連結)，寫入 data/history/<代號>.json。不下載、不轉檔舊影片。
 on:
+  schedule:
+    - cron: "40 20 * * *"   # 每天台北 04:40 補一次(來源會擋連線，缺的月份逐日補齊)
   workflow_dispatch:
     inputs:
       months:
@@ -14,7 +16,7 @@ concurrency:
 jobs:
   history:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,7 +24,7 @@ jobs:
           python-version: "3.11"
       - run: pip install -q requests beautifulsoup4 lxml
       - name: Build history
-        run: python scripts/build_history.py --months "${{ github.event.inputs.months }}"
+        run: python scripts/build_history.py --months "${{ github.event.inputs.months || 25 }}" --budget 45
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
