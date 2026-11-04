@@ -167,9 +167,9 @@ def norm_mark(t):
         n = _MARK_PATS[1].sub(MARK, n)
         if n == t: break
         t = n
+    t = re.sub(r"[（(]([^（）()]{0,24})" + MARK + r"(?![^（）()]*[）)])", r"\1" + MARK, t)   # 殘留未閉合的外層括號：（X（待確認音檔）
     t = re.sub(r"(?<![（(])待確認(?!音檔)", MARK, t)       # 括號外的裸「待確認」
     t = re.sub(r"(?:" + MARK + r"\s*){2,}", MARK, t)       # 連續重複
-    t = t.replace("（" + MARK, MARK).replace(MARK + "）", MARK) if ("（" + MARK) in t or (MARK + "）") in t else t
     return t
 
 def clean_str(x):
