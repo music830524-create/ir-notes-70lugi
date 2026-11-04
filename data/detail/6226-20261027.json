@@ -1,0 +1,60 @@
+{
+ "id": "6226-20261027",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": null
+ },
+ "generated_at": "2026-11-04T15:46:32+08:00",
+ "audio_duration_s": 36.0,
+ "timing": {
+  "download_s": 92.5,
+  "extract_s": 0.1,
+  "glossary_s": 424.3,
+  "transcribe_s": 93.5,
+  "postprocess_s": 0.2,
+  "total_s": 610.6
+ },
+ "rtf": 2.6,
+ "char_count": 65,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:01",
+   "start": 1.68,
+   "end": 25.52,
+   "zh": "各位投資先進大家午安!大家好!",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:25",
+   "start": 25.52,
+   "end": 31.52,
+   "zh": "歡迎參加由富邦證券舉辦的光鼎電子股份有限公司線上法人說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:31",
+   "start": 31.52,
+   "end": 34.56,
+   "zh": "在法人說明會的一開始,我先為各位做例子。",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "光鼎電子股份有限公司法說會。光鼎、Light、TWSE、PLEASE、READ、THIS、DISCL、AIMER、BEFORE、USING、PARA、LIGHT、LED、IAT、OF、EPS、Q1-Q2、SHEETS。",
+  "hotwords": "光鼎電子股份有限公司 光鼎 Light TWSE PLEASE READ THIS DISCL AIMER BEFORE USING PARA LIGHT LED IAT OF EPS Q1-Q2 SHEETS NAVPS FLOWS SMD PLCC ITR",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ }
+}
