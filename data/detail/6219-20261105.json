@@ -2,7 +2,7 @@
  "id": "6219-20261105",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-06T00:43:13+08:00",
  "audio_duration_s": 851.6,
@@ -16,9 +16,30 @@
  },
  "rtf": 0.777,
  "char_count": 2303,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "全台總共有 19 個建案與 1 個商用不動產，累計 2,691 戶，總銷金額達 378.51 億元，可銷售金額合計達 301.25 億元。",
+   "ts": "00:04:49"
+  }
+ ],
+ "financials": [
+  {
+   "label": "2026年Q2存貨",
+   "value": "11,261,196 千元",
+   "src": "簡報 p.15；逐字稿 00:05:48"
+  },
+  {
+   "label": "高鐵商城租金",
+   "value": "4500 萬/年",
+   "src": "簡報 p.14；簡報 p.30"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "新案即將登場包含新北新莊光榮段、台中沙鹿心海綻、台中北屯同榮段、台中西屯何安段、彰化和美富旺W行館、彰化市延和段及雲林斗六雲林溪段等規劃。",
+   "ts": "00:08:50"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -1344,5 +1365,29 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-06T07:41:19+08:00",
+  "calls": 2,
+  "retries": 1,
+  "seconds": 26.6,
+  "in_tokens": 7161,
+  "out_tokens": 478,
+  "financials_in": 3,
+  "financials_kept": 2,
+  "financials_dropped": [
+   "資本額（原文找不到: 1249670900）"
+  ],
+  "highlights_dropped": [
+   "公司主要業務為不動產興建開發，資本額為新台幣 1,249,6（原文找不到: 1249670900）"
+  ],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點1",
+   "財務2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
