@@ -1,0 +1,173 @@
+{
+ "id": "8454-20261109",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-09T17:57:52+08:00",
+ "audio_duration_s": 48.0,
+ "timing": {
+  "download_s": 53.5,
+  "extract_s": 0.2,
+  "glossary_s": 255.8,
+  "transcribe_s": 30.6,
+  "postprocess_s": 0.1,
+  "total_s": 340.3
+ },
+ "rtf": 0.638,
+ "char_count": 240,
+ "highlights": [
+  {
+   "text": "2026年第三季營業收入為 26,296.7 百萬元，較去年同期增加 7.1%；歸屬於母公司業主稅後純益為 586.1 百萬元，年增 4.9%，每股盈餘為 2.11 元增至 2.21 元。",
+   "ts": "00:00:00"
+  },
+  {
+   "text": "深化 1P+3P 雙引擎帶動核心電商動能加速，3P GMV 持續雙位數成長，momo Ads 營收保持雙位數成長。",
+   "ts": "00:00:00"
+  }
+ ],
+ "financials": [
+  {
+   "label": "營業收入",
+   "value": "26,296.7 百萬元（原值）；年增 +7.1%",
+   "src": "簡報 p.11；逐字稿 00:00:00"
+  },
+  {
+   "label": "商品毛利",
+   "value": "3,635.1 百萬元（原值）；年增 +7.5%",
+   "src": "簡報 p.11"
+  },
+  {
+   "label": "營業毛利",
+   "value": "2,422.6 百萬元（原值）；年增 +10.7%",
+   "src": "簡報 p.11"
+  },
+  {
+   "label": "營業費用",
+   "value": "(1,705.7) 百萬元（原值）；年增 +10.6%",
+   "src": "簡報 p.11"
+  },
+  {
+   "label": "營業淨利",
+   "value": "716.9 百萬元（原值）；年增 +11.1%",
+   "src": "簡報 p.11"
+  },
+  {
+   "label": "歸屬於母公司業主稅後純益",
+   "value": "586.1 百萬元（原值）；年增 +4.9%",
+   "src": "簡報 p.11"
+  },
+  {
+   "label": "每股盈餘(元)",
+   "value": "2.21 元（原值）；年增 +4.7%",
+   "src": "簡報 p.11"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "雙 11 與雙 12 旺季活動規劃與備貨規模均高於往年，持續推動營運維持成長。",
+   "ts": "00:00:00"
+  },
+  {
+   "text": "CDC 工程進度已達 87%，預計 2027 年投入營運。",
+   "ts": "00:00:00"
+  }
+ ],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:00",
+   "start": 0.37,
+   "end": 19.61,
+   "zh": "歡迎大家參加2026年第三季度法人說明會,我是 IR Lin,今天一同出席的還有 MoMo 的總經理 Jeff,稍後將由 Jeff 說明第三季營運概況與重點發展,並由財快處副總Gina 說明第三季財務與營運成果。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:19",
+   "start": 19.61,
+   "end": 22.61,
+   "zh": "最後進行 Q&A,由 Jeff 回答各位的提問。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:22",
+   "start": 22.61,
+   "end": 29.61,
+   "zh": "今天法說會使用的財務報表、簡報以及營運報告均已公告在公司的官網,歡迎各位下載參閱。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:29",
+   "start": 29.61,
+   "end": 35.7,
+   "zh": "在會議開始之前提醒各位",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:35",
+   "start": 35.7,
+   "end": 39.7,
+   "zh": "今天的簡報內容可能包含對未來營運展望的前瞻性陳述",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:39",
+   "start": 39.7,
+   "end": 42.7,
+   "zh": "這些陳述涉及部分風險與不確定因素",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:42",
+   "start": 42.7,
+   "end": 45.7,
+   "zh": "實際結果可能與預期有所差異",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:45",
+   "start": 45.7,
+   "end": 47.7,
+   "zh": "相關的說明",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "科技股份有限公司法說會。富邦媒、TT、eCommerce、GMV、ARPU、QoQ、EC、YOY、MAU、YoY、RMN、ROAS、NDC、DC、CDC、SDC、moPro、VIP、EPS、ESG、TSAA、Q1-Q3。",
+  "hotwords": "科技股份有限公司 富邦媒 TT eCommerce GMV ARPU QoQ EC YOY MAU YoY RMN ROAS NDC DC CDC SDC moPro VIP EPS ESG TSAA Q1-Q3 Safe Harbor Statement",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-09T17:59:27+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 94.6,
+  "in_tokens": 4439,
+  "out_tokens": 722,
+  "financials_in": 7,
+  "financials_kept": 7,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
