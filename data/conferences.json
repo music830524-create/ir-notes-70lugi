@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T22:08:33+00:00",
+ "generated_at": "2026-11-09T01:45:05+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -8030,7 +8030,7 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/240920261029E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/2409_228_20261029_en.mp4",
+    "url": "https://irconference.twse.com.tw/2409_228_20261029_ch.mp4",
     "kind": "mp4",
     "source": "twse_vod"
    },
