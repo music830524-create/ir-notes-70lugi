@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T20:51:05+00:00",
+ "generated_at": "2026-11-11T01:58:36+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -2693,6 +2693,37 @@
     "source": null
    },
    "website": "https://www.lotuspharm.com/en/investors/investor-events",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "6146-20261113",
+   "code": "6146",
+   "name": "耕興",
+   "date": "2026-11-13",
+   "time": "15:10",
+   "market": "上櫃",
+   "industry": null,
+   "host": null,
+   "host_source": null,
+   "place": "台北市信義區信義路5段7號88樓(台北101大樓88樓)",
+   "mops_summary": "本公司受邀參加黑石財經舉辦之「第三屆戰略臺灣投資論壇」，向投資人說明本公司產業狀況及發展趨勢。",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.sporton.com.tw/page.aspx?uid=232",
    "in_mops": true,
    "in_twse_vod": false,
    "held": false,
@@ -10679,7 +10710,7 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/240920261029E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/2409_228_20261029_ch.mp4",
+    "url": "https://irconference.twse.com.tw/2409_228_20261029_en.mp4",
     "kind": "mp4",
     "source": "twse_vod"
    },
