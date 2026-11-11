@@ -5,3 +5,15 @@ Save\s*(?:Power|Harbor)\s*Statement	Safe Harbor Statement	re
 HEP\s*HOT	Tape-out	re
 藍芽	藍牙	exact
 三通[道到](?=\s*\d+G)	單通道	re
+Metrogy	Metrology	ci
+Fundry	Foundry	ci
+Foudry	Foundry	ci
+Subtrain	Substrate	ci
+COWAS	CoWoS	ci
+細光子	矽光子
+面板集風霜	面板級封裝
+公模塊	光模塊
+VV Ratio	B/B Ratio	ci
+專孔	鑽孔
+背磚	背鑽
+備磚	背鑽

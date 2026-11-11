@@ -1,0 +1,22 @@
+# 大量 3167 專用（PCB 鑽孔／背鑽、TM 量測、TLSmart 先進封裝）。
+# 佐證：2026-11-11 官方簡報 REV5、公開資訊觀測站基本資料。只在有 data/company/3167.json 時啟用。
+TearSmart	TLSmart	ci
+TierSmart	TLSmart	ci
+TIA Smart	TLSmart	ci
+TR Smart	TLSmart	ci
+BV Ratio	B/B Ratio	ci
+ROMAP	roadmap	ci
+遊善普	游善溥
+(?<![一-龥])江科技股份有限公司	大量科技股份有限公司	re
+巴德	八德
+蘭京	南京
+緬水	漣水
+連水工廠	漣水工廠
+連水廠	漣水廠
+(?<!準)備專	背鑽	re
+配串(?=的|製程|制程|設備)	背鑽	re
+費專(?=製程|制程)	背鑽	re
+磚孔	鑽孔
+徒步機	塗布機
+玻璃摘板	玻璃載板
+邊緣圖布	邊緣塗布
