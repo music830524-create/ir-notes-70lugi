@@ -1,0 +1,88 @@
+{
+ "id": "2356-20261110",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-11T10:01:29+08:00",
+ "audio_duration_s": 35.3,
+ "timing": {
+  "download_s": 90.2,
+  "extract_s": 0.4,
+  "glossary_s": 0.0,
+  "transcribe_s": 14.2,
+  "postprocess_s": 0.2,
+  "total_s": 105.1
+ },
+ "rtf": 0.403,
+ "char_count": 71,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:14",
+   "start": 14.0,
+   "end": 19.62,
+   "zh": "各位下午好。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:19",
+   "start": 19.62,
+   "end": 26.62,
+   "zh": "歡迎大家參加英業達2026年第三季財報法人說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:26",
+   "start": 26.62,
+   "end": 30.62,
+   "zh": "我是KGI凱基電子研究分析師Angela。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:30",
+   "start": 30.62,
+   "end": 38.62,
+   "zh": "今天我們很榮幸邀請到英業達的高階教授,",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "英業達法說會。Safe Harbor Statement、EPS、YoY、QoQ、營收、毛利率、營業利益、稅後淨利、每股盈餘、季增、年增、展望。",
+  "hotwords": "英業達 Safe Harbor Statement EPS YoY QoQ 營收 毛利率 營業利益 稅後淨利 每股盈餘 季增 年增 展望",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 5,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-11T10:01:38+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 7.8,
+  "in_tokens": 709,
+  "out_tokens": 28,
+  "financials_in": 0,
+  "financials_kept": 0,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點0",
+   "財務0",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
