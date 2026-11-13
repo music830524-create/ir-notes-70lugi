@@ -5739,7 +5739,7 @@
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/6672-20261113.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "6446-20261113",
@@ -6548,7 +6548,7 @@
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/2368-20261112.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "7765-20261112",
