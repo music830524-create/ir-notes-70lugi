@@ -1,0 +1,112 @@
+{
+ "id": "2636-20261113",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-14T07:40:11+08:00",
+ "audio_duration_s": 13.7,
+ "timing": {
+  "download_s": 96.5,
+  "extract_s": 0.5,
+  "glossary_s": 3.1,
+  "transcribe_s": 11.6,
+  "postprocess_s": 0.2,
+  "total_s": 111.9
+ },
+ "rtf": 0.847,
+ "char_count": 61,
+ "highlights": [
+  {
+   "text": "2026年前三季合併營收201.55億元，年增25.63%；營業毛利30.19億元，年增17.14%；營業利益7.77億元，年增35.52%；EPS為7.57元。",
+   "ts": "00:00:00"
+  }
+ ],
+ "financials": [
+  {
+   "label": "2026年前三季合併營收",
+   "value": "201.55億元；年增 +25.63%",
+   "src": "簡報 p.5；逐字稿 00:00:00"
+  },
+  {
+   "label": "2026年前三季營業毛利",
+   "value": "30.19億元；年增 +17.14%",
+   "src": "簡報 p.5；逐字稿 00:00:00"
+  },
+  {
+   "label": "2026年前三季營業利益",
+   "value": "7.77億元；年增 +35.52%",
+   "src": "簡報 p.5；逐字稿 00:00:00"
+  },
+  {
+   "label": "2026年前三季EPS",
+   "value": "7.57元",
+   "src": "簡報 p.5；逐字稿 00:00:00"
+  },
+  {
+   "label": "2026年前三季毛利率",
+   "value": "14.98%",
+   "src": "簡報 p.5；逐字稿 00:00:00"
+  },
+  {
+   "label": "2026年前三季營業利益率",
+   "value": "3.85%",
+   "src": "簡報 p.5；逐字稿 00:00:00"
+  },
+  {
+   "label": "2026年前三季歸母淨利",
+   "value": "10.36億元；年增 +30.32%",
+   "src": "簡報 p.5；逐字稿 00:00:00"
+  }
+ ],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:00",
+   "start": 0.0,
+   "end": 6.4,
+   "zh": "歡迎各位投資簽訂參加今天台驊國際控股組隊有限公司的訪談說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:06",
+   "start": 6.4,
+   "end": 12.4,
+   "zh": "首先為大家介紹今天與會的長官,我們歡迎遊蕙如財務長,蕙婷蕙。",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "台驊控股法說會。TW、AGENDA、T3EX、CASE、GROUP、SERVICE、NETWORK、PDQ、ATP、T-TRANS、THI、EPS、YoY、MIX、LogisticsNT、REGIONAL、GLOBAL。",
+  "hotwords": "台驊控股 TW AGENDA T3EX CASE GROUP SERVICE NETWORK PDQ ATP T-TRANS THI EPS YoY MIX LogisticsNT REGIONAL GLOBAL USA TREND TEC SYNERGY",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 17,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-14T07:40:14+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 3.6,
+  "in_tokens": 8216,
+  "out_tokens": 592,
+  "financials_in": 7,
+  "financials_kept": 7,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點1",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
