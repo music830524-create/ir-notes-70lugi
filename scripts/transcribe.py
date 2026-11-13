@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """下載法說影片 -> 16kHz 單聲道音檔 -> faster-whisper(CPU, int8) -> 繁體 -> data/detail/<id>.json + .txt"""
-import argparse, json, os, re, subprocess, sys, time, datetime, urllib.request
+import argparse, html, json, os, re, subprocess, sys, time, datetime, urllib.parse, urllib.request
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import irtext
@@ -29,8 +29,55 @@ def set_status(cid, status, detail=None):
                 c["detail"] = detail
     CONF.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 
+def is_direct_mp4(url):
+    if not url: return False
+    path = url.split("?", 1)[0].split("#", 1)[0]
+    return path.lower().endswith(".mp4")
+
+def encode_url(url):
+    """http->https，並把路徑裡的非 ASCII（例如中文檔名）編成百分號，urllib 才能下載。"""
+    url = (url or "").replace("http://", "https://", 1)
+    parts = urllib.parse.urlsplit(url)
+    path = urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/")
+    return urllib.parse.urlunsplit((parts.scheme, parts.netloc, path, parts.query, parts.fragment))
+
+def resolve_from_page(page_url, date=""):
+    """從站外網頁抓直接 mp4；檔名含場次日期（YYYYMMDD）的優先。"""
+    req = urllib.request.Request(encode_url(page_url), headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        raw, base = r.read(), r.geturl()
+    text = raw.decode("utf-8", "replace")
+    hrefs = re.findall(r'(?:href|src)=["\']([^"\']+)["\']', text, re.I)
+    mp4s = []
+    seen = set()
+    for h in hrefs:
+        full = urllib.parse.urljoin(base, html.unescape(h))
+        if not is_direct_mp4(full): continue
+        if full in seen: continue
+        seen.add(full)
+        mp4s.append(full)
+    if not mp4s:
+        raise RuntimeError(f"頁面找不到 mp4: {page_url}")
+    ymd = (date or "").replace("-", "")
+    if ymd:
+        dated = [u for u in mp4s if ymd in urllib.parse.unquote(u)]
+        if dated:
+            return dated[0]
+    return mp4s[0]
+
+def resolve_video_url(c, override=""):
+    if override:
+        url = override.strip()
+        return url if is_direct_mp4(url) else resolve_from_page(url, c.get("date") or "")
+    url = ((c.get("video") or {}).get("url") or "").strip()
+    if is_direct_mp4(url):
+        return url
+    if not url:
+        raise RuntimeError("沒有影片網址")
+    return resolve_from_page(url, c.get("date") or "")
+
 def download(url, dst, tries=5):
-    url = url.replace("http://", "https://", 1)
+    url = encode_url(url)
     for i in range(1, tries + 1):
         try:
             log(f"download try {i}: {url}")
@@ -148,6 +195,7 @@ def main():
     ap.add_argument("--no-termfix", action="store_true", help="不套用 TSV 術語校正")
     ap.add_argument("--max-seconds", type=int, default=0, help="測試用：只轉前 N 秒")
     ap.add_argument("--no-homophone", action="store_true", help="不做 pypinyin 同音校正")
+    ap.add_argument("--url", default="", help="覆寫影片網址（直接 mp4，或含 mp4 連結的站外網頁）")
     a = ap.parse_args()
     ids = [x.strip() for x in a.ids.split(",") if x.strip()]
     confs = {c["id"]: c for c in load()["conferences"]}
@@ -157,13 +205,22 @@ def main():
     t = time.time()
     model = WhisperModel(a.model, device="cpu", compute_type="int8", cpu_threads=os.cpu_count() or 4)
     log(f"STAGE model_load done {time.time()-t:.1f}s (cpu_threads={os.cpu_count()})")
+    if a.url and len(ids) != 1:
+        log("--url 只能搭配單一場次"); sys.exit(1)
     fail = 0
     for cid in ids:
         c = confs.get(cid)
-        vurl = ((c or {}).get("video") or {}).get("url") or ""
-        vpath = vurl.split("?", 1)[0].split("#", 1)[0]
-        if not c or (c.get("video") or {}).get("kind") != "mp4" or not vpath.lower().endswith(".mp4"):
+        if not c:
+            log(f"skip {cid}: 找不到場次"); fail += 1; continue
+        try:
+            vurl = resolve_video_url(c, a.url)
+            log(f"{cid}: 影片 {vurl}")
+        except Exception as e:
+            log(f"skip {cid}: 無法解析影片 ({e})"); fail += 1; continue
+        if not is_direct_mp4(vurl):
             log(f"skip {cid}: 不是直接 mp4"); fail += 1; continue
+        c = dict(c)
+        c["video"] = dict(c.get("video") or {}, url=vurl, kind="mp4")
         try:
             run_one(c, a.model, model, cc, a)
         except Exception as e:
