@@ -5737,8 +5737,8 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
+   "transcript_status": "done",
+   "detail": "detail/6672-20261113.json",
    "summarized": false
   },
   {
@@ -6546,8 +6546,8 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
-   "detail": null,
+   "transcript_status": "done",
+   "detail": "detail/2368-20261112.json",
    "summarized": false
   },
   {
