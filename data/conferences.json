@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T18:21:37+00:00",
+ "generated_at": "2026-11-13T01:08:10+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -855,8 +855,8 @@
    "place": "台北W飯店",
    "mops_summary": "本公司受邀參加花旗環球證券舉辦之法人說明會「Citi’s 2026 Taiwan Corporate Day」，說明本公司2026年第3季營運狀況。",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/159020261113M003.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/159020261113E003.pdf"
    },
    "video": {
     "url": null,
@@ -868,7 +868,7 @@
    "in_twse_vod": false,
    "held": false,
    "has_video": false,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
@@ -1041,8 +1041,8 @@
    "place": "台北晶華酒店",
    "mops_summary": "本公司受邀參加華南永昌綜合證券舉辦之法人說明會「產業趨勢暨企業論壇」，說明本公司2026年第3季營運狀況。",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/159020261113M002.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/159020261113E002.pdf"
    },
    "video": {
     "url": null,
@@ -1054,7 +1054,7 @@
    "in_twse_vod": false,
    "held": false,
    "has_video": false,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
@@ -6197,7 +6197,7 @@
    "date": "2026-11-12",
    "time": "14:00",
    "market": "上櫃",
-   "industry": null,
+   "industry": "建材營造",
    "host": "元大證券",
    "host_source": "mops_summary",
    "place": "線上法說會",
@@ -6207,17 +6207,17 @@
     "en": null
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://irconference.twse.com.tw/6264_11_20261112_ch.mp4",
+    "kind": "mp4",
+    "source": "twse_vod"
    },
    "website": "https://www.kingland.com.tw/TradChinese",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -10838,15 +10838,15 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/159720261104E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/1597_11_20261105_ch.mp4",
-    "kind": "mp4",
-    "source": "twse_vod"
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://chieftek.com/",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/1597-20261105.json",
