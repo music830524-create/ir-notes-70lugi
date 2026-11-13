@@ -1,0 +1,285 @@
+{
+ "id": "4304-20261112",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-13T09:14:44+08:00",
+ "audio_duration_s": 1115.6,
+ "timing": {
+  "download_s": 68.0,
+  "extract_s": 1.0,
+  "glossary_s": 221.7,
+  "transcribe_s": 34.8,
+  "postprocess_s": 0.2,
+  "total_s": 325.8
+ },
+ "rtf": 0.031,
+ "char_count": 251,
+ "highlights": [
+  {
+   "text": "115上半年營業收入為 189,323 仟元，年增 +12.5%；營業毛利 38,121 仟元，毛利率回升至 20%，本期淨利大幅減虧。",
+   "ts": "00:00:18"
+  },
+  {
+   "text": "115Q2單季營業收入 95,096 仟元，毛利率達 26%，單季營業利益 9,493 仟元，基本每股盈餘為 $0.08，單季順利轉正。",
+   "ts": "00:00:18"
+  }
+ ],
+ "financials": [
+  {
+   "label": "115上半年營業收入",
+   "value": "189,323 仟元；年增 +12.5%",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "114上半年營業收入",
+   "value": "168,293 仟元",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115上半年營業毛利",
+   "value": "38,121 仟元（毛利率 20%）",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "114上半年營業毛利",
+   "value": "5,517 仟元（毛利率 3%）",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115Q2營業收入",
+   "value": "95,096 仟元",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115Q2營業毛利",
+   "value": "24,852 仟元（毛利率 26%）",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115Q2營業利益",
+   "value": "9,493 仟元",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115Q2本期淨利",
+   "value": "5,071 仟元",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115Q2基本每股盈餘",
+   "value": "$0.08",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115上半年本期淨利",
+   "value": "-2,990 仟元",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115上半年基本每股盈餘",
+   "value": "-$0.05",
+   "src": "簡報 p.9"
+  },
+  {
+   "label": "115/06/30 每股淨值",
+   "value": "$5.10",
+   "src": "簡報 p.8"
+  },
+  {
+   "label": "114/12/31 每股淨值",
+   "value": "$5.15",
+   "src": "簡報 p.8"
+  },
+  {
+   "label": "113/12/31 每股淨值",
+   "value": "$1.09",
+   "src": "簡報 p.8"
+  },
+  {
+   "label": "在手合約總額",
+   "value": "突破 1.7 億元",
+   "src": "簡報 p.6"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "優化產銷結構，縮減負毛利舊規格，擴產高階石英布與抗噪屏蔽複合材。",
+   "ts": "00:00:18"
+  },
+  {
+   "text": "擴大承攬台電強韌電網與綠能並網標案，加速驗收結算轉化實質現金流。",
+   "ts": "00:00:18"
+  },
+  {
+   "text": "深化東南亞戰略基地合作，靈活應對國際關稅壁壘，鞏固海外高階市場。",
+   "ts": "00:00:18"
+  },
+  {
+   "text": "推進低軌衛星傳輸線材、伺服器絕緣材及環保防火磚，開拓雙軌成長動能。",
+   "ts": "00:00:18"
+  }
+ ],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:18",
+   "start": 18.61,
+   "end": 20.61,
+   "zh": "聽的。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:20",
+   "start": 20.61,
+   "end": 707.41,
+   "zh": "這裡是領事資本。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:47",
+   "start": 707.41,
+   "end": 718.32,
+   "zh": "您好,我又想問一個問題,就是公司近兩年來美股淨值從1.09大幅回升到5.1,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:58",
+   "start": 718.32,
+   "end": 726.32,
+   "zh": "然後5.1以上推動淨值修復以後的核心措施,還有未來的資本結構規劃是怎麼樣的?",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:06",
+   "start": 726.32,
+   "end": 819.8,
+   "zh": "您好,我姓張,我是金融業這一邊。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:39",
+   "start": 819.8,
+   "end": 826.88,
+   "zh": "那我看最近的財務結構面的話是有逐漸往正向的一個發展",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:47",
+   "start": 827.24,
+   "end": 831.56,
+   "zh": "那目前這邊有提到就是說有關嘉義民雄產的部分",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:51",
+   "start": 831.92,
+   "end": 835.84,
+   "zh": "未來可能有做一些投資性的一個規劃",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:55",
+   "start": 835.84,
+   "end": 839.12,
+   "zh": "包含租賃或者是潛在的一些商機",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:59",
+   "start": 839.36,
+   "end": 842.2,
+   "zh": "那不曉得說這樣的一個具體計劃跟時間表",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:02",
+   "start": 842.2,
+   "end": 844.0,
+   "zh": "這邊是大概會怎麼安排",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:45",
+   "start": 945.58,
+   "end": 946.26,
+   "zh": "謝謝",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:16",
+   "start": 976.66,
+   "end": 977.34,
+   "zh": "你好",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:17",
+   "start": 977.34,
+   "end": 981.34,
+   "zh": "我這邊是金融投資的機構投資員",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:21",
+   "start": 981.34,
+   "end": 1110.5,
+   "zh": "我想要請問公司後來後續現金跟存在的部分的規劃",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:30",
+   "start": 1110.5,
+   "end": 1112.5,
+   "zh": "好 謝謝",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "勝昱科技股份有限公司法說會。勝昱、SUNVIC、COMPANY、PROFILE、ISO、RoHS、BUSINESS、UNIT、AL、PET、PI、AI、POWER、DIVISION、SGS、ON-SITE、GIS、營收。",
+  "hotwords": "勝昱科技股份有限公司 勝昱 SUNVIC COMPANY PROFILE ISO RoHS BUSINESS UNIT AL PET PI AI POWER DIVISION SGS ON-SITE GIS SF6 FUTURE OUTLOOK EPS YoY",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 17,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-13T09:15:33+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 49.3,
+  "in_tokens": 4022,
+  "out_tokens": 1405,
+  "financials_in": 15,
+  "financials_kept": 15,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
