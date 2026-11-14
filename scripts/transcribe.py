@@ -119,11 +119,17 @@ def run_one(c, model_name, model_obj, cc, opt):
     T = {}
     t0 = time.time()
     if not opt.tag: set_status(cid, "processing")
-    url = c["video"]["url"]
-    if is_direct_mp4(url):
-        download(url, media)
+    if opt.file:
+        media = Path(opt.file)
+        if not media.exists() or media.stat().st_size < 100000:
+            raise RuntimeError(f"本地音檔不存在或太小: {media}")
+        log(f"use local file: {media}")
     else:
-        media = download_stream(url, WORK, cid)
+        url = c["video"]["url"]
+        if is_direct_mp4(url):
+            download(url, media)
+        else:
+            media = download_stream(url, WORK, cid)
     T["download_s"] = round(time.time() - t0, 1)
     log(f"STAGE download done {T['download_s']}s size={media.stat().st_size/1e6:.1f}MB file={media.name}")
 
@@ -206,7 +212,11 @@ def run_one(c, model_name, model_obj, cc, opt):
         set_status(cid, "done", f"detail/{cid}.json")
     log(f"STAGE postprocess done {T['postprocess_s']}s chars={chars} total={T['total_s']}s")
     log("SUMMARY " + json.dumps({"id": cid, "model": model_name, "audio_s": round(dur, 1), **T, "rtf": det["rtf"], "chars": chars}, ensure_ascii=False))
-    media.unlink(missing_ok=True); wav.unlink(missing_ok=True)
+    # 本地 --file 不要刪；只清工作目錄裡下載的檔
+    if media.resolve().is_relative_to(WORK.resolve()):
+        media.unlink(missing_ok=True)
+    wav.unlink(missing_ok=True)
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -218,6 +228,7 @@ def main():
     ap.add_argument("--max-seconds", type=int, default=0, help="測試用：只轉前 N 秒")
     ap.add_argument("--no-homophone", action="store_true", help="不做 pypinyin 同音校正")
     ap.add_argument("--url", default="", help="覆寫影片網址（直接 mp4，或含 mp4 連結的站外網頁）")
+    ap.add_argument("--file", default="", help="本地影音檔（略過下載，供 GitHub Actions 無法抓 YouTube 時使用）")
     a = ap.parse_args()
     ids = [x.strip() for x in a.ids.split(",") if x.strip()]
     confs = {c["id"]: c for c in load()["conferences"]}
@@ -239,7 +250,7 @@ def main():
             log(f"{cid}: 影片 {vurl}")
         except Exception as e:
             log(f"skip {cid}: 無法解析影片 ({e})"); fail += 1; continue
-        if not (is_direct_mp4(vurl) or is_stream_url(vurl)):
+        if not a.file and not (is_direct_mp4(vurl) or is_stream_url(vurl)):
             log(f"skip {cid}: 不是直接 mp4 或可下載的影音網址"); fail += 1; continue
         c = dict(c)
         c["video"] = dict(c.get("video") or {}, url=vurl)
