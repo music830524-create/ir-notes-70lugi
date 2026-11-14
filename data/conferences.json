@@ -5086,7 +5086,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5118,7 +5118,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5274,7 +5274,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5647,7 +5647,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5679,7 +5679,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5711,7 +5711,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5774,7 +5774,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5806,7 +5806,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5931,7 +5931,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6087,7 +6087,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6585,7 +6585,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6617,7 +6617,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6672,7 +6672,8 @@
     "url": "https://www.gce.com.tw/legal.html",
     "kind": "offsite",
     "source": "twse_vod",
-    "offsite": true
+    "offsite": true,
+    "resolved_mp4": "https://www.gce.com.tw/file/20261112金像電法說會_更新版.mp4"
    },
    "website": "https://www.gce.com.tw/legal.html",
    "in_mops": true,
@@ -6743,7 +6744,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6837,7 +6838,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6932,7 +6933,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6995,7 +6996,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7027,7 +7028,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7059,7 +7060,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7091,7 +7092,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7123,7 +7124,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7155,7 +7156,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7249,7 +7250,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7281,7 +7282,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7344,7 +7345,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7748,7 +7749,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7811,7 +7812,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7843,7 +7844,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7875,7 +7876,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -7969,7 +7970,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -8249,7 +8250,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -8281,7 +8282,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -8499,7 +8500,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -8531,7 +8532,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -8780,7 +8781,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -8905,7 +8906,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -9310,7 +9311,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -9559,7 +9560,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -9715,7 +9716,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -9778,7 +9779,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -9810,7 +9811,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10245,7 +10246,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10277,7 +10278,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10309,7 +10310,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10372,7 +10373,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10497,7 +10498,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10529,7 +10530,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10561,7 +10562,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10810,7 +10811,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -10997,7 +10998,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -11029,7 +11030,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -11061,7 +11062,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -11186,7 +11187,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -11404,7 +11405,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -11436,7 +11437,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -11530,7 +11531,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -11655,7 +11656,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -18042,7 +18043,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19438,7 +19439,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19470,7 +19471,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19533,7 +19534,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19689,7 +19690,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19721,7 +19722,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19815,7 +19816,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19909,7 +19910,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -19972,7 +19973,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20066,7 +20067,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20098,7 +20099,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20254,7 +20255,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20286,7 +20287,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20318,7 +20319,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20381,7 +20382,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20444,7 +20445,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20476,7 +20477,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20508,7 +20509,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20540,7 +20541,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20851,7 +20852,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -20976,7 +20977,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21102,7 +21103,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21196,7 +21197,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21228,7 +21229,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21353,7 +21354,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21478,7 +21479,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21666,7 +21667,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21853,7 +21854,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21916,7 +21917,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -21948,7 +21949,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -22042,7 +22043,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -22229,7 +22230,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -22292,7 +22293,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -22355,7 +22356,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -22480,7 +22481,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -22543,7 +22544,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -22916,7 +22917,7 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },

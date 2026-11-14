@@ -117,8 +117,16 @@ def derive(c, root=None):
     v = c.get("video") or {}
     c["has_video"] = bool(v.get("url"))
     c["has_slides"] = bool(c["slides"]["zh"] or c["slides"]["en"])
-    # 只有直接 mp4 才待轉。站外的 YouTube／網頁有連結，但不進轉寫佇列。
-    c["transcript_status"] = "pending" if v.get("kind") == "mp4" else "none"
+    # 直接 mp4，或先前從官網頁解析到該日 mp4：待轉。
+    # 其他站外連結（YouTube／Webex 等，或官網頁尚未找到該日 mp4）：待手動轉，不要顯示「尚無影片」。
+    path = (v.get("url") or "").split("?", 1)[0].split("#", 1)[0]
+    has_auto = v.get("kind") == "mp4" or path.lower().endswith(".mp4") or bool(v.get("resolved_mp4"))
+    if has_auto:
+        c["transcript_status"] = "pending"
+    elif v.get("url"):
+        c["transcript_status"] = "manual"
+    else:
+        c["transcript_status"] = "none"
     c["detail"] = None
     c["summarized"] = False
     f = os.path.join(root, "data", "detail", c["id"] + ".json")
@@ -181,6 +189,10 @@ def main():
         c["industry"] = x.get("industry") or c["industry"]
         video = dict(url=x["url"], kind=x["kind"], source="twse_vod")
         if x["offsite"]: video["offsite"] = True   # 分類 170：介面顯示「有影片 (站外)」
+        # 同一頁面先前解析到的官網 mp4 要留下來，避免每次刷新又變回待手動
+        old_v = c.get("video") or {}
+        if old_v.get("resolved_mp4") and old_v.get("url") == video.get("url"):
+            video["resolved_mp4"] = old_v["resolved_mp4"]
         c["video"] = video
     # 3) 併入既有清單裡這次沒抓到的場次(較舊的、不在本月/上月/最近 N 筆影音的)，不讓它們消失
     try:

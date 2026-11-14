@@ -4,6 +4,7 @@ import argparse, html, json, os, re, subprocess, sys, time, datetime, urllib.par
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import irtext
+from videoutil import is_direct_mp4, encode_url, is_stream_url, resolve_from_page
 
 ROOT = Path(__file__).resolve().parent.parent
 CONF = ROOT / "data" / "conferences.json"
@@ -28,50 +29,6 @@ def set_status(cid, status, detail=None):
             if detail is not None:
                 c["detail"] = detail
     CONF.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
-
-def is_direct_mp4(url):
-    if not url: return False
-    path = url.split("?", 1)[0].split("#", 1)[0]
-    return path.lower().endswith(".mp4")
-
-def encode_url(url):
-    """http->https，並把路徑裡的非 ASCII（例如中文檔名）編成百分號，urllib 才能下載。"""
-    url = (url or "").replace("http://", "https://", 1)
-    parts = urllib.parse.urlsplit(url)
-    path = urllib.parse.quote(urllib.parse.unquote(parts.path), safe="/")
-    return urllib.parse.urlunsplit((parts.scheme, parts.netloc, path, parts.query, parts.fragment))
-
-def resolve_from_page(page_url, date=""):
-    """從站外網頁抓直接 mp4；檔名含場次日期（YYYYMMDD）的優先。"""
-    req = urllib.request.Request(encode_url(page_url), headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        raw, base = r.read(), r.geturl()
-    text = raw.decode("utf-8", "replace")
-    hrefs = re.findall(r'(?:href|src)=["\']([^"\']+)["\']', text, re.I)
-    mp4s = []
-    seen = set()
-    for h in hrefs:
-        full = urllib.parse.urljoin(base, html.unescape(h))
-        if not is_direct_mp4(full): continue
-        if full in seen: continue
-        seen.add(full)
-        mp4s.append(full)
-    if not mp4s:
-        raise RuntimeError(f"頁面找不到 mp4: {page_url}")
-    ymd = (date or "").replace("-", "")
-    if ymd:
-        dated = [u for u in mp4s if ymd in urllib.parse.unquote(u)]
-        if dated:
-            return dated[0]
-    return mp4s[0]
-
-def is_stream_url(url):
-    """YouTube 等需用 yt-dlp 下載的網址（不是直接 mp4、也不是公司官網頁）。"""
-    if not url: return False
-    host = urllib.parse.urlsplit(url).netloc.lower()
-    if host.startswith("www."): host = host[4:]
-    if host.startswith("m."): host = host[2:]
-    return host in ("youtube.com", "youtu.be", "youtube-nocookie.com") or host.endswith(".youtube.com")
 
 def resolve_video_url(c, override=""):
     url = (override or ((c.get("video") or {}).get("url") or "")).strip()
