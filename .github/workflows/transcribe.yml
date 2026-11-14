@@ -38,7 +38,7 @@ jobs:
       - name: Install
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg poppler-utils
-          pip install faster-whisper "av<16" opencc-python-reimplemented pypinyin
+          pip install faster-whisper "av<16" opencc-python-reimplemented pypinyin yt-dlp
           nproc; free -g | head -2
       - name: Cache models
         uses: actions/cache@v4

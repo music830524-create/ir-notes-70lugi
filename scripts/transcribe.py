@@ -65,16 +65,33 @@ def resolve_from_page(page_url, date=""):
             return dated[0]
     return mp4s[0]
 
+def is_stream_url(url):
+    """YouTube 等需用 yt-dlp 下載的網址（不是直接 mp4、也不是公司官網頁）。"""
+    if not url: return False
+    host = urllib.parse.urlsplit(url).netloc.lower()
+    if host.startswith("www."): host = host[4:]
+    if host.startswith("m."): host = host[2:]
+    return host in ("youtube.com", "youtu.be", "youtube-nocookie.com") or host.endswith(".youtube.com")
+
 def resolve_video_url(c, override=""):
-    if override:
-        url = override.strip()
-        return url if is_direct_mp4(url) else resolve_from_page(url, c.get("date") or "")
-    url = ((c.get("video") or {}).get("url") or "").strip()
-    if is_direct_mp4(url):
-        return url
+    url = (override or ((c.get("video") or {}).get("url") or "")).strip()
     if not url:
         raise RuntimeError("沒有影片網址")
+    if is_direct_mp4(url) or is_stream_url(url):
+        return url
     return resolve_from_page(url, c.get("date") or "")
+
+def download_stream(url, dst_dir, stem):
+    """用 yt-dlp 下載音訊（失敗再退回完整影音），回傳實際檔案路徑。"""
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    outtmpl = str(dst_dir / (stem + ".%(ext)s"))
+    log(f"yt-dlp: {url}")
+    subprocess.run(["yt-dlp", "--no-playlist", "--no-warnings", "--force-overwrites",
+                    "-f", "bestaudio/best", "-o", outtmpl, url], check=True)
+    files = [p for p in dst_dir.glob(stem + ".*") if p.is_file() and p.stat().st_size > 100000]
+    if not files:
+        raise RuntimeError("yt-dlp 沒有輸出檔")
+    return max(files, key=lambda p: p.stat().st_size)
 
 def download(url, dst, tries=5):
     url = encode_url(url)
@@ -97,16 +114,21 @@ def download(url, dst, tries=5):
 def run_one(c, model_name, model_obj, cc, opt):
     cid = c["id"]
     WORK.mkdir(parents=True, exist_ok=True)
-    mp4, wav = WORK / f"{cid}.mp4", WORK / f"{cid}.wav"
+    wav = WORK / f"{cid}.wav"
+    media = WORK / f"{cid}.mp4"
     T = {}
     t0 = time.time()
     if not opt.tag: set_status(cid, "processing")
-    download(c["video"]["url"], mp4)
+    url = c["video"]["url"]
+    if is_direct_mp4(url):
+        download(url, media)
+    else:
+        media = download_stream(url, WORK, cid)
     T["download_s"] = round(time.time() - t0, 1)
-    log(f"STAGE download done {T['download_s']}s size={mp4.stat().st_size/1e6:.1f}MB")
+    log(f"STAGE download done {T['download_s']}s size={media.stat().st_size/1e6:.1f}MB file={media.name}")
 
     t1 = time.time()
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp4), *(["-t", str(opt.max_seconds)] if opt.max_seconds else []), "-vn", "-ac", "1", "-ar", "16000", str(wav)], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(media), *(["-t", str(opt.max_seconds)] if opt.max_seconds else []), "-vn", "-ac", "1", "-ar", "16000", str(wav)], check=True)
     T["extract_s"] = round(time.time() - t1, 1)
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(wav)]).decode().strip())
     log(f"STAGE extract done {T['extract_s']}s audio_duration={dur:.1f}s ({hms(dur)})")
@@ -184,7 +206,7 @@ def run_one(c, model_name, model_obj, cc, opt):
         set_status(cid, "done", f"detail/{cid}.json")
     log(f"STAGE postprocess done {T['postprocess_s']}s chars={chars} total={T['total_s']}s")
     log("SUMMARY " + json.dumps({"id": cid, "model": model_name, "audio_s": round(dur, 1), **T, "rtf": det["rtf"], "chars": chars}, ensure_ascii=False))
-    mp4.unlink(missing_ok=True); wav.unlink(missing_ok=True)
+    media.unlink(missing_ok=True); wav.unlink(missing_ok=True)
 
 def main():
     ap = argparse.ArgumentParser()
@@ -217,10 +239,10 @@ def main():
             log(f"{cid}: 影片 {vurl}")
         except Exception as e:
             log(f"skip {cid}: 無法解析影片 ({e})"); fail += 1; continue
-        if not is_direct_mp4(vurl):
-            log(f"skip {cid}: 不是直接 mp4"); fail += 1; continue
+        if not (is_direct_mp4(vurl) or is_stream_url(vurl)):
+            log(f"skip {cid}: 不是直接 mp4 或可下載的影音網址"); fail += 1; continue
         c = dict(c)
-        c["video"] = dict(c.get("video") or {}, url=vurl, kind="mp4")
+        c["video"] = dict(c.get("video") or {}, url=vurl)
         try:
             run_one(c, a.model, model, cc, a)
         except Exception as e:
