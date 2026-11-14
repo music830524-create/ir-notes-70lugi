@@ -7654,9 +7654,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/4119-20261112.json",
+   "summarized": true
   },
   {
    "id": "3701-20261112",
@@ -7685,9 +7685,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/3701-20261112.json",
+   "summarized": true
   },
   {
    "id": "3591-20261112",
@@ -7716,9 +7716,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/3591-20261112.json",
+   "summarized": true
   },
   {
    "id": "3122-20261112",
@@ -7779,9 +7779,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/2926-20261112.json",
+   "summarized": true
   },
   {
    "id": "2457-20261112",
