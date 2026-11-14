@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T06:27:35+00:00",
+ "generated_at": "2026-11-14T15:07:35+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -4749,6 +4749,37 @@
    "summarized": false
   },
   {
+   "id": "3324-20261116",
+   "code": "3324",
+   "name": "雙鴻",
+   "date": "2026-11-16",
+   "time": "09:00",
+   "market": "上櫃",
+   "industry": null,
+   "host": null,
+   "host_source": null,
+   "place": "香港君悅酒店",
+   "mops_summary": "公告本公司受邀參加 JP Morgan APAC Technology, Innovation and Growth Conference",
+   "slides": {
+    "zh": "https://mopsov.twse.com.tw/nas/STR/332420261114M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/332420261114E001.pdf"
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": null,
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": true,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
    "id": "3131-20261116",
    "code": "3131",
    "name": "弘塑",
@@ -4854,8 +4885,8 @@
    "place": "新北市新店區寶強路6號 舉行線上法說會",
    "mops_summary": "公告本公司受邀參加由臺灣指數公司與寬量國際舉辦之線上法說會「璞玉藏金、優息引路：發掘台灣中堅企業的百業冠軍」",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/237620261114M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/237620261114E001.pdf"
    },
    "video": {
     "url": null,
@@ -4867,7 +4898,7 @@
    "in_twse_vod": false,
    "held": true,
    "has_video": false,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
@@ -6672,8 +6703,7 @@
     "url": "https://www.gce.com.tw/legal.html",
     "kind": "offsite",
     "source": "twse_vod",
-    "offsite": true,
-    "resolved_mp4": "https://www.gce.com.tw/file/20261112金像電法說會_更新版.mp4"
+    "offsite": true
    },
    "website": "https://www.gce.com.tw/legal.html",
    "in_mops": true,
@@ -15696,7 +15726,7 @@
    "name": "騏億鑫",
    "date": "2026-10-22",
    "time": "14:30",
-   "market": "興櫃",
+   "market": "上櫃",
    "industry": null,
    "host": null,
    "host_source": null,
@@ -18456,7 +18486,7 @@
    "name": "騏億鑫",
    "date": "2026-10-07",
    "time": "14:30",
-   "market": "興櫃",
+   "market": "上櫃",
    "industry": null,
    "host": "永豐金證券",
    "host_source": "mops_summary",
