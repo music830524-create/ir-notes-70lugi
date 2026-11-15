@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T17:13:37+00:00",
+ "generated_at": "2026-11-15T22:50:53+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -5065,7 +5065,7 @@
    "date": "2026-11-13",
    "time": "16:00",
    "market": "上市",
-   "industry": null,
+   "industry": "電子零組件業",
    "host": "大和國泰證券",
    "host_source": "mops_summary",
    "place": "線上法說會",
@@ -5075,17 +5075,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/353320261113E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://www.youtube.com/watch?v=Uo3EYKk7Upk&t=3s",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": null,
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -9830,7 +9831,7 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/301720261110E001.pdf"
    },
    "video": {
-    "url": "https://www.youtube.com/watch?v=gqi1qhZToA0",
+    "url": "https://www.youtube.com/watch?v=x35E7oZ4SCA",
     "kind": "offsite",
     "source": "twse_vod",
     "offsite": true
@@ -11206,18 +11207,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/366120261106E001.pdf"
    },
    "video": {
-    "url": "https://www.alchip.com/tw/Investors/financials/seminar",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.alchip.com/tw/Investors/financials/seminar",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
