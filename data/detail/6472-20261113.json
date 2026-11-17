@@ -1,0 +1,4956 @@
+{
+ "id": "6472-20261113",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": null
+ },
+ "generated_at": "2026-11-18T02:17:59+08:00",
+ "audio_duration_s": 3026.4,
+ "timing": {
+  "download_s": 2392.6,
+  "extract_s": 3.5,
+  "glossary_s": 29.3,
+  "transcribe_s": 9206.9,
+  "postprocess_s": 0.4,
+  "total_s": 11632.7
+ },
+ "rtf": 3.042,
+ "char_count": 10710,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:00",
+   "start": 0.0,
+   "end": 2.56,
+   "zh": "以及台灣醫藥健康分析師Jack Lin。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:03",
+   "start": 3.32,
+   "end": 6.44,
+   "zh": "今天的說明會將以英文及中文雙語進行,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:06",
+   "start": 6.76,
+   "end": 10.64,
+   "zh": "關於曾經與各位分享第三季度營運表現以及未來業務展望。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:11",
+   "start": 11.08,
+   "end": 13.6,
+   "zh": "問答環節將以中英文雙語進行。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:14",
+   "start": 14.72,
+   "end": 15.72,
+   "zh": "Good afternoon, everyone.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:15",
+   "start": 15.92,
+   "end": 19.76,
+   "zh": "Thank you for joining today's Borough Pharmaceutical 3Q26 earnings call.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:20",
+   "start": 20.48,
+   "end": 21.36,
+   "zh": "This is Jack Lin,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:21",
+   "start": 21.36,
+   "end": 24.2,
+   "zh": "China Biotech and Taiwan Healthcare Analyst at Morgan Stanley.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:25",
+   "start": 25.04,
+   "end": 27.64,
+   "zh": "Today's call will be conducted in both English and Mandarin.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:27",
+   "start": 27.64,
+   "end": 35.34,
+   "zh": "trenches I W Symphony iQ3 QWOTHER EXOS ISS vraiment υ organisms rock.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:35",
+   "start": 35.34,
+   "end": 38.92,
+   "zh": "팔衛 開之前簡單題式本次",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:38",
+   "start": 38.92,
+   "end": 43.28,
+   "zh": "DMost evening像摩根史丹利 낙엽 屏蔽登山媒體成員如果",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:43",
+   "start": 43.28,
+   "end": 47.42,
+   "zh": "四內傷你先 Velinsim 有什麼連系 apart from mew",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:47",
+   "start": 47.42,
+   "end": 52.88,
+   "zh": "bawl.com for a size Show AND a",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:52",
+   "start": 52.88,
+   "end": 54.7,
+   "zh": "不常獨uet 樹生 year ancient",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:54",
+   "start": 54.7,
+   "end": 56.6,
+   "zh": "jominous Cox aswent王",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:56",
+   "start": 56.6,
+   "end": 59.6,
+   "zh": "保瑞管理層與大家分享第三季度的營運表現以及未來展望。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:59",
+   "start": 59.6,
+   "end": 62.6,
+   "zh": "今年出席會議的管理層包括董事長、",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:02",
+   "start": 62.6,
+   "end": 65.6,
+   "zh": "總裁、副總裁、副總裁、",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:05",
+   "start": 65.6,
+   "end": 71.6,
+   "zh": "專屬專屬專屬專屬專屬專屬專屬專屬專屬專屬專屬專",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:11",
+   "start": 71.6,
+   "end": 75.6,
+   "zh": "專屬專屬專屬專屬專屬專",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:15",
+   "start": 75.6,
+   "end": 80.6,
+   "zh": "專屬專屬專屬專屬專",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:20",
+   "start": 80.6,
+   "end": 84.6,
+   "zh": "專屬專屬專屬專屬專",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:24",
+   "start": 84.6,
+   "end": 90.6,
+   "zh": "今天出席會議的管理層包括董事長及執行長Bobby Shen、財務長Alice Wang",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:30",
+   "start": 90.6,
+   "end": 93.6,
+   "zh": "以及資深投資人關係經理Nadia Chen。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:49",
+   "start": 109.6,
+   "end": 113.6,
+   "zh": "那麼接下來我先把時間交給Alice總請開始今天的分享",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:53",
+   "start": 113.6,
+   "end": 115.6,
+   "zh": "保瑞集團財務總裁Alyce 保瑞集團財務總裁Alyce",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:28",
+   "start": 148.62,
+   "end": 160.66,
+   "zh": "rosmmOP EPS COGS Q-IBO XCS 1000",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:40",
+   "start": 160.68,
+   "end": 165.62,
+   "zh": "0JX or to his !!!",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:45",
+   "start": 165.68,
+   "end": 166.12,
+   "zh": "ROSU",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:46",
+   "start": 166.14,
+   "end": 179.43,
+   "zh": "ROSU",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:59",
+   "start": 179.43,
+   "end": 215.28,
+   "zh": "오늘도歡迎要聽到一場ед的體系的視頻",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:35",
+   "start": 215.28,
+   "end": 227.9,
+   "zh": "上季程度下半年的進展大多數都已經達成",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:47",
+   "start": 227.9,
+   "end": 237.32,
+   "zh": "在CDMO的部分可以看到我們的訂單專科與品牌用料實際整體表現也已經回溫",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:57",
+   "start": 237.32,
+   "end": 241.6,
+   "zh": "納指公司成為訂購規則的協議者",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:01",
+   "start": 241.6,
+   "end": 248.1,
+   "zh": "其實目前為時刻的國際程度正在進行中",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:08",
+   "start": 248.1,
+   "end": 252.34,
+   "zh": "納指其部分的公務機構",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:12",
+   "start": 252.34,
+   "end": 260.87,
+   "zh": "貢獻人體生意送給國家開發的規則",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:20",
+   "start": 260.87,
+   "end": 271.71,
+   "zh": "也許這個時候可以交通知詢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:31",
+   "start": 271.71,
+   "end": 278.2,
+   "zh": "納指政府也即將對這個規則",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:38",
+   "start": 278.2,
+   "end": 280.02,
+   "zh": "有同步在高於情緒上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:44",
+   "start": 284.22,
+   "end": 326.38,
+   "zh": "Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:26",
+   "start": 326.38,
+   "end": 328.38,
+   "zh": "延續第二季的動能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:28",
+   "start": 328.38,
+   "end": 330.38,
+   "zh": "營收 季增",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:30",
+   "start": 330.38,
+   "end": 332.38,
+   "zh": "新台幣5.64億 營業利益",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:32",
+   "start": 332.38,
+   "end": 334.38,
+   "zh": "季增新台幣1.04億",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:34",
+   "start": 334.38,
+   "end": 336.38,
+   "zh": "CDMO事業規模逐漸擴大",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:36",
+   "start": 336.38,
+   "end": 338.38,
+   "zh": "CDMO自製產能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:38",
+   "start": 338.38,
+   "end": 340.38,
+   "zh": "季增16% 為2025年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:40",
+   "start": 340.38,
+   "end": 342.38,
+   "zh": "以來季對季最大的增幅",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:42",
+   "start": 342.38,
+   "end": 344.38,
+   "zh": "營收新台幣20.85億",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:44",
+   "start": 344.38,
+   "end": 346.38,
+   "zh": "年增16.9%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:46",
+   "start": 346.38,
+   "end": 348.38,
+   "zh": "季減1.5%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:48",
+   "start": 348.38,
+   "end": 350.38,
+   "zh": "全球銷售業務加速成長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:50",
+   "start": 350.38,
+   "end": 352.38,
+   "zh": "單季營收新台幣33.02億元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:52",
+   "start": 352.38,
+   "end": 354.38,
+   "zh": "年增9.3%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:54",
+   "start": 354.38,
+   "end": 359.38,
+   "zh": "22.5% 受惠於喊病 產品線表現優於管理層預期",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:59",
+   "start": 359.38,
+   "end": 361.38,
+   "zh": "以及利用市佔率先",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:01",
+   "start": 361.38,
+   "end": 365.38,
+   "zh": "2027年起 中企能見度為歷年來最高",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:05",
+   "start": 365.38,
+   "end": 369.38,
+   "zh": "未來12個月 合同在手訂單達3.4億美元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:09",
+   "start": 369.38,
+   "end": 372.38,
+   "zh": "北美各廠能見度充足",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:13",
+   "start": 373.38,
+   "end": 375.38,
+   "zh": "在我們重要的里程碑",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:15",
+   "start": 375.38,
+   "end": 376.38,
+   "zh": "可以看到四個項目",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:16",
+   "start": 376.38,
+   "end": 379.38,
+   "zh": "一個是 CDMO 新階的訂單",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:19",
+   "start": 379.38,
+   "end": 382.38,
+   "zh": "新階的訂單 定定中企商業化基礎",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:22",
+   "start": 382.38,
+   "end": 386.36,
+   "zh": "加盟頤歷 Seasonal Price격頭力氣發展",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:26",
+   "start": 386.44,
+   "end": 387.22,
+   "zh": "obrig mercy",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:31",
+   "start": 391.58,
+   "end": 393.34,
+   "zh": "Hua Zhuang",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:33",
+   "start": 393.5,
+   "end": 395.12,
+   "zh": "ölderm 온",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:36",
+   "start": 396.74,
+   "end": 397.96,
+   "zh": "突 íSqueeze",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:38",
+   "start": 398.26,
+   "end": 400.14,
+   "zh": "灰白起",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:40",
+   "start": 400.36,
+   "end": 402.38,
+   "zh": "灰箏起",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:42",
+   "start": 402.6,
+   "end": 407.84,
+   "zh": "灰羅子",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:48",
+   "start": 408.5,
+   "end": 410.84,
+   "zh": "灰黔起",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:50",
+   "start": 410.84,
+   "end": 413.16,
+   "zh": "Valianza CD思想",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:53",
+   "start": 413.16,
+   "end": 417.22,
+   "zh": "阿基特的隔離器技術缺少順利進行中",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:57",
+   "start": 417.22,
+   "end": 420.1,
+   "zh": "新的S-Reveco產品已經完成4P的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:00",
+   "start": 420.1,
+   "end": 422.48,
+   "zh": "自成缺少QPQ",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:02",
+   "start": 422.48,
+   "end": 426.62,
+   "zh": "第五三項技術移轉專案預計在2012年進行",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:06",
+   "start": 426.62,
+   "end": 429.14,
+   "zh": "在全球銷售的部分",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:09",
+   "start": 429.14,
+   "end": 432.94,
+   "zh": "季增專為數全球銷售業務為集團的支出",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:12",
+   "start": 432.94,
+   "end": 435.28,
+   "zh": "營收季增9.3%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:15",
+   "start": 435.28,
+   "end": 437.36,
+   "zh": "年增12.3%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:17",
+   "start": 437.36,
+   "end": 439.7,
+   "zh": "專科品牌要較2020年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:19",
+   "start": 439.7,
+   "end": 443.02,
+   "zh": "RGO就本身瀉積硫基成成",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:23",
+   "start": 443.14,
+   "end": 445.92,
+   "zh": "U5苗 kea Zuuuu",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:31",
+   "start": 451.18,
+   "end": 454.2,
+   "zh": "要未及古 ст행要維持市場 shrink",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:34",
+   "start": 454.2,
+   "end": 455.62,
+   "zh": "整個",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:35",
+   "start": 455.84,
+   "end": 456.56,
+   "zh": "您就行了",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:37",
+   "start": 457.02,
+   "end": 458.78,
+   "zh": "最も成功",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:41",
+   "start": 461.2,
+   "end": 461.74,
+   "zh": "轉轉共",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:42",
+   "start": 462.34,
+   "end": 462.9,
+   "zh": "習慣制度",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:43",
+   "start": 463.56,
+   "end": 464.4,
+   "zh": "擁有",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:45",
+   "start": 465.2,
+   "end": 466.24,
+   "zh": "Coffee",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:47",
+   "start": 467.18,
+   "end": 467.98,
+   "zh": "會",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:49",
+   "start": 469.7,
+   "end": 471.36,
+   "zh": "上秋季量產訂單",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:51",
+   "start": 471.5,
+   "end": 473.44,
+   "zh": "圍巍H&N 寫信",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:53",
+   "start": 473.66,
+   "end": 474.56,
+   "zh": "馬 Original",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:54",
+   "start": 474.94,
+   "end": 475.64,
+   "zh": "fatigue",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:56",
+   "start": 476.34,
+   "end": 477.12,
+   "zh": "筷白",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:57",
+   "start": 477.62,
+   "end": 478.78,
+   "zh": "都",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:59",
+   "start": 479.06,
+   "end": 479.54,
+   "zh": "看到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:06",
+   "start": 486.87,
+   "end": 488.53,
+   "zh": "左",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:09",
+   "start": 489.87,
+   "end": 490.31,
+   "zh": "第三季",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:10",
+   "start": 490.35,
+   "end": 491.13,
+   "zh": "人 does",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:11",
+   "start": 491.21,
+   "end": 491.45,
+   "zh": "領",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:11",
+   "start": 491.59,
+   "end": 491.81,
+   "zh": "5",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:12",
+   "start": 492.03,
+   "end": 492.57,
+   "zh": "億",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:15",
+   "start": 495.49,
+   "end": 496.17,
+   "zh": "哦",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:17",
+   "start": 497.41,
+   "end": 497.91,
+   "zh": "你",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:18",
+   "start": 498.27,
+   "end": 499.23,
+   "zh": "跟五億",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:19",
+   "start": 499.43,
+   "end": 500.35,
+   "zh": "出",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:20",
+   "start": 500.65,
+   "end": 501.11,
+   "zh": "點六",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:21",
+   "start": 501.33,
+   "end": 501.97,
+   "zh": "orden",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:21",
+   "start": 501.97,
+   "end": 504.01,
+   "zh": "UWFcade 20 VP INUM PAZ SPA QC SPA ENB SCORE",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:24",
+   "start": 504.01,
+   "end": 508.09,
+   "zh": "營業毛利佔要升值達25.29億元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:28",
+   "start": 508.09,
+   "end": 509.55,
+   "zh": "QoQ成長4.0%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:29",
+   "start": 509.55,
+   "end": 512.55,
+   "zh": "andELL Outlook成長16.5%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:32",
+   "start": 512.55,
+   "end": 515.91,
+   "zh": "盲率39%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:35",
+   "start": 515.91,
+   "end": 517.95,
+   "zh": "營業利益5.9億元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:37",
+   "start": 517.95,
+   "end": 522.13,
+   "zh": "營業利益10.90億元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:42",
+   "start": 522.13,
+   "end": 524.19,
+   "zh": "營業利益9.87億元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:44",
+   "start": 524.19,
+   "end": 526.67,
+   "zh": "增加1.04億元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:46",
+   "start": 526.67,
+   "end": 528.21,
+   "zh": "歸1.8波近11億元",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:48",
+   "start": 528.21,
+   "end": 530.23,
+   "zh": "次加稅 Tool破 chin",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:50",
+   "start": 530.23,
+   "end": 560.23,
+   "zh": "QC CONTRACT",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:20",
+   "start": 560.23,
+   "end": 563.05,
+   "zh": "受法規變動影響表現不如預期",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:23",
+   "start": 563.05,
+   "end": 566.97,
+   "zh": "部分在手訂單會遞延到2027年出貨",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:26",
+   "start": 566.97,
+   "end": 570.59,
+   "zh": "關鍵企業泰福登記2026年水益反應",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:30",
+   "start": 570.59,
+   "end": 572.05,
+   "zh": "轉型的相關措施",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:32",
+   "start": 572.05,
+   "end": 573.51,
+   "zh": "包括塑膠上市藥",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:33",
+   "start": 573.51,
+   "end": 575.17,
+   "zh": "設備部分的減水",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:35",
+   "start": 575.17,
+   "end": 576.85,
+   "zh": "那我們目前非常focus",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:36",
+   "start": 576.85,
+   "end": 578.59,
+   "zh": "在未來的成長動能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:38",
+   "start": 578.59,
+   "end": 580.33,
+   "zh": "兩個關鍵的專案是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:40",
+   "start": 580.33,
+   "end": 584.83,
+   "zh": "完成馬力蘭蒸汽廠隔離產線的轉換",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:44",
+   "start": 584.83,
+   "end": 586.83,
+   "zh": "確保P4生化不中斷",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:46",
+   "start": 586.83,
+   "end": 587.75,
+   "zh": "足量交互",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:47",
+   "start": 587.75,
+   "end": 589.99,
+   "zh": "從此營收與獲利動能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:49",
+   "start": 589.99,
+   "end": 593.99,
+   "zh": "整合Rubbio與San Diego廠共2萬4公升影置",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:53",
+   "start": 593.99,
+   "end": 598.59,
+   "zh": "進生物製劑原料產品以及珠貝開發能量",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:58",
+   "start": 598.59,
+   "end": 602.75,
+   "zh": "到單一生物製劑CDMO的平台",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:02",
+   "start": 602.75,
+   "end": 605.47,
+   "zh": "那在股商的營收組成",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:05",
+   "start": 605.47,
+   "end": 607.91,
+   "zh": "可以看到全球銷售的部分",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:07",
+   "start": 607.91,
+   "end": 610.31,
+   "zh": "是佔整個營收的51%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:10",
+   "start": 610.31,
+   "end": 613.11,
+   "zh": "47%來自於專科與品牌",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:13",
+   "start": 613.11,
+   "end": 614.91,
+   "zh": "廠商會選領方案的部分",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:14",
+   "start": 614.91,
+   "end": 616.75,
+   "zh": "他們將可剩選領藥",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:16",
+   "start": 616.75,
+   "end": 619.75,
+   "zh": "DLS CDMO CDMO",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:19",
+   "start": 619.75,
+   "end": 622.75,
+   "zh": "可以看佔整體收得33%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:22",
+   "start": 622.75,
+   "end": 624.75,
+   "zh": "這不含內部的訂單",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:24",
+   "start": 624.75,
+   "end": 627.75,
+   "zh": "67%是非無菌製劑",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:27",
+   "start": 627.75,
+   "end": 629.75,
+   "zh": "14%是無菌製劑",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:29",
+   "start": 629.75,
+   "end": 631.75,
+   "zh": "生物製藥部分的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:31",
+   "start": 631.75,
+   "end": 633.75,
+   "zh": "生物製劑來到9%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:33",
+   "start": 633.75,
+   "end": 635.75,
+   "zh": "這也是未來相當大的成長動能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:35",
+   "start": 635.75,
+   "end": 639.75,
+   "zh": "在CHC的部分佔成體營收16%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:39",
+   "start": 639.75,
+   "end": 643.75,
+   "zh": "75%來自於規格品牌的銷售",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:43",
+   "start": 643.75,
+   "end": 645.75,
+   "zh": "7%來自於台灣的業務",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:45",
+   "start": 645.75,
+   "end": 647.85,
+   "zh": "7%來自原料與CMO",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:47",
+   "start": 647.85,
+   "end": 649.95,
+   "zh": "威德業務最大中維基康廠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:49",
+   "start": 649.95,
+   "end": 652.45,
+   "zh": "授予運動增效的兩類產品",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:53",
+   "start": 653.95,
+   "end": 654.95,
+   "zh": "大家可以看到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:54",
+   "start": 654.95,
+   "end": 656.75,
+   "zh": "我們今年雖然做了兩個",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:56",
+   "start": 656.75,
+   "end": 657.95,
+   "zh": "蠻大的併購案",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:57",
+   "start": 657.95,
+   "end": 660.65,
+   "zh": "就是威德的併購",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:00",
+   "start": 660.65,
+   "end": 662.85,
+   "zh": "以及Rodfell的生物製劑廠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:02",
+   "start": 662.85,
+   "end": 664.75,
+   "zh": "能夠完成後門能量",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:04",
+   "start": 664.75,
+   "end": 666.05,
+   "zh": "有上衝一的現金",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:06",
+   "start": 666.05,
+   "end": 668.25,
+   "zh": "有50億台幣",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:08",
+   "start": 668.25,
+   "end": 669.45,
+   "zh": "跟現金比",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:09",
+   "start": 669.45,
+   "end": 670.95,
+   "zh": "因為幾乎80億",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:10",
+   "start": 670.95,
+   "end": 673.15,
+   "zh": "是準備在7月份交流的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:13",
+   "start": 673.15,
+   "end": 675.65,
+   "zh": "所以因為實材是非常的充足",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:15",
+   "start": 675.65,
+   "end": 679.49,
+   "zh": "6月28號 附載語部",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:19",
+   "start": 679.49,
+   "end": 685.13,
+   "zh": "本來的QQQ有稍微加從7.1%到7.3%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:25",
+   "start": 685.13,
+   "end": 690.65,
+   "zh": "在做整個降債規劃當中",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:30",
+   "start": 690.65,
+   "end": 693.93,
+   "zh": "在聯合公司口碑",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:33",
+   "start": 693.93,
+   "end": 698.81,
+   "zh": "從2024年第四季的53.14%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:38",
+   "start": 698.81,
+   "end": 704.33,
+   "zh": "逐漸降幅到7.1%的30.3%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:44",
+   "start": 704.33,
+   "end": 709.33,
+   "zh": "QC 降到 28.5% QC 降到 18.8%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:49",
+   "start": 709.33,
+   "end": 714.33,
+   "zh": "QC 全球銷售業 負責 產業 自製 生產",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:54",
+   "start": 714.33,
+   "end": 717.33,
+   "zh": "QC 並調整 高度 補助 面積 資產 選領 要",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:57",
+   "start": 717.33,
+   "end": 722.33,
+   "zh": "QC 讓保衛團隊 積極 穩於 流動 新 活動 區別 追蹤",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:02",
+   "start": 722.33,
+   "end": 722.71,
+   "zh": "高雄市統約紓項",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:15",
+   "start": 735.36,
+   "end": 740.47,
+   "zh": "我希望這個接觸比較量",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:24",
+   "start": 744.99,
+   "end": 747.65,
+   "zh": "謝謝謝謝這個財務長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:27",
+   "start": 747.65,
+   "end": 748.65,
+   "zh": "雖然這邊",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:28",
+   "start": 748.91,
+   "end": 751.23,
+   "zh": "一些的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:31",
+   "start": 751.25,
+   "end": 754.65,
+   "zh": "電腦上好像今天都會有出一些小小的狀況",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:34",
+   "start": 754.67,
+   "end": 755.57,
+   "zh": "但其實",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:35",
+   "start": 755.61,
+   "end": 756.63,
+   "zh": "數字很精彩",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:36",
+   "start": 756.63,
+   "end": 757.11,
+   "zh": "那",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:37",
+   "start": 757.11,
+   "end": 770.29,
+   "zh": "Q3 ETH QOY D and R⁄ilahihg jego otd QQ同伴私 solidarity happy 待會會用英文解寫在咖啡的一些非常地表現 QQ is an excellent thank you to the Q.Cit submit Q3 to theulu hacia so I'll speaking English internet for the remainages The focus the dragging each report",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:50",
+   "start": 770.71,
+   "end": 773.77,
+   "zh": "ㄜ DU sedan de Mo we Still some チ since we still seeingっちゃ withoutl we Still Coach IT kissl",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:53",
+   "start": 773.77,
+   "end": 774.65,
+   "zh": "THEKE idee to CENDUK powerful to interior",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:54",
+   "start": 774.65,
+   "end": 776.19,
+   "zh": "He's strong grow.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:56",
+   "start": 776.19,
+   "end": 778.49,
+   "zh": "IN else l's in supercomputing",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:58",
+   "start": 778.49,
+   "end": 780.47,
+   "zh": "Lss YoYац Iio",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:00",
+   "start": 780.47,
+   "end": 782.31,
+   "zh": "I BETRAMIN",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:02",
+   "start": 782.69,
+   "end": 783.33,
+   "zh": "O okay",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:03",
+   "start": 783.33,
+   "end": 784.13,
+   "zh": "AAA Ellès",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:04",
+   "start": 784.13,
+   "end": 784.77,
+   "zh": "WEZ P FOR OARN",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:04",
+   "start": 784.77,
+   "end": 785.11,
+   "zh": "세요",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:05",
+   "start": 785.11,
+   "end": 785.65,
+   "zh": "Uhh",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:05",
+   "start": 785.65,
+   "end": 786.25,
+   "zh": "投格",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:06",
+   "start": 786.25,
+   "end": 788.25,
+   "zh": "VPN ^^",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:13",
+   "start": 793.25,
+   "end": 795.25,
+   "zh": "않아요",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:15",
+   "start": 795.25,
+   "end": 797.25,
+   "zh": "我",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:17",
+   "start": 797.25,
+   "end": 799.25,
+   "zh": "買多多",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:19",
+   "start": 799.25,
+   "end": 800.71,
+   "zh": "小",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:21",
+   "start": 801.05,
+   "end": 803.05,
+   "zh": "\"...",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:23",
+   "start": 803.05,
+   "end": 805.05,
+   "zh": "frightened",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:26",
+   "start": 806.13,
+   "end": 808.13,
+   "zh": "approaching",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:28",
+   "start": 808.13,
+   "end": 810.13,
+   "zh": "pandemic",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:30",
+   "start": 810.13,
+   "end": 812.13,
+   "zh": "...",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:32",
+   "start": 812.13,
+   "end": 815.23,
+   "zh": "and",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:35",
+   "start": 815.23,
+   "end": 826.07,
+   "zh": "2014-011 CDMO A UED QQ QC QC A QC Don Q Champagne",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:50",
+   "start": 830.07,
+   "end": 839.27,
+   "zh": "QQ Q3 Q3 Q3 Q 3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q3 Q4 너무每月流程在5月",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:59",
+   "start": 839.27,
+   "end": 877.72,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:37",
+   "start": 877.72,
+   "end": 907.72,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:07",
+   "start": 907.72,
+   "end": 911.2,
+   "zh": "主要是在生活中工你C平окоExcitedCAPEX highlight",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:11",
+   "start": 911.2,
+   "end": 920.16,
+   "zh": "CAPEX crush FUYAMAWA Q3",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:20",
+   "start": 920.16,
+   "end": 924.14,
+   "zh": "TBC D journey",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:24",
+   "start": 924.14,
+   "end": 927.1,
+   "zh": "listen to the",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:27",
+   "start": 927.1,
+   "end": 930.82,
+   "zh": "압ścieA",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:30",
+   "start": 930.82,
+   "end": 933.12,
+   "zh": "YD",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:33",
+   "start": 933.12,
+   "end": 934.36,
+   "zh": "大學年大學同學師",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:34",
+   "start": 934.36,
+   "end": 935.86,
+   "zh": "可以一起進化",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:35",
+   "start": 935.86,
+   "end": 950.94,
+   "zh": "來建設",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:51",
+   "start": 951.94,
+   "end": 962.3,
+   "zh": "Fucking",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:02",
+   "start": 962.3,
+   "end": 962.6,
+   "zh": "Fuck",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:03",
+   "start": 963.12,
+   "end": 983.24,
+   "zh": "QQ普通溪cherb",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:23",
+   "start": 983.24,
+   "end": 1006.58,
+   "zh": "будем有機這些數量的建築物",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:46",
+   "start": 1006.58,
+   "end": 1011.42,
+   "zh": "冥冥溪溪-5 ост basically any pussy",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:51",
+   "start": 1011.42,
+   "end": 1018.62,
+   "zh": "so we get to scale we actually start specialized",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:58",
+   "start": 1018.62,
+   "end": 1021.38,
+   "zh": "emean there the particular",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:01",
+   "start": 1021.7,
+   "end": 1030.66,
+   "zh": "gorilla is especially now back to theiti alpha",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:10",
+   "start": 1030.66,
+   "end": 1060.66,
+   "zh": "QQ QQ INT3 CDDH13HQS QQ EUQQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ further questions Rapunzel Relish QQ QQ QQ QQ QQ QQQ QQ AP QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ ok you feel listen up progressive well thank you and I",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:40",
+   "start": 1060.66,
+   "end": 1064.58,
+   "zh": "saja THE MAPLE GROW",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:44",
+   "start": 1064.68,
+   "end": 1067.7,
+   "zh": "alman",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:49",
+   "start": 1069.0,
+   "end": 1083.74,
+   "zh": "MARK",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:04",
+   "start": 1084.24,
+   "end": 1085.5,
+   "zh": "MARK",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:05",
+   "start": 1085.5,
+   "end": 1087.5,
+   "zh": "05259 DLD QGT–O 😺",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:35",
+   "start": 1115.5,
+   "end": 1150.78,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:10",
+   "start": 1150.78,
+   "end": 1180.78,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:40",
+   "start": 1180.78,
+   "end": 1195.72,
+   "zh": "磁寰達一章位 配合 FDA的教授",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:55",
+   "start": 1195.72,
+   "end": 1198.2,
+   "zh": "CHECK Dadayo turnover",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:58",
+   "start": 1198.2,
+   "end": 1202.28,
+   "zh": "Swa everything",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:08",
+   "start": 1208.84,
+   "end": 1209.64,
+   "zh": "Biologics",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:09",
+   "start": 1209.64,
+   "end": 1211.2,
+   "zh": "Still love",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:24",
+   "start": 1224.32,
+   "end": 1225.56,
+   "zh": "Canada",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:25",
+   "start": 1225.56,
+   "end": 1228.2,
+   "zh": "快接客服 Master Ok",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:28",
+   "start": 1228.2,
+   "end": 1229.96,
+   "zh": "您將籤個紅包",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:29",
+   "start": 1229.96,
+   "end": 1237.32,
+   "zh": "您的郵件",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:37",
+   "start": 1237.32,
+   "end": 1242.04,
+   "zh": "nor do you don't know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:42",
+   "start": 1242.14,
+   "end": 1242.88,
+   "zh": "Leo",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:42",
+   "start": 1242.88,
+   "end": 1245.24,
+   "zh": "QQ PPQ Delta PQ PM Q$ Cём Thursday",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:45",
+   "start": 1245.24,
+   "end": 1246.4,
+   "zh": "QQ do you know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:46",
+   "start": 1246.4,
+   "end": 1247.42,
+   "zh": "QQ do you know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:47",
+   "start": 1247.42,
+   "end": 1248.6,
+   "zh": "QQ 않는",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:48",
+   "start": 1248.6,
+   "end": 1250.1,
+   "zh": "QQ do you know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:50",
+   "start": 1250.1,
+   "end": 1251.34,
+   "zh": "QQ do you know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:51",
+   "start": 1251.34,
+   "end": 1252.82,
+   "zh": "QQ yo y",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:52",
+   "start": 1252.82,
+   "end": 1254.8,
+   "zh": "QQ yo dat",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:54",
+   "start": 1254.8,
+   "end": 1255.8,
+   "zh": "QQ yo yo dat",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:55",
+   "start": 1255.8,
+   "end": 1258.15,
+   "zh": "QQ yo yo dat",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:58",
+   "start": 1258.15,
+   "end": 1258.97,
+   "zh": "QQ yo yo y",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:58",
+   "start": 1258.97,
+   "end": 1260.15,
+   "zh": "QQ yo yo yo yo yo",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:00",
+   "start": 1260.15,
+   "end": 1261.15,
+   "zh": "qOhh",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:01",
+   "start": 1261.15,
+   "end": 1262.15,
+   "zh": "qOhh",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:02",
+   "start": 1262.15,
+   "end": 1263.15,
+   "zh": "Q доR",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:03",
+   "start": 1263.15,
+   "end": 1264.15,
+   "zh": "Q到R",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:04",
+   "start": 1264.15,
+   "end": 1265.15,
+   "zh": "Q do you know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:05",
+   "start": 1265.15,
+   "end": 1266.15,
+   "zh": "QQ do you know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:06",
+   "start": 1266.15,
+   "end": 1267.15,
+   "zh": "QQ do you know",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:07",
+   "start": 1267.15,
+   "end": 1269.09,
+   "zh": "Q2",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:09",
+   "start": 1269.09,
+   "end": 1269.81,
+   "zh": "Q fått",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:09",
+   "start": 1269.81,
+   "end": 1271.11,
+   "zh": "Q to R",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:11",
+   "start": 1271.11,
+   "end": 1272.07,
+   "zh": "Q teo",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:12",
+   "start": 1272.07,
+   "end": 1273.07,
+   "zh": "Q teo",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:13",
+   "start": 1273.07,
+   "end": 1303.07,
+   "zh": "Q3",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:43",
+   "start": 1303.07,
+   "end": 1306.41,
+   "zh": "JJ Frost 2025 QQ QQ inch.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:46",
+   "start": 1306.45,
+   "end": 1307.85,
+   "zh": "J Energ Yi Tang career",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:48",
+   "start": 1308.07,
+   "end": 1312.45,
+   "zh": "J Are skip Correct",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:52",
+   "start": 1312.61,
+   "end": 1317.85,
+   "zh": "QQ TQ Q QQ Guys",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:57",
+   "start": 1317.91,
+   "end": 1320.49,
+   "zh": "CQ QQ QQ",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:00",
+   "start": 1320.55,
+   "end": 1322.49,
+   "zh": "Q QQ And",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:03",
+   "start": 1323.55,
+   "end": 1327.99,
+   "zh": "Q QQ Q Q Q Q Q Q Q Q map",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:08",
+   "start": 1328.63,
+   "end": 1331.85,
+   "zh": "c QQ das",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:11",
+   "start": 1331.85,
+   "end": 1368.25,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:48",
+   "start": 1368.25,
+   "end": 1404.46,
+   "zh": "Qodus",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:24",
+   "start": 1404.46,
+   "end": 1406.58,
+   "zh": "今年的性full degree offer",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:29",
+   "start": 1409.54,
+   "end": 1412.18,
+   "zh": "您知道可在law",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:32",
+   "start": 1412.9,
+   "end": 1414.56,
+   "zh": "comparing that inWith some way",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:34",
+   "start": 1414.58,
+   "end": 1416.68,
+   "zh": "SOMEwisonomies 聊了一些並重新公佈WeederGlobal",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:36",
+   "start": 1416.82,
+   "end": 1421.52,
+   "zh": "We reinvested into Songları Biotech",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:41",
+   "start": 1421.52,
+   "end": 1424.18,
+   "zh": "And now wwere present 42%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:44",
+   "start": 1424.44,
+   "end": 1425.22,
+   "zh": "of Songwei",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:45",
+   "start": 1425.5,
+   "end": 1427.58,
+   "zh": "And the acquisition of WeederGlobal",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:47",
+   "start": 1427.58,
+   "end": 1429.36,
+   "zh": "now has really catapult.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:49",
+   "start": 1429.78,
+   "end": 1431.86,
+   "zh": "Bat company and that",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:51",
+   "start": 1431.86,
+   "end": 1432.64,
+   "zh": "Brand in",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:52",
+   "start": 1432.64,
+   "end": 1434.42,
+   "zh": "to be in an important part",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:54",
+   "start": 1434.42,
+   "end": 1464.42,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:24",
+   "start": 1464.42,
+   "end": 1467.44,
+   "zh": "O has a global brand name, 支片上內部活動有 Analytics",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:27",
+   "start": 1467.44,
+   "end": 1471.18,
+   "zh": "We're growing 36%, quarter to quarter 36%下滑 dinosaur錢翔",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:31",
+   "start": 1471.18,
+   "end": 1474.92,
+   "zh": "significant brand scale, rapid profits, 估計しま若僅創 Twitch",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:34",
+   "start": 1474.92,
+   "end": 1477.42,
+   "zh": "Net Income, for the first nine months of 2026, Capital水平售資,也幾乎有四千蠸",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:37",
+   "start": 1477.42,
+   "end": 1480.12,
+   "zh": "has already reached 22% last yearㅣ 되어指褒黎 Rusp Walter你是 數量過去的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:44",
+   "start": 1484.12,
+   "end": 1489.62,
+   "zh": "所以應該必須是 和他那一個契級呢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:51",
+   "start": 1491.62,
+   "end": 1494.2,
+   "zh": "BorahZ是 rebuild 優積 мож hook的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:54",
+   "start": 1494.2,
+   "end": 1499.72,
+   "zh": "M vaisement and operational efficiency included as a back one in manufacturing, immang Hourlid",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:59",
+   "start": 1499.72,
+   "end": 1500.4,
+   "zh": "M FACURING",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:00",
+   "start": 1500.4,
+   "end": 1502.46,
+   "zh": "with the global we Energie brand name",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:02",
+   "start": 1502.6,
+   "end": 1504.56,
+   "zh": "So, once again, the",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:05",
+   "start": 1505.0,
+   "end": 1506.6,
+   "zh": "fore group is providing",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:06",
+   "start": 1506.64,
+   "end": 1508.68,
+   "zh": "an infrastructure of monitor",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:08",
+   "start": 1508.74,
+   "end": 1509.44,
+   "zh": "businessman",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:09",
+   "start": 1509.5,
+   "end": 1530.61,
+   "zh": "Mang for",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:30",
+   "start": 1530.61,
+   "end": 1531.17,
+   "zh": "a little",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:31",
+   "start": 1531.17,
+   "end": 1538.03,
+   "zh": "我希望能讓我們在我們觀察中的27個項目上的增長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:38",
+   "start": 1538.03,
+   "end": 1542.51,
+   "zh": "我們真的看到了一個迴歸和持續性的進展",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:42",
+   "start": 1542.51,
+   "end": 1543.97,
+   "zh": "在我們 CDMO 商業上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:43",
+   "start": 1543.97,
+   "end": 1545.39,
+   "zh": "我們看到了這個產品的利益",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:45",
+   "start": 1545.39,
+   "end": 1546.33,
+   "zh": "在動向上漲幅上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:46",
+   "start": 1546.33,
+   "end": 1549.01,
+   "zh": "我們會繼續看到增長在市場上的增長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:49",
+   "start": 1549.01,
+   "end": 1551.01,
+   "zh": "我們會繼續在增長的市場上的利益",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:51",
+   "start": 1551.01,
+   "end": 1553.81,
+   "zh": "特別是在我們的MAPRO的生產項目上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:53",
+   "start": 1553.81,
+   "end": 1556.57,
+   "zh": "在我們特別的農業上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:56",
+   "start": 1556.57,
+   "end": 1559.69,
+   "zh": "我們能看到這將是一年半的增長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:59",
+   "start": 1559.69,
+   "end": 1589.69,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:29",
+   "start": 1589.69,
+   "end": 1591.47,
+   "zh": "中華國家中常城公司生產局",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:31",
+   "start": 1591.81,
+   "end": 1593.19,
+   "zh": "首個體驗 & 首個實潮",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:33",
+   "start": 1593.29,
+   "end": 1595.29,
+   "zh": "能夠帶給世界其中一個 собственно",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:35",
+   "start": 1595.35,
+   "end": 1596.09,
+   "zh": "ta 가",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:36",
+   "start": 1596.17,
+   "end": 1597.01,
+   "zh": "中 strang stb qua",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:37",
+   "start": 1597.01,
+   "end": 1604.91,
+   "zh": "藍貴",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:47",
+   "start": 1607.49,
+   "end": 1611.99,
+   "zh": "acres",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:52",
+   "start": 1612.33,
+   "end": 1616.41,
+   "zh": "majesty",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:56",
+   "start": 1616.41,
+   "end": 1626.79,
+   "zh": "2012年 HK製造與中國事業經濟研業整合學歷,管理與分割著了軍事行業條例,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:07",
+   "start": 1627.79,
+   "end": 1635.77,
+   "zh": "於2015年由港大未知",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:17",
+   "start": 1637.77,
+   "end": 1646.01,
+   "zh": "oily",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:26",
+   "start": 1646.01,
+   "end": 1650.06,
+   "zh": "Thank you very much.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:30",
+   "start": 1650.06,
+   "end": 1653.46,
+   "zh": "謝謝Bobby 也謝謝Alice總的分享",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:33",
+   "start": 1653.46,
+   "end": 1655.5,
+   "zh": "那我們現在進入問答環節",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:35",
+   "start": 1655.5,
+   "end": 1658.06,
+   "zh": "那進入問答環節前先簡單提醒大家",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:38",
+   "start": 1658.06,
+   "end": 1660.78,
+   "zh": "可以透過Q&A文字框提交問題",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:40",
+   "start": 1660.78,
+   "end": 1662.5,
+   "zh": "用中文的提問接客",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:42",
+   "start": 1662.5,
+   "end": 1664.66,
+   "zh": "我們會按照說到問題的順序安排",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:44",
+   "start": 1664.66,
+   "end": 1666.86,
+   "zh": "再有管理層一時回覆",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:46",
+   "start": 1666.86,
+   "end": 1669.94,
+   "zh": "Thank you Bobby and Alice for the presentation.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:49",
+   "start": 1669.94,
+   "end": 1671.38,
+   "zh": "And before moving to the Q&A",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:51",
+   "start": 1671.38,
+   "end": 1674.34,
+   "zh": "just a quick reminder for listeners on this webcast",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:54",
+   "start": 1674.34,
+   "end": 1677.42,
+   "zh": "that questions can be submitted through the Q&A text box.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:27:57",
+   "start": 1677.42,
+   "end": 1684.42,
+   "zh": "Q&A",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:04",
+   "start": 1684.54,
+   "end": 1688.42,
+   "zh": "Q&A",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:18",
+   "start": 1698.42,
+   "end": 1702.58,
+   "zh": "第三季度可能有一些相關生物類似藥設備的減損",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:22",
+   "start": 1702.58,
+   "end": 1705.7,
+   "zh": "然後可能也有一些近期增值的多次",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:25",
+   "start": 1705.7,
+   "end": 1710.82,
+   "zh": "就想了解一下未來對太福公司的具體計劃是如何",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:30",
+   "start": 1710.82,
+   "end": 1716.26,
+   "zh": "我們看到Borah已經支持10VAX的貨幣",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:36",
+   "start": 1716.26,
+   "end": 1718.82,
+   "zh": "也見到許多管理團隊的改變",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:38",
+   "start": 1718.82,
+   "end": 1724.02,
+   "zh": "第三季度也有一些關於裝備的批評",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:44",
+   "start": 1724.02,
+   "end": 1727.54,
+   "zh": "也有幾個提升貨幣",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:28:47",
+   "start": 1727.54,
+   "end": 1740.58,
+   "zh": "QHQ Q quitting as a calculatorknow how to want to help, answer questions that are not on these different節目, clip ideas, how to be an employer, what the point we get and what the difficult life is about these two topics and what I mentioned in the beginning after you've just an overview of 하나日和 Brussel knock up so this is some details of our",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:00",
+   "start": 1740.58,
+   "end": 1749.94,
+   "zh": "I'll look and a plan company has for 10 bucks View all kind of like risk with the fact that when you hurt a already",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:09",
+   "start": 1749.94,
+   "end": 1751.54,
+   "zh": "肯定是非常非常看好泰福啊",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:11",
+   "start": 1751.54,
+   "end": 1754.24,
+   "zh": "那泰福你也知道它有很長久的歷史",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:14",
+   "start": 1754.24,
+   "end": 1755.38,
+   "zh": "那這個歷史來說呢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:15",
+   "start": 1755.38,
+   "end": 1758.24,
+   "zh": "我們一直不斷的在整理它",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:18",
+   "start": 1758.24,
+   "end": 1760.24,
+   "zh": "一直不斷在整合它",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:20",
+   "start": 1760.24,
+   "end": 1763.14,
+   "zh": "我們買了我們的Rockville廠之後呢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:23",
+   "start": 1763.14,
+   "end": 1766.66,
+   "zh": "其實就很有很多機會去讓他們兩個Synergy",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:26",
+   "start": 1766.66,
+   "end": 1770.76,
+   "zh": "可以看到那邊的所謂的費用可以再降低",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:30",
+   "start": 1770.76,
+   "end": 1772.72,
+   "zh": "所以其實你看一些人士的來動",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:29:32",
+   "start": 1772.86,
+   "end": 1775.7,
+   "zh": "因為我們現在有這個Rockville facility",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:05",
+   "start": 1805.7,
+   "end": 1808.7,
+   "zh": "保瑞有更大的投資效應",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:09",
+   "start": 1809.7,
+   "end": 1810.7,
+   "zh": "短期來說",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:10",
+   "start": 1810.7,
+   "end": 1813.7,
+   "zh": "我們還是用個開源節流",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:14",
+   "start": 1814.7,
+   "end": 1816.7,
+   "zh": "讓他有更有效應",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:16",
+   "start": 1816.7,
+   "end": 1819.7,
+   "zh": "看起來他們的財報會越來越穩定",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:19",
+   "start": 1819.7,
+   "end": 1825.7,
+   "zh": "保瑞是100%支持現在太福的大方向",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:25",
+   "start": 1825.7,
+   "end": 1828.7,
+   "zh": "包括現在泰福的領導團隊",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:28",
+   "start": 1828.7,
+   "end": 1831.7,
+   "zh": "也是我們原本保瑞生技的廠長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:31",
+   "start": 1831.7,
+   "end": 1833.7,
+   "zh": "我們把他升到總經理",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:33",
+   "start": 1833.7,
+   "end": 1838.1,
+   "zh": "財務管理",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:38",
+   "start": 1838.1,
+   "end": 1840.1,
+   "zh": "在街上很多的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:40",
+   "start": 1840.1,
+   "end": 1841.1,
+   "zh": "泰福的細節",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:41",
+   "start": 1841.1,
+   "end": 1843.5,
+   "zh": "我們沒有在這個會議有報告",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:43",
+   "start": 1843.5,
+   "end": 1845.7,
+   "zh": "但它以新客戶來說",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:45",
+   "start": 1845.7,
+   "end": 1846.9,
+   "zh": "也簽到一些",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:46",
+   "start": 1846.9,
+   "end": 1848.1,
+   "zh": "也創造一個新高",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:48",
+   "start": 1848.1,
+   "end": 1850.7,
+   "zh": "所以其實它的新客戶這樣簽下來",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:50",
+   "start": 1850.7,
+   "end": 1852.1,
+   "zh": "但大部分是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:52",
+   "start": 1852.1,
+   "end": 1852.9,
+   "zh": "說實話",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:52",
+   "start": 1852.9,
+   "end": 1855.1,
+   "zh": "是要是一個比較大的投資",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:55",
+   "start": 1855.1,
+   "end": 1857.3,
+   "zh": "所以為什麼我們覺得說泰福是一個",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:30:57",
+   "start": 1857.3,
+   "end": 1862.18,
+   "zh": "J JH Massage",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:05",
+   "start": 1865.46,
+   "end": 1870.02,
+   "zh": "H HA",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:10",
+   "start": 1870.12,
+   "end": 1877.52,
+   "zh": "J NH Massage",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:17",
+   "start": 1877.78,
+   "end": 1880.86,
+   "zh": "Jぇ tomorrow",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:21",
+   "start": 1881.12,
+   "end": 1884.7,
+   "zh": "JJ dominance",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:24",
+   "start": 1884.94,
+   "end": 1886.22,
+   "zh": "J JH Massage",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:26",
+   "start": 1886.48,
+   "end": 1887.26,
+   "zh": "J..\" onto",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:27",
+   "start": 1887.3,
+   "end": 1890.98,
+   "zh": "ABC,AOC,BioNTech,Tri-Supply",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:31",
+   "start": 1891.06,
+   "end": 1893.94,
+   "zh": "其實這些所謂的標靶藥",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:33",
+   "start": 1893.94,
+   "end": 1896.02,
+   "zh": "都是用大分子來開發的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:36",
+   "start": 1896.02,
+   "end": 1897.54,
+   "zh": "讓你可以看所有的新藥",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:37",
+   "start": 1897.54,
+   "end": 1899.46,
+   "zh": "通過的都是大分子",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:39",
+   "start": 1899.46,
+   "end": 1901.86,
+   "zh": "所以我們認為說這個是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:41",
+   "start": 1901.86,
+   "end": 1903.78,
+   "zh": "一個CDMO必須要有的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:43",
+   "start": 1903.78,
+   "end": 1905.22,
+   "zh": "必須要做的投資",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:45",
+   "start": 1905.22,
+   "end": 1908.58,
+   "zh": "這個也是我們為什麼一直非常支持",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:48",
+   "start": 1908.58,
+   "end": 1910.5,
+   "zh": "泰普這個事業體",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:50",
+   "start": 1910.5,
+   "end": 1913.94,
+   "zh": "然後願意把這個Orion的部分",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:31:53",
+   "start": 1913.94,
+   "end": 1926.6,
+   "zh": "ORIEN R MrFクリスト",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:23",
+   "start": 1943.94,
+   "end": 1947.94,
+   "zh": "剛剛您有提到保瑞也是泰普的股東之一",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:27",
+   "start": 1947.94,
+   "end": 1949.54,
+   "zh": "針對股本的結構",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:29",
+   "start": 1949.54,
+   "end": 1951.94,
+   "zh": "我們相信泰普經營團隊跟董事會",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:31",
+   "start": 1951.94,
+   "end": 1954.94,
+   "zh": "會以兼具所有股東權益的角度來設計",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:34",
+   "start": 1954.94,
+   "end": 1956.94,
+   "zh": "它的股本結構",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:38",
+   "start": 1958.94,
+   "end": 1961.94,
+   "zh": "我可以再講一個大方向",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:41",
+   "start": 1961.94,
+   "end": 1963.94,
+   "zh": "保瑞永遠會投資未來",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:43",
+   "start": 1963.94,
+   "end": 1965.94,
+   "zh": "不會投資過去",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:45",
+   "start": 1965.94,
+   "end": 1966.94,
+   "zh": "這個什麼意思呢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:46",
+   "start": 1966.94,
+   "end": 1968.94,
+   "zh": "就是說我們覺得這個是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:48",
+   "start": 1968.94,
+   "end": 1970.94,
+   "zh": "有很大大前途",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:32:50",
+   "start": 1970.94,
+   "end": 1971.94,
+   "zh": "而不是我們認為說",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:23",
+   "start": 2003.5,
+   "end": 2005.5,
+   "zh": "在7月英雄公告有提到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:25",
+   "start": 2005.5,
+   "end": 2009.5,
+   "zh": "珍珍機場可能有一些處理FDA要求的品質專案",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:29",
+   "start": 2009.5,
+   "end": 2012.5,
+   "zh": "希望管理層能夠細說一下",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:32",
+   "start": 2012.5,
+   "end": 2015.5,
+   "zh": "現在的狀況以及後續的一些可能的影響",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:35",
+   "start": 2015.5,
+   "end": 2017.5,
+   "zh": "因為這個廠從併購的時候",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:37",
+   "start": 2017.5,
+   "end": 2021.5,
+   "zh": "還是有一些品質改善計劃的執行",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:41",
+   "start": 2021.5,
+   "end": 2024.5,
+   "zh": "先了解一下背後的背景",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:44",
+   "start": 2024.5,
+   "end": 2026.5,
+   "zh": "後面的原因是什麼樣",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:46",
+   "start": 2026.5,
+   "end": 2039.9,
+   "zh": "FDA一直希望徵技廠會轉換到isolator technology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:33:59",
+   "start": 2039.9,
+   "end": 2043.26,
+   "zh": "為什麼原本看好這個廠 現在也看好這個廠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:34:03",
+   "start": 2043.26,
+   "end": 2049.5,
+   "zh": "因為它目前有一個非常非常的新的isolator line在那裡",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:34:09",
+   "start": 2049.5,
+   "end": 2055.66,
+   "zh": "我們買它的時候 其實很多客戶是還沒有轉換他們的藥到isolator line",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:34:15",
+   "start": 2055.66,
+   "end": 2066.76,
+   "zh": "FDA跟你說我們要主動把客戶跟他溝通 轉為Ist 생겼的線",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:34:27",
+   "start": 2067.16,
+   "end": 2071.56,
+   "zh": "同時 我現在用的Ravline也要給他們一個清楚的計劃",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:34:31",
+   "start": 2071.56,
+   "end": 2075.72,
+   "zh": "我們怎麼把這些客戶轉換到Ist測試",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:34:35",
+   "start": 2075.72,
+   "end": 2084.72,
+   "zh": "Q1 2025 Q1",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:05",
+   "start": 2105.72,
+   "end": 2109.72,
+   "zh": "ISOLATE RAPS LINE",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:09",
+   "start": 2109.72,
+   "end": 2111.72,
+   "zh": "ISOLATE RAPS LINE",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:11",
+   "start": 2111.72,
+   "end": 2113.72,
+   "zh": "FDA通過",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:13",
+   "start": 2113.72,
+   "end": 2115.72,
+   "zh": "需要花很多時間跟客戶溝通",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:15",
+   "start": 2115.72,
+   "end": 2117.72,
+   "zh": "跟FDA溝通",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:17",
+   "start": 2117.72,
+   "end": 2119.72,
+   "zh": "兩邊都要同意",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:19",
+   "start": 2119.72,
+   "end": 2121.72,
+   "zh": "轉換計劃",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:21",
+   "start": 2121.72,
+   "end": 2123.72,
+   "zh": "才可以執行",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:23",
+   "start": 2123.72,
+   "end": 2125.72,
+   "zh": "執行還要做很多測試等等",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:25",
+   "start": 2125.72,
+   "end": 2127.72,
+   "zh": "好處",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:27",
+   "start": 2127.72,
+   "end": 2129.72,
+   "zh": "保瑞都會收費",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:29",
+   "start": 2129.72,
+   "end": 2131.72,
+   "zh": "收費過程",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:31",
+   "start": 2131.72,
+   "end": 2133.72,
+   "zh": "也是要跟",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:35:33",
+   "start": 2133.72,
+   "end": 2163.72,
+   "zh": "Q2",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:36:03",
+   "start": 2163.72,
+   "end": 2193.72,
+   "zh": "isolator line",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:36:33",
+   "start": 2193.72,
+   "end": 2212.4,
+   "zh": "要 showcase",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:36:53",
+   "start": 2213.44,
+   "end": 2217.04,
+   "zh": "雖然我們在緊急隊商上 unaessential",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:36:57",
+   "start": 2217.04,
+   "end": 2220.8,
+   "zh": "本程 但在技術回社 設計的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:37:00",
+   "start": 2220.8,
+   "end": 2231.8,
+   "zh": "QQ.下滑中有多少是跟Rockville和韋德併入的結構型的組合變化,多少是可能Maryland這邊場地的這個戰時上的因素?",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:37:11",
+   "start": 2231.8,
+   "end": 2239.8,
+   "zh": "QQ.2027年隔離期產線全開之後,isolator出來之後,目標的毛利率可能可以回到什麼樣的水平?",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:37:19",
+   "start": 2239.8,
+   "end": 2269.68,
+   "zh": "貿易下滑跟去年同期比,學名要也有先進者競爭受到一些影響,增進場有些產能會移到2027年,Rofield場今年才剛加進去,貿易率也有些影響。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:37:49",
+   "start": 2269.68,
+   "end": 2272.64,
+   "zh": "明年整個如果產能全開",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:37:52",
+   "start": 2272.64,
+   "end": 2280.32,
+   "zh": "毛利率應該會回到我們以前大概是40%的水準",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:00",
+   "start": 2280.32,
+   "end": 2281.52,
+   "zh": "正常的水準",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:01",
+   "start": 2281.52,
+   "end": 2283.12,
+   "zh": "所以最近我剛才提到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:03",
+   "start": 2283.12,
+   "end": 2284.6,
+   "zh": "就是還有一些改善的空間",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:04",
+   "start": 2284.6,
+   "end": 2286.8,
+   "zh": "因為我們的產能利用率",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:06",
+   "start": 2286.8,
+   "end": 2291.98,
+   "zh": "交動率都還沒有全部上來",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:11",
+   "start": 2291.98,
+   "end": 2292.86,
+   "zh": "明白",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:12",
+   "start": 2292.86,
+   "end": 2294.06,
+   "zh": "謝謝Alison",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:14",
+   "start": 2294.06,
+   "end": 2296.3,
+   "zh": "然後我可能就也再繼續跟進問一下",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:16",
+   "start": 2296.3,
+   "end": 2298.58,
+   "zh": "就是這個投資者有請問就是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:18",
+   "start": 2298.58,
+   "end": 2301.1,
+   "zh": "螞蟻藍爭利場剛剛可能提到的法規變動",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:21",
+   "start": 2301.1,
+   "end": 2304.38,
+   "zh": "有沒有具體能夠瞭解到是什麼樣的法規",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:24",
+   "start": 2304.38,
+   "end": 2308.72,
+   "zh": "延迪到27年的在手訂單今個大致上有多少",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:28",
+   "start": 2308.72,
+   "end": 2311.52,
+   "zh": "可能4PPPQ完成之後",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:31",
+   "start": 2311.52,
+   "end": 2315.06,
+   "zh": "什麼時候能夠恢復全量的商業交付",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:35",
+   "start": 2315.06,
+   "end": 2318.94,
+   "zh": "最後可能跟三項的幾章來arin",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:38",
+   "start": 2318.94,
+   "end": 2321.96,
+   "zh": "什麼時候能夠認真在營鎖裡",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:41",
+   "start": 2321.96,
+   "end": 2323.14,
+   "zh": "是 3 個問題嘛 對abol",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:43",
+   "start": 2323.14,
+   "end": 2324.28,
+   "zh": "Pinia QC cloak",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:44",
+   "start": 2324.28,
+   "end": 2327.38,
+   "zh": "有點 rewards 合在一起",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:47",
+   "start": 2327.38,
+   "end": 2328.48,
+   "zh": "有 法規",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:48",
+   "start": 2328.48,
+   "end": 2330.08,
+   "zh": "對 他頭孔快怎麼打",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:50",
+   "start": 2330.08,
+   "end": 2330.74,
+   "zh": "又 idk 文字翻譯",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:50",
+   "start": 2330.74,
+   "end": 2336.58,
+   "zh": "連地到27年的在手訂單金額",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:38:57",
+   "start": 2337.02,
+   "end": 2341.78,
+   "zh": "然後4P PPQ完之後何時恢復全量商業交付",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:01",
+   "start": 2341.78,
+   "end": 2342.54,
+   "zh": "其實四個",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:02",
+   "start": 2342.9,
+   "end": 2344.86,
+   "zh": "然後第四個是善量計轉案",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:04",
+   "start": 2344.86,
+   "end": 2346.58,
+   "zh": "什麼時候能決正列印收",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:08",
+   "start": 2348.58,
+   "end": 2351.78,
+   "zh": "我想首先法規的東西",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:11",
+   "start": 2351.78,
+   "end": 2353.62,
+   "zh": "其實也為了減少時間",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:13",
+   "start": 2353.62,
+   "end": 2355.18,
+   "zh": "也是保護一些客戶的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:15",
+   "start": 2355.18,
+   "end": 2358.06,
+   "zh": "因為基本上我們是都是客戶的一些的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:39:18",
+   "start": 2358.06,
+   "end": 2361.06,
+   "zh": "比較密切的資料",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:21",
+   "start": 2421.06,
+   "end": 2431.06,
+   "zh": "2027年目前客戶希望可以排到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:31",
+   "start": 2431.06,
+   "end": 2434.06,
+   "zh": "其實我們內一個生產線是almost排滿的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:34",
+   "start": 2434.06,
+   "end": 2439.06,
+   "zh": "細節數字來說我們還沒有統計數字",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:39",
+   "start": 2439.06,
+   "end": 2441.06,
+   "zh": "因為其實過程中不只是批量的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:41",
+   "start": 2441.06,
+   "end": 2443.06,
+   "zh": "還是有計轉的費用",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:43",
+   "start": 2443.06,
+   "end": 2447.06,
+   "zh": "所以其實這一方面的金額還是沒有辦法估到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:47",
+   "start": 2447.06,
+   "end": 2450.06,
+   "zh": "我只能說從一個產能利用率來說",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:40:50",
+   "start": 2450.06,
+   "end": 2478.88,
+   "zh": "QQ DVD PROTEIN opt-in QQ hottp survive QQ DVD PROTEIN EPS QC QC DEX Hilfe dc QQ",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:41:20",
+   "start": 2480.06,
+   "end": 2502.98,
+   "zh": "QQ QR MARCH 2019 LSP 2018 added new",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:41:53",
+   "start": 2513.49,
+   "end": 2516.95,
+   "zh": "的人員是Keyiji Genki",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:41:56",
+   "start": 2516.95,
+   "end": 2527.25,
+   "zh": "這個代表天才期間的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:42:07",
+   "start": 2527.25,
+   "end": 2530.13,
+   "zh": "變運力和iso4的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:42:10",
+   "start": 2530.13,
+   "end": 2533.97,
+   "zh": "邏輯真的是綜合的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:42:13",
+   "start": 2533.97,
+   "end": 2536.41,
+   "zh": "這個貴與村富是非常 Mrs.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:42:16",
+   "start": 2536.41,
+   "end": 2540.61,
+   "zh": "這裡我交代出來解說",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:20",
+   "start": 2600.61,
+   "end": 2605.29,
+   "zh": "保險幾負",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:25",
+   "start": 2605.53,
+   "end": 2608.61,
+   "zh": "保險公司也對我們的產品越來越熟悉",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:28",
+   "start": 2608.61,
+   "end": 2610.61,
+   "zh": "然後幾負量也越來越高",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:30",
+   "start": 2610.69,
+   "end": 2613.85,
+   "zh": "所以這兩方面我們還是看好的一個趨勢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:33",
+   "start": 2613.85,
+   "end": 2616.05,
+   "zh": "明白",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:37",
+   "start": 2617.33,
+   "end": 2619.17,
+   "zh": "我能請我自己問一下",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:39",
+   "start": 2619.17,
+   "end": 2620.45,
+   "zh": "跟我們分享一下",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:40",
+   "start": 2620.45,
+   "end": 2622.97,
+   "zh": "我們剛才簡報也有提到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:42",
+   "start": 2622.97,
+   "end": 2625.01,
+   "zh": "我們 CDMO這邊的backloss",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:45",
+   "start": 2625.01,
+   "end": 2626.01,
+   "zh": "持續在增長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:46",
+   "start": 2626.45,
+   "end": 2628.93,
+   "zh": "但我們能就能不能跟我們多分享一下",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:43:48",
+   "start": 2628.93,
+   "end": 2648.53,
+   "zh": "在這一些看到Backload的增長以及籤的新的訂單裡面,有沒有特定一些方向或者說特定的這個不管是技術或者是modality方面,我們看到就是需求量是比較多的,然後尤其對於我們主要海外的客戶,就可能需求量比較多的一些種類。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:08",
+   "start": 2648.53,
+   "end": 2653.13,
+   "zh": "需求量的確是增技充填",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:13",
+   "start": 2653.13,
+   "end": 2657.17,
+   "zh": "所以其實我覺得五成以上的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:17",
+   "start": 2657.17,
+   "end": 2661.65,
+   "zh": "我們的Inquiry跟RFP",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:21",
+   "start": 2661.65,
+   "end": 2664.81,
+   "zh": "跟我們講的Marketing Qualify利等等",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:24",
+   "start": 2664.81,
+   "end": 2666.89,
+   "zh": "其實五成都是在增技這方面",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:26",
+   "start": 2666.89,
+   "end": 2669.97,
+   "zh": "其實因為有幾個大趨勢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:29",
+   "start": 2669.97,
+   "end": 2673.13,
+   "zh": "因為GLP One還是在成長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:33",
+   "start": 2673.13,
+   "end": 2675.89,
+   "zh": "所以其他增技用的量非常非常的大",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:35",
+   "start": 2675.89,
+   "end": 2682.49,
+   "zh": "要蓋一個蒸氣廠真的需要三年到五年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:42",
+   "start": 2682.49,
+   "end": 2688.09,
+   "zh": "現在的蒸氣廠產能運用力都爆了",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:48",
+   "start": 2688.09,
+   "end": 2693.29,
+   "zh": "所以包括客戶要找充填廠都非常難",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:53",
+   "start": 2693.29,
+   "end": 2699.09,
+   "zh": "加上FDA現在也是一個更高的門檻",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:44:59",
+   "start": 2699.09,
+   "end": 2704.89,
+   "zh": "更嚴格的方式去分析跟要求蒸氣廠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:04",
+   "start": 2704.89,
+   "end": 2707.73,
+   "zh": "Double Whammy",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:07",
+   "start": 2707.73,
+   "end": 2711.29,
+   "zh": "需求量很高",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:11",
+   "start": 2711.29,
+   "end": 2716.29,
+   "zh": "二方面FDA管的規格也拉得高",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:16",
+   "start": 2716.29,
+   "end": 2720.53,
+   "zh": "所以很多廠是趕著在追兩個大趨勢",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:20",
+   "start": 2720.53,
+   "end": 2722.53,
+   "zh": "所以我們的Inquiry",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:22",
+   "start": 2722.53,
+   "end": 2724.53,
+   "zh": "雖然我們也跑得比較快",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:24",
+   "start": 2724.53,
+   "end": 2726.85,
+   "zh": "我們也早期投資isolator line",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:26",
+   "start": 2726.85,
+   "end": 2728.49,
+   "zh": "有些廠根本沒有isolator",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:28",
+   "start": 2728.49,
+   "end": 2729.69,
+   "zh": "只有RAPS",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:29",
+   "start": 2729.69,
+   "end": 2732.49,
+   "zh": "所以這方面來說我們是走得蠻快",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:32",
+   "start": 2732.49,
+   "end": 2740.49,
+   "zh": "Domestic OSD QoF定期在北美",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:40",
+   "start": 2740.49,
+   "end": 2744.49,
+   "zh": "onshoring很多很多很多的enquiry",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:44",
+   "start": 2744.49,
+   "end": 2749.49,
+   "zh": "所以我們的Maple Gold廠也是相當忙",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:49",
+   "start": 2749.49,
+   "end": 2754.49,
+   "zh": "在配合客戶給他RFP request for proposal",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:54",
+   "start": 2754.49,
+   "end": 2758.49,
+   "zh": "然後也開始on board這些的所有的客戶",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:45:58",
+   "start": 2758.49,
+   "end": 2761.49,
+   "zh": "所以這方面來說其實這個是兩個大方向",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:01",
+   "start": 2761.49,
+   "end": 2762.09,
+   "zh": "找我看稍等一下看一下",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:02",
+   "start": 2762.09,
+   "end": 2762.59,
+   "zh": "aqui有 0 below, 1 1.1ки 1 20 2 carry 3 10 Q ω 224 Commerce, Q de ε P C E S Q QQ Q2 QSINGING",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:02",
+   "start": 2762.59,
+   "end": 2777.03,
+   "zh": "Boca survey show these. These are basically 90 Also, Q QQ QQ QQQ QQ QQQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ brief",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:17",
+   "start": 2777.03,
+   "end": 2782.25,
+   "zh": "就是關於Rockiciple是 cling right 100",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:23",
+   "start": 2783.75,
+   "end": 2784.85,
+   "zh": "到刑運是跟 pa personally",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:24",
+   "start": 2784.87,
+   "end": 2787.23,
+   "zh": "合作那作為兩家董事長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:28",
+   "start": 2788.43,
+   "end": 2791.71,
+   "zh": "認為就是的是生物製進平台的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:31",
+   "start": 2791.73,
+   "end": 2792.59,
+   "zh": "因素獲利",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:32",
+   "start": 2792.61,
+   "end": 2794.13,
+   "zh": "在寶瑞跟太福股東",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:34",
+   "start": 2794.15,
+   "end": 2795.11,
+   "zh": "之間怎麼去",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:35",
+   "start": 2795.97,
+   "end": 2798.03,
+   "zh": "分 automotive",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:38",
+   "start": 2798.09,
+   "end": 2800.17,
+   "zh": "那未來會不會對",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:40",
+   "start": 2800.33,
+   "end": 2802.35,
+   "zh": "太 induction",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:42",
+   "start": 2802.89,
+   "end": 2803.33,
+   "zh": "prepares",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:43",
+   "start": 2803.95,
+   "end": 2806.15,
+   "zh": "這個情況去有任何的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:46",
+   "start": 2806.15,
+   "end": 2816.21,
+   "zh": "日本中共機構進入緊急時期銷售中心,將要企業研討方式推動,或者截止其旋轉。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:46:56",
+   "start": 2816.21,
+   "end": 2824.01,
+   "zh": "此低於可能問題不過, sectoral問題卻反映,中共美國委員會做計劃今次十月首認識的計劃。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:04",
+   "start": 2824.01,
+   "end": 2831.47,
+   "zh": "Shisoh Sima 的總統 clearly has the international agenda,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:11",
+   "start": 2831.47,
+   "end": 2837.47,
+   "zh": "大份子業務團分開 大份子業務專門賣大份子",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:17",
+   "start": 2837.47,
+   "end": 2843.47,
+   "zh": "包括太福的業務和行銷團隊是在賣我們Rockville的capacity",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:23",
+   "start": 2843.47,
+   "end": 2851.47,
+   "zh": "所以這是一個很清楚的雙方合作的合約跟關係",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:31",
+   "start": 2851.47,
+   "end": 2856.47,
+   "zh": "我們可以借用所謂的保瑞的知名度或太福的技術",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:36",
+   "start": 2856.47,
+   "end": 2859.11,
+   "zh": "而復刻兩地 E kommen de slide",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:39",
+   "start": 2859.11,
+   "end": 2861.43,
+   "zh": "就很多五 pathetic",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:41",
+   "start": 2861.43,
+   "end": 2863.41,
+   "zh": "memory 豐富可能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:43",
+   "start": 2863.41,
+   "end": 2866.29,
+   "zh": "本 wire  fais 率",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:46",
+   "start": 2866.29,
+   "end": 2867.53,
+   "zh": "恐龍讓我們",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:47",
+   "start": 2867.53,
+   "end": 2867.73,
+   "zh": "在手上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:47",
+   "start": 2867.73,
+   "end": 2868.89,
+   "zh": "在 conscience 看右邊",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:48",
+   "start": 2868.89,
+   "end": 2870.17,
+   "zh": "ough ratio",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:50",
+   "start": 2870.17,
+   "end": 2870.31,
+   "zh": "發言說",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:50",
+   "start": 2870.31,
+   "end": 2871.05,
+   "zh": "反轉",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:51",
+   "start": 2871.05,
+   "end": 2871.61,
+   "zh": "在手上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:51",
+   "start": 2871.61,
+   "end": 2872.61,
+   "zh": "那 hora는데",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:52",
+   "start": 2872.61,
+   "end": 2873.17,
+   "zh": "好",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:53",
+   "start": 2873.25,
+   "end": 2873.55,
+   "zh": "那就這樣",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:53",
+   "start": 2873.55,
+   "end": 2873.77,
+   "zh": "絕不要",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:53",
+   "start": 2873.77,
+   "end": 2875.57,
+   "zh": "我們就從這些",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:55",
+   "start": 2875.57,
+   "end": 2877.65,
+   "zh": "收藏一直 compris",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:57",
+   "start": 2877.65,
+   "end": 2878.37,
+   "zh": "得一些",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:47:58",
+   "start": 2878.67,
+   "end": 2881.37,
+   "zh": "mouvement 我們就",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:48:01",
+   "start": 2881.37,
+   "end": 2882.41,
+   "zh": "這些",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:48:02",
+   "start": 2882.41,
+   "end": 2883.31,
+   "zh": "聽起來",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:48:03",
+   "start": 2883.31,
+   "end": 2884.21,
+   "zh": "至少angers 得",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:48:04",
+   "start": 2884.21,
+   "end": 2884.73,
+   "zh": "不要",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:48:04",
+   "start": 2884.73,
+   "end": 2885.57,
+   "zh": "沒有",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:48:35",
+   "start": 2915.57,
+   "end": 2945.57,
+   "zh": "Thermofisher Theromofisher Theromofisher",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:05",
+   "start": 2945.57,
+   "end": 2946.01,
+   "zh": "NOXGY42 STI FACFER",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:06",
+   "start": 2946.01,
+   "end": 2948.01,
+   "zh": "ateur",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:08",
+   "start": 2948.41,
+   "end": 2950.99,
+   "zh": "在把得CENERGY做的更完整的時候",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:11",
+   "start": 2951.01,
+   "end": 2954.73,
+   "zh": "我希望我們雙方公司會有更有密切的合作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:16",
+   "start": 2956.03,
+   "end": 2959.73,
+   "zh": "現在線上暫時沒有其他問題",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:19",
+   "start": 2959.73,
+   "end": 2961.77,
+   "zh": "我想看看BOBBY總跟E질總有沒有",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:21",
+   "start": 2961.79,
+   "end": 2963.37,
+   "zh": "fantasy connection 網上結論",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:23",
+   "start": 2963.39,
+   "end": 2966.33,
+   "zh": "最後總結, 幫我們跟很多投資者分享",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:26",
+   "start": 2966.99,
+   "end": 2969.17,
+   "zh": "謝謝 ogr桑的投資支持",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:29",
+   "start": 2969.69,
+   "end": 2973.13,
+   "zh": "剛剛有提到訂單有部分的遞asonic",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:33",
+   "start": 2973.13,
+   "end": 2975.13,
+   "zh": "我大家是開始做反管管 Affair",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:49:35",
+   "start": 2975.13,
+   "end": 3007.11,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:50:07",
+   "start": 3007.11,
+   "end": 3022.86,
+   "zh": "QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ QQ Q",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "保瑞法說會。US、CA、CDMO、CHC、QoQ、YoY、DLS、YTD、PPQ、Top-20、CAPEX、EPS、COGS、GM、OPEX、OP、NWC、end-3Q26、DS、DP、QC、cGMP、MR、ER、CR。",
+  "hotwords": "保瑞 US CA CDMO CHC QoQ YoY DLS YTD PPQ Top-20 CAPEX EPS COGS GM OPEX OP NWC end-3Q26 DS DP QC cGMP MR ER CR DEA II PFS MUPS SUPPLY",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 17,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 2
+ }
+}
