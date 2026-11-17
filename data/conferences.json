@@ -23702,9 +23702,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/3430-20260923.json",
+   "summarized": true
   },
   {
    "id": "3293-20260923",
