@@ -7763,7 +7763,7 @@
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/2376-20261113.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "8996-20261113",
@@ -13109,7 +13109,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/2356-20261110.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "4953-20261109",
@@ -18632,7 +18632,7 @@
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/6625-20261022.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "4541-20261022",
@@ -19097,7 +19097,7 @@
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/5905-20261021.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "4102-20261021",
@@ -22260,7 +22260,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/8436-20260930.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "8424-20260930",
@@ -22291,7 +22291,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/8424-20260930.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "8147-20260930",
@@ -22449,7 +22449,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/5481-20260930.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "4806-20260930",
@@ -22637,7 +22637,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/2743-20260930.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "2354-20260930",
@@ -22668,7 +22668,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/2354-20260930.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "2007-20260930",
@@ -22888,7 +22888,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/6923-20260929.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "6235-20260929",
