@@ -5211,9 +5211,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/8473-20261117.json",
+   "summarized": true
   },
   {
    "id": "8213-20261117",
@@ -25705,9 +25705,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/2948-20260916.json",
+   "summarized": true
   },
   {
    "id": "2836-20260916",
