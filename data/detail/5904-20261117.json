@@ -1,0 +1,123 @@
+{
+ "id": "5904-20261117",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-17T21:44:49+08:00",
+ "audio_duration_s": 62.6,
+ "timing": {
+  "download_s": 668.0,
+  "extract_s": 0.4,
+  "glossary_s": 123.2,
+  "transcribe_s": 9.1,
+  "postprocess_s": 0.2,
+  "total_s": 800.9
+ },
+ "rtf": 0.145,
+ "char_count": 20,
+ "highlights": [
+  {
+   "text": "3Q26營收為 7,359 百萬元，年增 15.0%。GPM 為 46.6%，年增 0.7%、季增 1.7%。",
+   "ts": "00:00:59"
+  },
+  {
+   "text": "3Q26 OPM 為 17.5%，年增 1.9%、季增 2.1%。NI 為 1,016 百萬元，EPS 為 0.95 元，年增 24.5%。",
+   "ts": "00:00:59"
+  }
+ ],
+ "financials": [
+  {
+   "label": "3Q26 Net Sales",
+   "value": "7,359 百萬元；年增 +15.0%、季增 +6.2%",
+   "src": "簡報 p.4；逐字稿 00:00:59"
+  },
+  {
+   "label": "3Q26 Gross profit",
+   "value": "3,433 百萬元；年增 +16.8%、季增 +10.2%",
+   "src": "簡報 p.4；逐字稿 00:00:59"
+  },
+  {
+   "label": "3Q26 Operating profit",
+   "value": "1,289 百萬元；年增 +28.6%、季增 +20.7%",
+   "src": "簡報 p.4；逐字稿 00:00:59"
+  },
+  {
+   "label": "3Q26 Net income",
+   "value": "1,016 百萬元；年增 +25.6%、季增 +17.1%",
+   "src": "簡報 p.4；逐字稿 00:00:59"
+  },
+  {
+   "label": "3Q26 EPS",
+   "value": "0.95 元；年增 +24.5%、季增 +16.6%",
+   "src": "簡報 p.4；逐字稿 00:00:59"
+  },
+  {
+   "label": "1-3Q26 Net Sales",
+   "value": "21,386 百萬元；年增 +14.1%",
+   "src": "簡報 p.5；逐字稿 00:00:59"
+  },
+  {
+   "label": "1-3Q26 Gross profit",
+   "value": "9,750 百萬元；年增 +17.3%",
+   "src": "簡報 p.5；逐字稿 00:00:59"
+  },
+  {
+   "label": "1-3Q26 Operating profit",
+   "value": "3,587 百萬元；年增 +33.0%",
+   "src": "簡報 p.5；逐字稿 00:00:59"
+  },
+  {
+   "label": "1-3Q26 Net income",
+   "value": "2,873 百萬元；年增 +31.4%",
+   "src": "簡報 p.5；逐字稿 00:00:59"
+  },
+  {
+   "label": "1-3Q26 EPS",
+   "value": "2.70 元；年增 +31.1%",
+   "src": "簡報 p.5；逐字稿 00:00:59"
+  }
+ ],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:59",
+   "start": 59.34,
+   "end": 62.54,
+   "zh": "各位先進午安,歡迎各位參加寶雅20...",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "寶雅*法說會。陳宗成先、OTC、OCT、QoQ、YoY、GPM、OPM、EPS、NI、DIF、OPEX、NPM、YOY、PB、EC、ESL、Safe Harbor Statement、營收、毛利率、營業利益、稅後淨利。",
+  "hotwords": "寶雅* 陳宗成先 OTC OCT QoQ YoY GPM OPM EPS NI DIF OPEX NPM YOY PB EC ESL Safe Harbor Statement 營收 毛利率 營業利益 稅後淨利 每股盈餘 季增 年增 展望",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 17,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-17T21:46:10+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 80.4,
+  "in_tokens": 5116,
+  "out_tokens": 906,
+  "financials_in": 10,
+  "financials_kept": 10,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
