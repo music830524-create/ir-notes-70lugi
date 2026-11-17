@@ -23953,9 +23953,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/1470-20260923.json",
+   "summarized": true
   },
   {
    "id": "1402-20260923",
