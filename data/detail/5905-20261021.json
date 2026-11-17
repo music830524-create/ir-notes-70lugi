@@ -2,7 +2,7 @@
  "id": "5905-20261021",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-04T18:59:31+08:00",
  "audio_duration_s": 455.6,
@@ -16,9 +16,25 @@
  },
  "rtf": 0.811,
  "char_count": 1360,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "南仁湖今年到第二季轉虧為盈，稅後淨利為485萬8千元。",
+   "ts": "00:02:11"
+  }
+ ],
+ "financials": [
+  {
+   "label": "稅後淨利",
+   "value": "485萬8千元",
+   "src": "逐字稿 00:02:18"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "高雄海洋館預計在2029年的第二季營運完工，自點交後營運期為20年。",
+   "ts": "00:07:04"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -824,5 +840,25 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T04:08:41+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 3.7,
+  "in_tokens": 2734,
+  "out_tokens": 196,
+  "financials_in": 1,
+  "financials_kept": 1,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點1",
+   "財務1",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }

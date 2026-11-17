@@ -2,7 +2,7 @@
  "id": "2743-20260930",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-18T00:07:11+08:00",
  "audio_duration_s": 1320.8,
@@ -16,9 +16,38 @@
  },
  "rtf": 0.35,
  "char_count": 3946,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "山富目前資本額為4.68億元，核心業務以出境團體旅遊為主，佔營收超過95%。",
+   "ts": "00:01:42"
+  },
+  {
+   "text": "日本與韓國是最大宗的營收比例，佔將近一半左右；越南行程比去年成長許多。長程線在暑假與秋冬季節有強勁需求，今年表現預估持平。",
+   "ts": "00:03:15"
+  }
+ ],
+ "financials": [
+  {
+   "label": "資本額",
+   "value": "4.68億元",
+   "src": "逐字稿 00:01:42"
+  },
+  {
+   "label": "2026 Q2 EPS",
+   "value": "2.32",
+   "src": "逐字稿 00:01:42"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "2026年Q2的EPS為2.32，希望樂觀一點應該可以跟2025接近。",
+   "ts": "00:13:43"
+  },
+  {
+   "text": "未來展望希望讓內部使用的AI工具可以對外提供給一般消費者使用，並持續深化同業通路與會員紅利點數的結合。",
+   "ts": "00:19:18"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -2296,5 +2325,25 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T04:12:02+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 4.5,
+  "in_tokens": 6431,
+  "out_tokens": 378,
+  "financials_in": 2,
+  "financials_kept": 2,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "財務2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }

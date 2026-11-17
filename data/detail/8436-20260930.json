@@ -2,7 +2,7 @@
  "id": "8436-20260930",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-17T23:27:31+08:00",
  "audio_duration_s": 1563.0,
@@ -16,10 +16,40 @@
  },
  "rtf": 0.494,
  "char_count": 5388,
- "highlights": [],
- "financials": [],
- "outlook": [],
- "qa": [],
+ "highlights": [
+  {
+   "text": "大江銷售產品至 68 個國家，目前產品線涵蓋膠囊、粉末、瓶裝與 Jelly 等，並在台灣、金山、美國設有生產廠區。",
+   "ts": "00:05:23"
+  },
+  {
+   "text": "美國廠目前有三條 bottle 的線，年底之前還會有 TechX 的投資在美國；在 2027 年，PDM 產線應該會進入量產階段。",
+   "ts": "00:06:18"
+  }
+ ],
+ "financials": [
+  {
+   "label": "帳面淨現金",
+   "value": "約 35 億元",
+   "src": "逐字稿 00:20:15"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "年底之前還會有 TechX 的投資在美國，最主要來自於當地市場訂單式的需求。",
+   "ts": "00:06:33"
+  },
+  {
+   "text": "在 2027 年，PDM（PowerShare 或 DigitalShare）應該會進入量產階段。",
+   "ts": "00:06:43"
+  }
+ ],
+ "qa": [
+  {
+   "q": "Jelly 產品在美國市場的接受度與發展情況為何？",
+   "a": "美國市場對於 Jelly 過去多停留在零食，但經解釋水分與營養穩定性的 know-how 後，加上產線規模優勢，目前在 Jelly 市場至少還有一年以上的成本優勢。近期全美做益生菌的一家公司也下單 Jelly 產品結合腸道健康。",
+   "ts": "00:21:41"
+  }
+ ],
  "transcript": [
   {
    "speaker": "發言人",
@@ -3624,5 +3654,25 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 3
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T04:10:48+08:00",
+  "calls": 2,
+  "retries": 1,
+  "seconds": 39.6,
+  "in_tokens": 8789,
+  "out_tokens": 440,
+  "financials_in": 1,
+  "financials_kept": 1,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "財務1",
+   "問答1"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }

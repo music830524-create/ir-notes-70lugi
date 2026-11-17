@@ -219,10 +219,10 @@
  },
  "sections_meta": {
   "model": "gemini-3.5-flash-lite",
-  "generated_at": "2026-11-18T02:30:53+08:00",
+  "generated_at": "2026-11-18T04:07:53+08:00",
   "calls": 1,
   "retries": 0,
-  "seconds": 8.4,
+  "seconds": 3.3,
   "in_tokens": 1351,
   "out_tokens": 28,
   "financials_in": 0,

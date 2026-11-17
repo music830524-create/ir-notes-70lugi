@@ -2,7 +2,7 @@
  "id": "2354-20260930",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-17T23:28:41+08:00",
  "audio_duration_s": 2093.5,
@@ -16,9 +16,53 @@
  },
  "rtf": 0.316,
  "char_count": 7290,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "截止去年為止的全年營收達到新台幣的 1,562 億，約台股的美元在差不多 50 億上下。",
+   "ts": "00:02:14"
+  },
+  {
+   "text": "公司第二季盈餘每股 EPS 0.63 元，毛利率 4.03%，營業利益 7.13%，淨利率 2.89%。",
+   "ts": "00:19:09"
+  }
+ ],
+ "financials": [
+  {
+   "label": "2025年全年營收",
+   "value": "1,562 億元",
+   "src": "逐字稿 00:02:14"
+  },
+  {
+   "label": "2026年第二季每股盈餘 EPS",
+   "value": "0.63 元",
+   "src": "逐字稿 00:19:04"
+  },
+  {
+   "label": "2026年第二季毛利率",
+   "value": "4.03%",
+   "src": "逐字稿 00:19:17"
+  },
+  {
+   "label": "2026年第二季營業利益率",
+   "value": "7.13%",
+   "src": "逐字稿 00:19:17"
+  },
+  {
+   "label": "2026年第二季淨利率",
+   "value": "2.89%",
+   "src": "逐字稿 00:19:35"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "美國肯塔基州的核心工廠預計在今年第四季開始有機會做試產，長遠會放點一些比較具高效還有高毛利率的核心自動訊產品，包含先進的 AI 裝置等。",
+   "ts": "00:07:14"
+  },
+  {
+   "text": "美國工廠預期在投產之後的一到兩年之內，就可以達到本身的一個平衡點。",
+   "ts": "00:08:45"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -3232,5 +3276,24 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 2
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T04:12:56+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 33.5,
+  "in_tokens": 9626,
+  "out_tokens": 560,
+  "financials_in": 5,
+  "financials_kept": 5,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
