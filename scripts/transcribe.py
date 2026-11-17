@@ -50,18 +50,34 @@ def download_stream(url, dst_dir, stem):
         raise RuntimeError("yt-dlp 沒有輸出檔")
     return max(files, key=lambda p: p.stat().st_size)
 
-def download(url, dst, tries=5):
+def download(url, dst, tries=8):
+    """下載直接 mp4。伺服器中途斷線時用 Range 從斷點續傳，並核對 Content-Length，避免拿到半截檔。"""
     url = encode_url(url)
+    total = 0
+    if dst.exists(): dst.unlink()
     for i in range(1, tries + 1):
+        have = dst.stat().st_size if dst.exists() else 0
         try:
-            log(f"download try {i}: {url}")
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-            with urllib.request.urlopen(req, timeout=60) as r, open(dst, "wb") as f:
-                while True:
-                    b = r.read(1 << 20)
-                    if not b: break
-                    f.write(b)
-            if dst.stat().st_size > 100000:
+            log(f"download try {i}: {url} (已有 {have/1e6:.1f}MB)")
+            h = {"User-Agent": "Mozilla/5.0"}
+            if have: h["Range"] = f"bytes={have}-"
+            req = urllib.request.Request(url, headers=h)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                cr = r.headers.get("Content-Range") or ""
+                if have and r.status == 206 and "/" in cr and cr.split("/")[-1].isdigit():
+                    total = int(cr.split("/")[-1]); mode = "ab"
+                else:
+                    total = int(r.headers.get("Content-Length") or 0); mode = "wb"
+                with open(dst, mode) as f:
+                    while True:
+                        b = r.read(1 << 20)
+                        if not b: break
+                        f.write(b)
+            size = dst.stat().st_size
+            if total and size < total:
+                log(f"download 不完整 {size/1e6:.1f}/{total/1e6:.1f}MB，續傳")
+                time.sleep(5 * i); continue
+            if size > 100000:
                 return
         except Exception as e:
             log(f"download failed: {e}")
