@@ -2,7 +2,7 @@
  "id": "1533-20261022",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-04T19:22:30+08:00",
  "audio_duration_s": 804.5,
@@ -16,9 +16,48 @@
  },
  "rtf": 1.954,
  "char_count": 2361,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "今年到第三季營收是38.15千萬左右，其中電動車營收佔比從2024年的38%逐年成長到今年第三季。",
+   "ts": "00:01:23"
+  },
+  {
+   "text": "2026年1到6月營收大概27億，毛利率2025年約30%，2026年約28%左右，主要因電動車營收成長及電動車營收毛利率約在20幾%左右影響。",
+   "ts": "00:02:10"
+  }
+ ],
+ "financials": [
+  {
+   "label": "2026年第三季營收",
+   "value": "38.15千萬左右",
+   "src": "逐字稿 00:01:23"
+  },
+  {
+   "label": "2026年1-6月營收",
+   "value": "約27億",
+   "src": "逐字稿 00:02:13"
+  },
+  {
+   "label": "2025年毛利率",
+   "value": "約30%",
+   "src": "逐字稿 00:02:28"
+  },
+  {
+   "label": "2026年毛利率",
+   "value": "約28%",
+   "src": "逐字稿 00:02:30"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "車王電集團將朝向類控股公司發展，許多事業單位將逐步被spott out出去，甚至在國內外去做上市櫃。",
+   "ts": "00:04:15"
+  },
+  {
+   "text": "在日本市場，今年底有110幾輛車在運行，到了明年準備逐步邁向有機會往200輛來接近。",
+   "ts": "00:12:09"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -1544,5 +1583,25 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T02:30:24+08:00",
+  "calls": 2,
+  "retries": 1,
+  "seconds": 34.7,
+  "in_tokens": 4200,
+  "out_tokens": 514,
+  "financials_in": 4,
+  "financials_kept": 4,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "財務4",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }

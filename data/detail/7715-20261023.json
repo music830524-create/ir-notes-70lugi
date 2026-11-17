@@ -2,7 +2,7 @@
  "id": "7715-20261023",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-04T16:03:33+08:00",
  "audio_duration_s": 27.5,
@@ -64,5 +64,25 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T02:28:44+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 14.5,
+  "in_tokens": 764,
+  "out_tokens": 28,
+  "financials_in": 0,
+  "financials_kept": 0,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點0",
+   "財務0",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
