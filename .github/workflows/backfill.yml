@@ -1,12 +1,16 @@
 name: backfill
-# 連續回補：近 90 天(略過最近 4 天，那些交給 auto)還沒轉逐字稿、有 mp4 的場次，
+# 連續回補：清單內所有日期(預設 3650 天＝全部，略過最近 4 天，那些交給 auto)還沒轉逐字稿、有 mp4 的場次，
 # 由新到舊每輪平行 BATCH 場；每場轉完立刻整理(Gemini)並 push、更新清單狀態；
 # finalize 依序補整理沒整理成功的場次，若還有剩就自動觸發下一輪，直到轉完。
 # 失敗場次記在 data/retry，3 次後跳過，不會無限迴圈。
+# 備援：每 30 分鐘排程叫醒一次；若已有一輪在跑，concurrency 會讓它排隊等，不會同時重複跑。
+#       鏈條斷掉(例如某步逾時被取消)時，下一個排程會自動接上。
 on:
+  schedule:
+    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
-      days: {description: "回補最近幾天", default: "90"}
+      days: {description: "回補最近幾天(3650=清單全部)", default: "3650"}
       batch: {description: "每輪平行幾場", default: "18"}
       chain: {description: "還有剩是否自動接下一輪", default: "true"}
 permissions:
@@ -16,7 +20,7 @@ concurrency:
   group: backfill
   cancel-in-progress: false
 env:
-  DAYS: ${{ github.event.inputs.days || '90' }}
+  DAYS: ${{ github.event.inputs.days || '3650' }}
   BATCH: ${{ github.event.inputs.batch || '18' }}
   CHAIN: ${{ github.event.inputs.chain || 'true' }}
 jobs:
@@ -88,7 +92,7 @@ jobs:
     needs: [plan, run]
     if: always()
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
         with: {ref: main}
@@ -96,6 +100,7 @@ jobs:
         with: {python-version: "3.11"}
       - name: 依序補整理(最多 15 場，避免 Gemini 429)
         continue-on-error: true
+        timeout-minutes: 60
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
@@ -116,6 +121,8 @@ jobs:
           [ -z "$IDS" ] && exit 0
           for id in ${IDS//,/ }; do python scripts/summarize.py --ids "$id" || true; python scripts/record.py "$id"; sleep 20; done
       - name: Commit
+        if: always()
+        continue-on-error: true
         run: |
           pip install -q requests beautifulsoup4 lxml
           git config user.name "github-actions[bot]"
@@ -130,7 +137,7 @@ jobs:
           done
           exit 1
       - name: 還有剩就接下一輪
-        if: env.CHAIN == 'true'
+        if: always() && env.CHAIN == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
