@@ -1,0 +1,96 @@
+{
+ "id": "5481-20260930",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-17T22:19:47+08:00",
+ "audio_duration_s": 49.7,
+ "timing": {
+  "download_s": 219.1,
+  "extract_s": 0.2,
+  "glossary_s": 0.0,
+  "transcribe_s": 23.7,
+  "postprocess_s": 0.2,
+  "total_s": 243.2
+ },
+ "rtf": 0.477,
+ "char_count": 228,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:01",
+   "start": 1.14,
+   "end": 16.14,
+   "zh": "各位投資先進午安,新華泰富股份有限公司法輪說明會正式開始。今天非常榮幸可以邀請到黃泰董事長,帶大家一同瞭解公司的營運概況。接下來,有請長官做分享,謝謝。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:16",
+   "start": 16.14,
+   "end": 27.64,
+   "zh": "大家好,我是新華泰股份有限公司的董事長黃泰。今天由我來跟各位報告跟說明115年度法人說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:27",
+   "start": 27.64,
+   "end": 43.14,
+   "zh": "今天總共會分成幾個項目來跟各位聖經來做報告。第一個是公司的簡介與嚴格,第二個是營業概況,第三個是ESG的行動,第四個是未來展望,第五個是Q&A的規劃時間。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:43",
+   "start": 43.14,
+   "end": 46.58,
+   "zh": "首先先跟各位報告一下我們公司的警戒與嚴格",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:46",
+   "start": 46.58,
+   "end": 49.58,
+   "zh": "在1990年的時候",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "新華法說會。Safe Harbor Statement、EPS、YoY、QoQ、營收、毛利率、營業利益、稅後淨利、每股盈餘、季增、年增、展望。",
+  "hotwords": "新華 Safe Harbor Statement EPS YoY QoQ 營收 毛利率 營業利益 稅後淨利 每股盈餘 季增 年增 展望",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 17,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-17T22:20:01+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 6.7,
+  "in_tokens": 825,
+  "out_tokens": 28,
+  "financials_in": 0,
+  "financials_kept": 0,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點0",
+   "財務0",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
