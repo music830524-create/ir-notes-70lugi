@@ -2,7 +2,7 @@
  "id": "1506-20260923",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-18T04:59:23+08:00",
  "audio_duration_s": 826.5,
@@ -16,9 +16,41 @@
  },
  "rtf": 0.566,
  "char_count": 2063,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "正道生產據點有台灣台南廠與馬來西亞廠，台灣廠生產金屬加工類與系統櫃新事業，馬來西亞廠以金屬加工產品為主。",
+   "ts": "00:01:33"
+  },
+  {
+   "text": "金屬加工產品包含引擎活塞、連桿、轉向系統、底盤件及冷凍壓縮機與工業用零件，客戶群涵蓋歐一廠、國內車廠及馬來西亞車廠等。",
+   "ts": "00:02:22"
+  },
+  {
+   "text": "正道是美國本土以外全世界唯一授權使用NASA高溫鋁合金的工廠，也是唯一實機量產的工廠。",
+   "ts": "00:05:53"
+  },
+  {
+   "text": "鋁價上漲至6月的3700美金影響毛利與獲利，已跟客戶協調漲價，後續獲利將好轉；系統櫃則受央行政策發酵影響房市表現未如預期。",
+   "ts": "00:12:22"
+  }
+ ],
+ "financials": [
+  {
+   "label": "鋁價",
+   "value": "3700 美金",
+   "src": "逐字稿 00:12:24"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "金屬加工部分因鋁價漲到6月的3700美金影響毛利和獲利，已跟客戶進行協調漲價，後續獲利會好轉。",
+   "ts": "00:12:22"
+  },
+  {
+   "text": "系統櫃的部分由於受到央行政策發酵影響房市交易，表現也未如預期並影響了獲利。",
+   "ts": "00:12:35"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -1152,5 +1184,24 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T05:38:26+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 6.1,
+  "in_tokens": 3688,
+  "out_tokens": 488,
+  "financials_in": 1,
+  "financials_kept": 1,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "財務1",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
