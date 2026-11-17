@@ -50,39 +50,52 @@ def download_stream(url, dst_dir, stem):
         raise RuntimeError("yt-dlp 沒有輸出檔")
     return max(files, key=lambda p: p.stat().st_size)
 
-def download(url, dst, tries=8):
-    """下載直接 mp4。伺服器中途斷線時用 Range 從斷點續傳，並核對 Content-Length，避免拿到半截檔。"""
+def download(url, dst, tries=40, chunk=16 << 20, deadline_min=150):
+    """下載直接 mp4。證交所伺服器常卡住或中途斷線：分段 Range 下載、30 秒沒資料就重連續傳，
+    核對 Content-Range 總長度，避免拿到半截檔(半截檔會被誤當成很短的逐字稿)。"""
     url = encode_url(url)
-    total = 0
     if dst.exists(): dst.unlink()
-    for i in range(1, tries + 1):
+    total = 0
+    mode = "ab"
+    stalls = 0
+    t_end = time.time() + deadline_min * 60
+    last_log = 0
+    while stalls < tries and time.time() < t_end:
         have = dst.stat().st_size if dst.exists() else 0
+        if total and have >= total:
+            break
+        end = have + chunk - 1
+        h = {"User-Agent": "Mozilla/5.0", "Range": f"bytes={have}-{end}"}
+        got = 0
         try:
-            log(f"download try {i}: {url} (已有 {have/1e6:.1f}MB)")
-            h = {"User-Agent": "Mozilla/5.0"}
-            if have: h["Range"] = f"bytes={have}-"
             req = urllib.request.Request(url, headers=h)
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=30) as r:
                 cr = r.headers.get("Content-Range") or ""
-                if have and r.status == 206 and "/" in cr and cr.split("/")[-1].isdigit():
+                if r.status == 206 and "/" in cr and cr.split("/")[-1].isdigit():
                     total = int(cr.split("/")[-1]); mode = "ab"
-                else:
-                    total = int(r.headers.get("Content-Length") or 0); mode = "wb"
+                else:  # 不支援 Range：整檔重抓
+                    total = int(r.headers.get("Content-Length") or 0); mode = "wb"; have = 0
                 with open(dst, mode) as f:
                     while True:
                         b = r.read(1 << 20)
                         if not b: break
-                        f.write(b)
-            size = dst.stat().st_size
-            if total and size < total:
-                log(f"download 不完整 {size/1e6:.1f}/{total/1e6:.1f}MB，續傳")
-                time.sleep(5 * i); continue
-            if size > 100000:
-                return
+                        f.write(b); got += len(b)
         except Exception as e:
-            log(f"download failed: {e}")
-        time.sleep(5 * i)
-    raise RuntimeError("download failed")
+            if got == 0: log(f"download 卡住/失敗 @ {have/1e6:.1f}MB: {type(e).__name__}: {str(e)[:80]}")
+        if got == 0:
+            stalls += 1; time.sleep(min(30, 3 * stalls))
+        else:
+            stalls = 0
+        size = dst.stat().st_size if dst.exists() else 0
+        if time.time() - last_log > 60:
+            log(f"download 進度 {size/1e6:.1f}/{total/1e6:.1f}MB"); last_log = time.time()
+        if mode == "wb" and got and (not total or size >= total):
+            break
+    size = dst.stat().st_size if dst.exists() else 0
+    if size > 100000 and (not total or size >= total):
+        log(f"download 完成 {size/1e6:.1f}MB")
+        return
+    raise RuntimeError(f"download failed: {size/1e6:.1f}/{total/1e6:.1f}MB")
 
 def run_one(c, model_name, model_obj, cc, opt):
     cid = c["id"]
