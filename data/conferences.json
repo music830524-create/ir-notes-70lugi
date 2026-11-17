@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T13:29:51+00:00",
+ "generated_at": "2026-11-17T22:26:33+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -5065,7 +5065,7 @@
    "date": "2026-11-17",
    "time": "15:30",
    "market": "上市",
-   "industry": null,
+   "industry": "金融保險業",
    "host": null,
    "host_source": null,
    "place": "玉山金控總部",
@@ -5075,17 +5075,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/288420261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://www.zucast.com/webcast/nAEwyG2y",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https:// www.esunfhc.com/zh-tw/investor-relations/ir-events/investor-conference",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5127,7 +5128,7 @@
    "date": "2026-11-17",
    "time": "15:00",
    "market": "上市",
-   "industry": null,
+   "industry": "運動休閒",
    "host": "凱基證券",
    "host_source": "mops_summary",
    "place": "線上法說會",
@@ -5137,17 +5138,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/991420261117E003.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://irconference.twse.com.tw/9914_29_20261117_ch.mp4",
+    "kind": "mp4",
+    "source": "twse_vod"
    },
    "website": "https://www.merida-bikes.com/zh-tw/p/tou-zi-ren-zi-xuninvestors/tou-zi-ren-zi-xun-352.html",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -5158,7 +5159,7 @@
    "date": "2026-11-17",
    "time": "14:50",
    "market": "上櫃",
-   "industry": null,
+   "industry": "電腦及週邊設備業",
    "host": null,
    "host_source": null,
    "place": "證券櫃檯買賣中心11樓多功能資訊媒體區 (台北市中正區羅斯福路二段100號11樓)",
@@ -5168,17 +5169,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/823420261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://www.youtube.com/watch?v=0O5O2fnTM4s",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.nexcom.com.tw/About/InvestorRelations#",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5189,7 +5191,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上市",
-   "industry": null,
+   "industry": "綠能環保",
    "host": "兆豐證券",
    "host_source": "mops_summary",
    "place": "台北市忠孝東路二段95號13樓1301會議室",
@@ -5199,17 +5201,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/847320261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://irconference.twse.com.tw/8473_14_20261117_ch.mp4",
+    "kind": "mp4",
+    "source": "twse_vod"
    },
    "website": "https://mfw.com.tw/investor/",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -5220,7 +5222,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上市",
-   "industry": null,
+   "industry": "電子零組件業",
    "host": "福邦證券",
    "host_source": "mops_summary",
    "place": "福邦證券 台北市忠孝西路一段6號14樓",
@@ -5230,17 +5232,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/821320261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://drive.google.com/file/d/196jDyIRL48ncRzYk7BOO4YAF49FWJn9w/view",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.tpt-pcb.com.tw/",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5344,7 +5347,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上市",
-   "industry": null,
+   "industry": "半導體業",
    "host": "永豐金證券",
    "host_source": "mops_summary",
    "place": "https://reurl.cc/5Xn4o6 webex號碼：2516 806 0689 webex密碼：6909",
@@ -5354,17 +5357,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/690920261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://youtu.be/r9DU_UInpPg",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.tricorntech.com/investor/Shareholders/",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5375,7 +5379,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上櫃",
-   "industry": null,
+   "industry": "生技醫療業",
    "host": "台新證券",
    "host_source": "mops_summary",
    "place": "台北市建國北路一段96號13樓",
@@ -5385,17 +5389,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/661220261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://www.youtube.com/watch?v=Fvtc8u695EY",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": null,
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5406,7 +5411,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上市",
-   "industry": null,
+   "industry": "電腦及週邊設備業",
    "host": null,
    "host_source": null,
    "place": "線上會議",
@@ -5416,17 +5421,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/657920261116E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://youtu.be/tQ4O0I_vCsg",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.aaeon.com/tw/article/detail/investors-conference",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5437,7 +5443,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上櫃",
-   "industry": null,
+   "industry": "電子零組件業",
    "host": "統一證券",
    "host_source": "mops_summary",
    "place": "統一證券大樓13樓1302會議室(台北市松山區東興路8號13樓)",
@@ -5447,17 +5453,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/653820261116E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://irconference.twse.com.tw/6538_10_20261117_ch.mp4",
+    "kind": "mp4",
+    "source": "twse_vod"
    },
    "website": "https://www.bch.com.tw/investment",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -5499,7 +5505,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上櫃",
-   "industry": null,
+   "industry": "建材營造",
    "host": "富邦證券",
    "host_source": "mops_summary",
    "place": "台北市仁愛路4段169號2樓(富邦金融大樓2F會議室)",
@@ -5509,17 +5515,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/521320261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://youtu.be/4GrGt4LqK1w",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.yeashin.com.tw",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5592,7 +5599,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上櫃",
-   "industry": null,
+   "industry": "電子零組件業",
    "host": "福邦證券",
    "host_source": "mops_summary",
    "place": "福邦證券 台北市忠孝西路一段6號14樓",
@@ -5602,17 +5609,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/327620261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://drive.google.com/file/d/196jDyIRL48ncRzYk7BOO4YAF49FWJn9w/view",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.tht-pcb.com.tw/Corporation_info.html",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5623,7 +5631,7 @@
    "date": "2026-11-17",
    "time": "14:30",
    "market": "上市",
-   "industry": null,
+   "industry": "汽車工業",
    "host": "凱基證券",
    "host_source": "mops_summary",
    "place": "凱基證券(台北市中山區明水路700號12樓)",
@@ -5633,17 +5641,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/222820261116E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://pse.is/9vnyv4",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.irf.biz/index.html",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5747,7 +5756,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上市",
-   "industry": null,
+   "industry": "通信網路業",
    "host": "台新證券",
    "host_source": "mops_summary",
    "place": "臺北市大安區敦化南路二段97號11樓",
@@ -5757,17 +5766,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/642620261113E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://www.youtube.com/watch?v=RYKTegSv7Y8",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.nextapogee.com.tw/ch/news_detail.php?Sn=98",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5840,7 +5850,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上櫃",
-   "industry": null,
+   "industry": "電腦及週邊設備業",
    "host": null,
    "host_source": null,
    "place": "櫃買中心11樓多功能資訊媒體區(台北市中正區羅斯福路二段100號11樓)",
@@ -5850,17 +5860,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/547420261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://www.youtube.com/watch?v=FovhhMIzP1Q",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": null,
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5871,7 +5882,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上市",
-   "industry": null,
+   "industry": "光電業",
    "host": null,
    "host_source": null,
    "place": "康和綜合證券總公司B2會議室 台北市信義區基隆路一段176號B2",
@@ -5881,17 +5892,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/524320261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://irconference.twse.com.tw/5243_23_20261117_ch.mp4",
+    "kind": "mp4",
+    "source": "twse_vod"
    },
    "website": "https://www.eson.tw/index.php?c=category&id=37",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -5933,7 +5944,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上櫃",
-   "industry": null,
+   "industry": "通信網路業",
    "host": null,
    "host_source": null,
    "place": "櫃買中心11樓多功能資訊媒體區(台北市羅斯福路二段100號11樓)",
@@ -5943,17 +5954,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/355820261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://www.youtube.com/watch?v=wzOuMFHWK4o",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": null,
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5964,7 +5976,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上櫃",
-   "industry": null,
+   "industry": "通信網路業",
    "host": null,
    "host_source": null,
    "place": "新竹縣湖口鄉新竹工業區漢陽路165號",
@@ -5974,17 +5986,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/315220261113E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://youtu.be/vOD3pAP_lPs",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.acxc.com.tw/significant",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5995,7 +6008,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上櫃",
-   "industry": null,
+   "industry": "電腦及週邊設備業",
    "host": null,
    "host_source": null,
    "place": "櫃買中心11樓多功能資訊媒體區(台北市中正區羅斯福路二段100號11樓)",
@@ -6005,17 +6018,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/308820261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://vimeopro.com/tpex/investor2026/video/1247543774",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.axiomtek.com.tw/about-us/financials",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6088,7 +6102,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上市",
-   "industry": null,
+   "industry": "半導體業",
    "host": "福邦證券",
    "host_source": "mops_summary",
    "place": "新竹豐邑喜來登大飯店東館3F梅花廳 (新竹縣竹北市光明六路東一段265號3F)",
@@ -6098,17 +6112,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/233820261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://youtu.be/4sn0VAgWjJ0",
+    "kind": "offsite",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.tmcnet.com.tw/tw/Investors/Conference",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -6119,7 +6134,7 @@
    "date": "2026-11-17",
    "time": "14:00",
    "market": "上市",
-   "industry": null,
+   "industry": "化學工業",
    "host": "中國信託證券",
    "host_source": "mops_summary",
    "place": "線上法說會",
@@ -6129,17 +6144,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/173020261117E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://irconference.twse.com.tw/1730_11_20261117_ch.mp4",
+    "kind": "mp4",
+    "source": "twse_vod"
    },
    "website": "https://www.farcent.com.tw/investors03-3",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -6522,7 +6537,7 @@
    "date": "2026-11-17",
    "time": "08:00",
    "market": "上市",
-   "industry": null,
+   "industry": "食品工業",
    "host": "台新證券",
    "host_source": "mops_summary",
    "place": "線上法說會",
@@ -6532,17 +6547,18 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/121620261116E001.pdf"
    },
    "video": {
-    "url": null,
-    "kind": null,
-    "source": null
+    "url": "https://ir.sp88.tw/docs/20261117CN.mp4",
+    "kind": "mp4",
+    "source": "twse_vod",
+    "offsite": true
    },
    "website": "https://www.uni-president.com.tw/invest/index.html",
    "in_mops": true,
-   "in_twse_vod": false,
+   "in_twse_vod": true,
    "held": true,
-   "has_video": false,
+   "has_video": true,
    "has_slides": true,
-   "transcript_status": "none",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -11132,18 +11148,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/294920261111E001.pdf"
    },
    "video": {
-    "url": "https://drive.google.com/file/d/1uWuYfXbhH-1XZAXvJbewBkDmRSfK8VCf/view?usp=sharing",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.hhgalaxy.com/ir/investor/",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -11164,18 +11179,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/457620261111E002.pdf"
    },
    "video": {
-    "url": "https://youtu.be/t0HIUskq51s",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.hiwinmikro.tw/zh/investor/shareholder",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -11414,18 +11428,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/696220261111E001.pdf"
    },
    "video": {
-    "url": "https://www.youtube.com/watch?v=Hxk1c1cnmbQ",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.ilitekholding.com/investors/shareholders/conference",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -11663,18 +11676,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/247820261111E001.pdf"
    },
    "video": {
-    "url": "https://youtu.be/JwCe_B6Ho9c",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": null,
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -11788,18 +11800,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/615520261110E001.pdf"
    },
    "video": {
-    "url": "https://youtu.be/8EAQr78AmHA?si=UKsQkSut_eUIc52J",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.kingcore.com/tw/investorarea-65-76-page76",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -11851,16 +11862,15 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/285520261111E001.pdf"
    },
    "video": {
-    "url": "https://promote.pscnet.com.tw/html/test/2855-1151111.mp4",
-    "kind": "mp4",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.pscnet.com.tw/",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/2855-20261111.json",
@@ -12193,18 +12203,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/690320261110E001.pdf"
    },
    "video": {
-    "url": "https://jiuhan.com.tw/conference",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://jiuhan.com.tw/conference",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -12225,15 +12234,15 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/689420261110E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/6894_12_20261110_ch.mp4",
-    "kind": "mp4",
-    "source": "twse_vod"
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.recotech.com.tw/zh-tw/invest/finance/earning-results-conference",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/6894-20261110.json",
@@ -12349,15 +12358,15 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/302620261110E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/3026_38_20261110_ch.mp4",
-    "kind": "mp4",
-    "source": "twse_vod"
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.holystone.com.tw",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/3026-20261110.json",
@@ -12442,18 +12451,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/204920261110E001.pdf"
    },
    "video": {
-    "url": "https://www.hiwin.tw/stock/stock_video.aspx",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.hiwin.tw",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -12474,15 +12482,15 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/147620261110E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/1476_75_20261110_ch.mp4",
-    "kind": "mp4",
-    "source": "twse_vod"
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.eclat.com.tw/zh-tw/investors/events-presentations/",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/1476-20261110.json",
@@ -12598,18 +12606,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/534420261110E001.pdf"
    },
    "video": {
-    "url": "https://drive.google.com/file/d/1Nr8O3mbk1M55qHhitvqptmDcBR_wWjj_/view?usp=drivesdk",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": null,
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -12661,18 +12668,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/496120261110E001.pdf"
    },
    "video": {
-    "url": "https://www.fitipower.com/investor/quarterly-reports",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.fitipower.com/investor/quarterly-reports",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -12693,18 +12699,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/301720261110E001.pdf"
    },
    "video": {
-    "url": "https://www.youtube.com/watch?v=x35E7oZ4SCA",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.avc.co",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -12725,15 +12730,15 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/248020261109E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/2480_36_20261110_ch.mp4",
-    "kind": "mp4",
-    "source": "twse_vod"
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.sti.com.tw/web/official/earnings-call",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/2480-20261110.json",
@@ -12756,15 +12761,15 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/242020261109E001.pdf"
    },
    "video": {
-    "url": "https://irconference.twse.com.tw/2420_18_20261110_ch.mp4",
-    "kind": "mp4",
-    "source": "twse_vod"
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.zippy.com/tw/02_news_liststatic.aspx",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
    "transcript_status": "done",
    "detail": "detail/2420-20261110.json",
@@ -13159,18 +13164,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/696120261109E001.pdf"
    },
    "video": {
-    "url": "https://www.youtube.com/watch?v=aCE-quLCcIE&feature=youtu.be",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://info.gounitravel.com/category/zh-tw/investors/dharma?fr=cg21616C0201M01",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -13191,18 +13195,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/645620261109E001.pdf"
    },
    "video": {
-    "url": "https://youtu.be/UtwrB4tBIZo",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.gis-touch.com/c/ir_events.php",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -13378,18 +13381,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/695220261109E001.pdf"
    },
    "video": {
-    "url": "https://www.dawushan.com.tw/shareholder?category=inverstors-conference",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.dawushan.com.tw/shareholder?category=inverstors-conference",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -13410,18 +13412,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/679920261109E002.pdf"
    },
    "video": {
-    "url": "https://www.youtube.com/watch?v=jBUUMUM02ng&feature=youtu.be",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.m3tekic.com/",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
@@ -13442,18 +13443,17 @@
     "en": "https://mopsov.twse.com.tw/nas/STR/612120261109E001.pdf"
    },
    "video": {
-    "url": "https://youtu.be/qDQkmMG_J8I",
-    "kind": "offsite",
-    "source": "twse_vod",
-    "offsite": true
+    "url": null,
+    "kind": null,
+    "source": null
    },
    "website": "https://www.simplo.com.tw",
    "in_mops": true,
-   "in_twse_vod": true,
+   "in_twse_vod": false,
    "held": true,
-   "has_video": true,
+   "has_video": false,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "none",
    "detail": null,
    "summarized": false
   },
