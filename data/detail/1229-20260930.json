@@ -1,0 +1,80 @@
+{
+ "id": "1229-20260930",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-17T22:22:56+08:00",
+ "audio_duration_s": 61.5,
+ "timing": {
+  "download_s": 461.1,
+  "extract_s": 0.1,
+  "glossary_s": 0.0,
+  "transcribe_s": 12.6,
+  "postprocess_s": 0.2,
+  "total_s": 473.9
+ },
+ "rtf": 0.205,
+ "char_count": 116,
+ "highlights": [],
+ "financials": [],
+ "outlook": [],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:35",
+   "start": 35.47,
+   "end": 45.47,
+   "zh": "各位凱基的投資先進,大家午安。我是凱基的法業EVA,歡迎各位參加今天聯華實業控股股份有限公司的法人說明會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:45",
+   "start": 45.47,
+   "end": 56.47,
+   "zh": "我們今天非常榮幸可以邀請到聯華實業的徐肇華幕僚長以及代理發言人顏文清財務長兩位長官來到線上。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:56",
+   "start": 56.47,
+   "end": 60.47,
+   "zh": "接下來我們就把時間交給公司,謝謝。",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "聯華法說會。Safe Harbor Statement、EPS、YoY、QoQ、營收、毛利率、營業利益、稅後淨利、每股盈餘、季增、年增、展望。",
+  "hotwords": "聯華 Safe Harbor Statement EPS YoY QoQ 營收 毛利率 營業利益 稅後淨利 每股盈餘 季增 年增 展望",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 17,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-17T22:23:18+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 9.2,
+  "in_tokens": 727,
+  "out_tokens": 28,
+  "financials_in": 0,
+  "financials_kept": 0,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點0",
+   "財務0",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
