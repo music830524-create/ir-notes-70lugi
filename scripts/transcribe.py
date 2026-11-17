@@ -67,10 +67,12 @@ def download(url, dst, tries=40, chunk=16 << 20, deadline_min=150):
         end = have + chunk - 1
         h = {"User-Agent": "Mozilla/5.0", "Range": f"bytes={have}-{end}"}
         got = 0
+        st = crng = clen = None
         try:
             req = urllib.request.Request(url, headers=h)
             with urllib.request.urlopen(req, timeout=30) as r:
                 cr = r.headers.get("Content-Range") or ""
+                st, crng, clen = r.status, cr, r.headers.get("Content-Length")
                 if r.status == 206 and "/" in cr and cr.split("/")[-1].isdigit():
                     total = int(cr.split("/")[-1]); mode = "ab"
                 else:  # 不支援 Range：整檔重抓
@@ -83,7 +85,10 @@ def download(url, dst, tries=40, chunk=16 << 20, deadline_min=150):
         except Exception as e:
             if got == 0: log(f"download 卡住/失敗 @ {have/1e6:.1f}MB: {type(e).__name__}: {str(e)[:80]}")
         if got == 0:
-            stalls += 1; time.sleep(min(30, 3 * stalls))
+            stalls += 1
+            if stalls <= 3 or stalls % 10 == 0:
+                log(f"download 沒拿到資料 (第 {stalls} 次) @ {have/1e6:.1f}MB status={st} range={crng!r} len={clen!r}")
+            time.sleep(min(30, 3 * stalls))
         else:
             stalls = 0
         size = dst.stat().st_size if dst.exists() else 0
