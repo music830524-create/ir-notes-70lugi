@@ -17,6 +17,7 @@ on:
         default: ""
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: auto
   cancel-in-progress: false
@@ -148,3 +149,21 @@ jobs:
             sleep 5
           done
           exit 1
+  kick-backfill:
+    # 第二道備援：backfill 沒在跑也沒在排隊，就叫它起來(backfill 自己也有每 30 分鐘排程)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 確認 backfill 有在跑
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          N=0
+          for st in in_progress queued pending waiting; do
+            c=$(gh run list -R "$GITHUB_REPOSITORY" -w backfill.yml -s $st -L 5 --json databaseId -q 'length')
+            N=$((N + c))
+          done
+          echo "backfill 進行中/排隊中: $N"
+          if [ "$N" = "0" ]; then
+            gh workflow run backfill.yml -R "$GITHUB_REPOSITORY" --ref main && echo "已啟動 backfill"
+          fi
