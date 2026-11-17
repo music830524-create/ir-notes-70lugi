@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T18:35:49+00:00",
+ "generated_at": "2026-11-17T02:58:23+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -771,6 +771,37 @@
     "source": null
    },
    "website": "https://www.tungthih.com.tw/investor02.php",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "5244-20261124",
+   "code": "5244",
+   "name": "弘凱",
+   "date": "2026-11-24",
+   "time": "14:30",
+   "market": "上市",
+   "industry": null,
+   "host": "宏遠證券",
+   "host_source": "mops_summary",
+   "place": "宏遠證券總公司702會議廳(台北市大安區信義路四段236號7樓)",
+   "mops_summary": "本公司受邀參加宏遠證券舉辦之法人說明會，會中將說明公司營運近況及未來展望。",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.brightek.com/TW/investor/performance/lists2.html#crumb",
    "in_mops": true,
    "in_twse_vod": false,
    "held": false,
@@ -2734,6 +2765,37 @@
    "summarized": false
   },
   {
+   "id": "1736-20261118",
+   "code": "1736",
+   "name": "喬山",
+   "date": "2026-11-18",
+   "time": "14:50",
+   "market": "上市",
+   "industry": null,
+   "host": "永豐金證券",
+   "host_source": "mops_summary",
+   "place": "臺灣證券交易所(101大樓) 1樓資訊展示中心",
+   "mops_summary": "本公司受邀參加永豐金證券及臺灣證券交易所舉辦115年「臺灣璞玉指數」主題式業績發表會，說明本公司第三季營運成果及未來展望",
+   "slides": {
+    "zh": "https://mopsov.twse.com.tw/nas/STR/173620261117M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/173620261117E001.pdf"
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": null,
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": true,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
    "id": "9902-20261118",
    "code": "9902",
    "name": "台火",
@@ -2848,6 +2910,37 @@
     "source": null
    },
    "website": "https://www.hfcfinance.com.tw/zh-tw/investor/conference",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "4989-20261118",
+   "code": "4989",
+   "name": "榮科",
+   "date": "2026-11-18",
+   "time": "14:30",
+   "market": "上市",
+   "industry": null,
+   "host": "元大證券",
+   "host_source": "mops_summary",
+   "place": "台北市敦化南路一段66號6樓(元大金控大樓6樓會議室)",
+   "mops_summary": "本公司受邀參加元大證券舉辦之法人說明會，說明本公司營運成果及未來展望。",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://lcyt.lcycic.com/zh/investors/investor-conference/corporate-briefing-session",
    "in_mops": true,
    "in_twse_vod": false,
    "held": false,
@@ -3220,6 +3313,37 @@
     "source": null
    },
    "website": "https://www.tstco.com.hk/Corporate_Briefing_Session.html",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "3402-20261118",
+   "code": "3402",
+   "name": "漢科",
+   "date": "2026-11-18",
+   "time": "14:00",
+   "market": "上櫃",
+   "industry": null,
+   "host": null,
+   "host_source": null,
+   "place": "櫃買中心11樓多功能資訊媒體區",
+   "mops_summary": "本公司受邀參加櫃買中心業績發表會",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.wholetech.com.tw/wholetech/views/i_s/financial_info.php",
    "in_mops": true,
    "in_twse_vod": false,
    "held": false,
@@ -4203,8 +4327,8 @@
    "place": "線上法說會",
    "mops_summary": "本公司受元大證券邀請，將於法人說明會中說明公司營運狀況",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/614320261117M002.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/614320261117E002.pdf"
    },
    "video": {
     "url": null,
@@ -4216,7 +4340,7 @@
    "in_twse_vod": false,
    "held": true,
    "has_video": false,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
@@ -4637,8 +4761,8 @@
    "place": "台北W飯店",
    "mops_summary": "本公司受邀參加麥格理證舉辦之「GMACQUARIE TAIWAN CONFERENCE」，說明營運概況。",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/316720261117M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/316720261117E001.pdf"
    },
    "video": {
     "url": null,
@@ -4650,7 +4774,7 @@
    "in_twse_vod": false,
    "held": true,
    "has_video": false,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
@@ -4854,8 +4978,8 @@
    "place": "台北W飯店",
    "mops_summary": "本公司受邀參加Macquarie舉辦之「Taiwan Conference 2026 」，會中就本公司115年第3季之財務報告相關資訊暨營運概況進行說明。",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/246720261116M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/246720261116E001.pdf"
    },
    "video": {
     "url": null,
@@ -4867,7 +4991,7 @@
    "in_twse_vod": false,
    "held": true,
    "has_video": false,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
