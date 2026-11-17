@@ -5829,9 +5829,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "done",
-   "detail": "detail/5904-20261117.json",
-   "summarized": true
+   "transcript_status": "pending",
+   "detail": null,
+   "summarized": false
   },
   {
    "id": "5474-20261117",
@@ -7015,9 +7015,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "done",
-   "detail": "detail/8044-20261116.json",
-   "summarized": true
+   "transcript_status": "pending",
+   "detail": null,
+   "summarized": false
   },
   {
    "id": "7786-20261116",
@@ -9043,9 +9043,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "done",
-   "detail": "detail/2636-20261113.json",
-   "summarized": true
+   "transcript_status": "pending",
+   "detail": null,
+   "summarized": false
   },
   {
    "id": "2481-20261113",
@@ -9106,9 +9106,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "done",
-   "detail": "detail/1810-20261113.json",
-   "summarized": true
+   "transcript_status": "pending",
+   "detail": null,
+   "summarized": false
   },
   {
    "id": "6274-20261113",
@@ -13107,8 +13107,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "done",
-   "detail": "detail/2356-20261110.json",
+   "transcript_status": "pending",
+   "detail": null,
    "summarized": false
   },
   {
@@ -21297,8 +21297,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "done",
-   "detail": "detail/2221-20261008.json",
+   "transcript_status": "pending",
+   "detail": null,
    "summarized": false
   },
   {
@@ -22447,8 +22447,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "done",
-   "detail": "detail/5481-20260930.json",
+   "transcript_status": "pending",
+   "detail": null,
    "summarized": false
   },
   {
@@ -22540,8 +22540,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "done",
-   "detail": "detail/4580-20260930.json",
+   "transcript_status": "pending",
+   "detail": null,
    "summarized": false
   },
   {
@@ -22760,8 +22760,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "done",
-   "detail": "detail/1229-20260930.json",
+   "transcript_status": "pending",
+   "detail": null,
    "summarized": false
   },
   {
