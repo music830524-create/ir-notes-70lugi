@@ -2,7 +2,7 @@
  "id": "2430-20260821",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-19T02:56:42+08:00",
  "audio_duration_s": 975.7,
@@ -16,9 +16,49 @@
  },
  "rtf": 1.263,
  "char_count": 3159,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "今年上半年的整體營收來到了86.71億台幣，跟去年同期的88.61億相比減少了2.1%。營業毛利約當是14.6%，跟去年同期的15%約當減少了0.4%。",
+   "ts": "00:05:04"
+  }
+ ],
+ "financials": [
+  {
+   "label": "今年上半年整體營收",
+   "value": "86.71億台幣；年減 -2.1%",
+   "src": "逐字稿 00:05:07"
+  },
+  {
+   "label": "今年上半年營業毛利",
+   "value": "14.6%",
+   "src": "逐字稿 00:05:31"
+  },
+  {
+   "label": "今年上半年現金",
+   "value": "11.5億台幣（去年同期為 10.99億）",
+   "src": "逐字稿 00:08:40"
+  },
+  {
+   "label": "存貨",
+   "value": "28.34億",
+   "src": "逐字稿 00:09:00"
+  },
+  {
+   "label": "應付賬款",
+   "value": "27.11億（去年同期為 26.59億）",
+   "src": "逐字稿 00:09:11"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "零售業方面會持續進行實體門市、新門市的拓展，並執行現有門市的整改計畫，以提升會員消費體驗與增加陳列品項。",
+   "ts": "00:10:10"
+  },
+  {
+   "text": "著重數位AI商品銷售，包括今年第三季引進自有品牌的智能眼鏡；同時提升節能家電銷售，以及強化寵物和銀髮商品銷售，並導入新的會員機制與擴大生態圈經營。",
+   "ts": "00:11:50"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -1376,5 +1416,24 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-19T05:47:05+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 7.8,
+  "in_tokens": 4493,
+  "out_tokens": 542,
+  "financials_in": 5,
+  "financials_kept": 5,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點1",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }

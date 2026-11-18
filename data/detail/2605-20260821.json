@@ -2,7 +2,7 @@
  "id": "2605-20260821",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-19T03:03:31+08:00",
  "audio_duration_s": 922.7,
@@ -16,9 +16,69 @@
  },
  "rtf": 0.64,
  "char_count": 3591,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "上半年營業收入為新台幣26.97億元，年增33%、稅前淨利23.6億元，年增954%，每股盈餘為3.67元。",
+   "ts": "00:00:25"
+  },
+  {
+   "text": "上半年利用率維持在99.3%，其中VLCC表現突出，日均收入約8.68萬美元，是營收與獲利改善的重要驅動力。",
+   "ts": "00:00:53"
+  }
+ ],
+ "financials": [
+  {
+   "label": "上半年營業收入",
+   "value": "新台幣 26.97 億元；年增 +33%",
+   "src": "逐字稿 00:00:25"
+  },
+  {
+   "label": "上半年稅前淨利",
+   "value": "23.6 億元；年增 +954%",
+   "src": "逐字稿 00:00:25"
+  },
+  {
+   "label": "上半年每股盈餘",
+   "value": "3.67 元",
+   "src": "逐字稿 00:00:38"
+  },
+  {
+   "label": "第二季集團稅前淨利",
+   "value": "5,770 萬美元，較第一季增加 4,084 萬美元",
+   "src": "逐字稿 00:02:18"
+  },
+  {
+   "label": "上半年集團累計稅前淨利",
+   "value": "7,450 萬美元，較去年同期的 700 萬美元增加 6,750 萬美元",
+   "src": "逐字稿 00:02:35"
+  },
+  {
+   "label": "期末現金加約當現金",
+   "value": "104 億",
+   "src": "逐字稿 00:06:53"
+  },
+  {
+   "label": "定存及其他資產",
+   "value": "144 億",
+   "src": "逐字稿 00:06:57"
+  },
+  {
+   "label": "短期借款",
+   "value": "57 億",
+   "src": "逐字稿 00:07:01"
+  },
+  {
+   "label": "總負債",
+   "value": "71 億，負債約佔資產的 27%",
+   "src": "逐字稿 00:07:05"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "散裝貨市場受長航線與營運效益支撐，VLCC具短期盈餘彈性，在2027年以後風險區趨保守管理。",
+   "ts": "00:14:32"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -1368,5 +1428,24 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-19T05:46:37+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 7.8,
+  "in_tokens": 4927,
+  "out_tokens": 757,
+  "financials_in": 9,
+  "financials_kept": 9,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
