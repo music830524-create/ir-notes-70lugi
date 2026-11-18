@@ -31782,9 +31782,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/5498-20260820.json",
+   "summarized": true
   },
   {
    "id": "5478-20260820",
