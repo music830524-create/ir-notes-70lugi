@@ -4713,9 +4713,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/4113-20261118.json",
+   "summarized": true
   },
   {
    "id": "4770-20261118",
@@ -31472,8 +31472,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
+   "transcript_status": "done",
+   "detail": "detail/2616-20260821.json",
    "summarized": false
   },
   {
