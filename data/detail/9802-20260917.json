@@ -2,7 +2,7 @@
  "id": "9802-20260917",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-18T07:47:04+08:00",
  "audio_duration_s": 1523.0,
@@ -16,9 +16,33 @@
  },
  "rtf": 0.707,
  "char_count": 6544,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "今年度的重點放在新廠的建設以及廠的提升，以目前公佈的前八月營收來看至少維持正成長，且今年擴廠速度會加快，明年則會放慢並以增加利潤的提升與人均產值為目標。",
+   "ts": "00:02:57"
+  },
+  {
+   "text": "產線安排部分，去年年底生產線是59條，今年初本預估約68條，近期已上修到71條，產能增加速度比去年同期超進度。",
+   "ts": "00:22:33"
+  }
+ ],
+ "financials": [
+  {
+   "label": "今年上半年資本性支出",
+   "value": "6.1 億元",
+   "src": "逐字稿 00:12:30"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "預計今年下半年的產值還是高於上半年，3Q的產值跟銷售應該會比2Q還要高，且2026年的秋冬款會大於去年同期以及今年春夏款。",
+   "ts": "00:18:18"
+  },
+  {
+   "text": "明年會增加利潤的提升還有單人均產值為唯一的目標，即使人數相等，當整個人均產值提升的時候，明年的產值還是會再增加。",
+   "ts": "00:04:02"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -4000,5 +4024,25 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T09:45:53+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 1.6,
+  "in_tokens": 10491,
+  "out_tokens": 380,
+  "financials_in": 1,
+  "financials_kept": 1,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "財務1",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
