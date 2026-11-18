@@ -7713,9 +7713,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/6697-20261116.json",
+   "summarized": true
   },
   {
    "id": "6510-20261116",
@@ -28496,9 +28496,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/3356-20260901.json",
+   "summarized": true
   },
   {
    "id": "2024-20260901",
