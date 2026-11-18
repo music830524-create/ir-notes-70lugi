@@ -7932,9 +7932,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/5007-20261116.json",
+   "summarized": true
   },
   {
    "id": "3105-20261116",
@@ -29054,9 +29054,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/2017-20260828.json",
+   "summarized": true
   },
   {
    "id": "2015-20260828",
