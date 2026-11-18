@@ -1,0 +1,249 @@
+{
+ "id": "3236-20260910",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-18T13:16:32+08:00",
+ "audio_duration_s": 1491.5,
+ "timing": {
+  "download_s": 1558.3,
+  "extract_s": 0.9,
+  "glossary_s": 0.0,
+  "transcribe_s": 147.8,
+  "postprocess_s": 0.2,
+  "total_s": 1707.2
+ },
+ "rtf": 0.099,
+ "char_count": 368,
+ "highlights": [],
+ "financials": [],
+ "outlook": [
+  {
+   "text": "以今年來講，我們的狀況大概是好的，希望明年度可以在這個狀況之下，在技術方面做一些提升。",
+   "ts": "00:21:43"
+  },
+  {
+   "text": "M2M移動到馬來西亞的計畫還是會繼續。",
+   "ts": "00:21:54"
+  }
+ ],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:21:29",
+   "start": 1289.1,
+   "end": 1303.98,
+   "zh": "所以相對來講的發展,因為現在我們看到持續發出的訂單,都是屬於一些新生活階段的訂單,希望它能夠發小下去。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:43",
+   "start": 1303.98,
+   "end": 1309.98,
+   "zh": "總而言之,以今年來講,我們的狀況大概是好的,剛剛也介紹過我們在採畫的狀況,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:49",
+   "start": 1309.98,
+   "end": 1314.98,
+   "zh": "我希望明年度我們可以在這個狀況之下,在技術方面做一些提升,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:54",
+   "start": 1314.98,
+   "end": 1321.98,
+   "zh": "讓提到關於我們一些新的額下實相跟一些相關的投入,我們M2M移動到馬來西亞的計畫化還是會繼續。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:01",
+   "start": 1321.98,
+   "end": 1378.31,
+   "zh": "謝謝嘉賓的視頻。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:58",
+   "start": 1378.31,
+   "end": 1387.31,
+   "zh": "第三項應用是因為EMI電池幹擾",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:07",
+   "start": 1387.31,
+   "end": 1395.44,
+   "zh": "所以不管哪一個家有通電的地方都可以",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:15",
+   "start": 1395.44,
+   "end": 1399.01,
+   "zh": "就用到這三類",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:19",
+   "start": 1399.01,
+   "end": 1402.01,
+   "zh": "當然最夯的就是AI應用",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:22",
+   "start": 1402.01,
+   "end": 1405.01,
+   "zh": "特別是AI設計這一塊",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:25",
+   "start": 1405.01,
+   "end": 1410.54,
+   "zh": "從過去的分離系列間到雙向",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:30",
+   "start": 1410.54,
+   "end": 1416.3,
+   "zh": "我們在做功率的降低",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:36",
+   "start": 1416.3,
+   "end": 1418.2,
+   "zh": "降低功率 損耗 降低",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:38",
+   "start": 1418.2,
+   "end": 1429.93,
+   "zh": "不斷從製程技術跟設計結構技術上面進行",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:49",
+   "start": 1429.93,
+   "end": 1440.79,
+   "zh": "未來我們會在同體共殺跟多項式的輕薄短暫",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:00",
+   "start": 1440.79,
+   "end": 1443.62,
+   "zh": "在信號處理",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:03",
+   "start": 1443.62,
+   "end": 1455.33,
+   "zh": "功率演變就朝向更低的功率",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:15",
+   "start": 1455.33,
+   "end": 1464.92,
+   "zh": "電磁乾燃就是朝比例平寬去做處理",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:24",
+   "start": 1464.92,
+   "end": 1478.95,
+   "zh": "做更有效的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:38",
+   "start": 1478.95,
+   "end": 1479.95,
+   "zh": "今天就到這邊",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:39",
+   "start": 1479.95,
+   "end": 1482.15,
+   "zh": "謝謝各位貴賓的一個參與",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:42",
+   "start": 1482.15,
+   "end": 1484.85,
+   "zh": "那今天的掌聲會就圓滿結束",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:44",
+   "start": 1484.85,
+   "end": 1486.43,
+   "zh": "謝謝大家",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "千如法說會。Safe Harbor Statement、EPS、YoY、QoQ、營收、毛利率、營業利益、稅後淨利、每股盈餘、季增、年增、展望。",
+  "hotwords": "千如 Safe Harbor Statement EPS YoY QoQ 營收 毛利率 營業利益 稅後淨利 每股盈餘 季增 年增 展望",
+  "opencc": "s2tw+臺->台",
+  "company_file": false,
+  "termfix_global": 17,
+  "termfix_company": 0,
+  "homophone": true,
+  "fixstats": {},
+  "dropped_segments": 0
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T13:17:03+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 1.4,
+  "in_tokens": 1120,
+  "out_tokens": 125,
+  "financials_in": 0,
+  "financials_kept": 0,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點0",
+   "財務0",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}
