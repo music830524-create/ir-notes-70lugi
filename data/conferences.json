@@ -27845,8 +27845,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
+   "transcript_status": "done",
+   "detail": "detail/3580-20260901.json",
    "summarized": false
   },
   {
