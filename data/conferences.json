@@ -25051,7 +25051,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/9802-20260917.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "7728-20260917",
@@ -25832,7 +25832,7 @@
    "has_slides": false,
    "transcript_status": "done",
    "detail": "detail/2006-20260916.json",
-   "summarized": false
+   "summarized": true
   },
   {
    "id": "1762-20260916",
