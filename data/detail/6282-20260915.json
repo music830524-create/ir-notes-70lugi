@@ -27,30 +27,32 @@
    "label": "Q1 EPS",
    "value": "0.27",
    "src": "逐字稿 00:08:45"
-  },
-  {
-   "label": "上半年整體營收",
-   "value": "180%",
-   "src": "逐字稿 00:10:51"
-  },
-  {
-   "label": "利率",
-   "value": "22.7%",
-   "src": "逐字稿 00:10:57"
   }
  ],
  "outlook": [
   {
-   "text": "CCC day 從去年年底的123天控制到107天，今年的目標是能希望朝90天方向走。",
-   "ts": "00:13:14"
+   "text": "我們今年的目標是能希望90天方向走",
+   "ts": "00:13:29"
   },
   {
-   "text": "AI的營收佔比合併的角度，如果是2025當然會佔30，第二季來講目前AI的相關第二季佔29%應該是沒有問題。",
-   "ts": "00:14:47"
+   "text": "AI的營收佔比合併的角度,如果是2025當然會佔30",
+   "ts": "00:15:07"
   },
   {
-   "text": "33kW已經量產、已經開始量產，72kW預計在第三季，目前正在開發25kW PSU，預計相關的安規預計SAMPLE成本比較量成。",
+   "text": "第二季來講 目前AI的相關 第二季佔29%應該是沒有問題",
+   "ts": "00:15:25"
+  },
+  {
+   "text": "33kW 已經量產 已經開始量產",
    "ts": "00:16:03"
+  },
+  {
+   "text": "72kW預計在第三季 目前正在開發25kW PSU",
+   "ts": "00:16:27"
+  },
+  {
+   "text": "預計相關的安規 預計SAMPLE成本比較量成",
+   "ts": "00:16:46"
   }
  ],
  "qa": [],
@@ -637,20 +639,20 @@
  },
  "sections_meta": {
   "model": "gemini-3.5-flash-lite",
-  "generated_at": "2026-11-18T10:02:02+08:00",
+  "generated_at": "2026-11-18T12:29:55+08:00",
   "calls": 1,
   "retries": 0,
   "seconds": 1.6,
   "in_tokens": 2058,
-  "out_tokens": 407,
-  "financials_in": 4,
-  "financials_kept": 4,
+  "out_tokens": 382,
+  "financials_in": 2,
+  "financials_kept": 2,
   "financials_dropped": [],
   "highlights_dropped": [],
   "text_numbers_unverified": 0,
   "shortfall": [
    "重點0",
-   "財務4",
+   "財務2",
    "問答0"
   ]
  },
