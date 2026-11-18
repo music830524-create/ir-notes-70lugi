@@ -26636,9 +26636,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/8028-20260910.json",
+   "summarized": true
   },
   {
    "id": "7828-20260910",
