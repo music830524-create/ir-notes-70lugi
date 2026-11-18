@@ -2,7 +2,7 @@
  "id": "1529-20260828",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-18T16:22:46+08:00",
  "audio_duration_s": 1878.8,
@@ -16,9 +16,53 @@
  },
  "rtf": 0.73,
  "char_count": 4441,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "樂事綠能資本額為15億5000萬多一點點，若加上現金增資完成，股本將到約20億2800多萬。今年上半年EPS為0.5元，負債比下降到42%。",
+   "ts": "00:01:54"
+  },
+  {
+   "text": "公司主要業務包含電機事業群（如配電盤、變壓器、氣材等）與太陽能事業群。台電相關業務佔合併營收約七成。",
+   "ts": "00:08:00"
+  }
+ ],
+ "financials": [
+  {
+   "label": "資本額",
+   "value": "15億5000萬多一點點",
+   "src": "逐字稿 00:01:54"
+  },
+  {
+   "label": "上半年 EPS",
+   "value": "0.5元",
+   "src": "逐字稿 00:21:50"
+  },
+  {
+   "label": "負債比",
+   "value": "42%",
+   "src": "逐字稿 00:22:29"
+  },
+  {
+   "label": "已上線售電商轉裝置容量",
+   "value": "將近 41MW",
+   "src": "逐字稿 00:19:23"
+  },
+  {
+   "label": "未完成裝置容量",
+   "value": "75000W",
+   "src": "逐字稿 00:19:26"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "未來展望為將已拿到的單子順利生產並交貨給台電。停滯式變壓器總共有四個規格（25千伏、50千伏、100、167），其中25與50千伏已可投標，100和167千伏的認證還在進行中。",
+   "ts": "00:25:41"
+  },
+  {
+   "text": "民間建廠和公共工程投標會與子公司萬全營造合作，能源事業現階段以優化現有電廠、維持售電收入並保持穩定水準為主。",
+   "ts": "00:29:13"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -2280,5 +2324,24 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-18T18:13:32+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 2.0,
+  "in_tokens": 6791,
+  "out_tokens": 606,
+  "financials_in": 5,
+  "financials_kept": 5,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
