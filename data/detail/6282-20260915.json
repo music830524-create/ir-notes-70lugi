@@ -16,43 +16,48 @@
  },
  "rtf": 0.137,
  "char_count": 1000,
- "highlights": [],
+ "highlights": [
+  {
+   "text": "資本目前是 85.6 億，主要業務有三個事業體與電源簡介、智慧能源等。",
+   "ts": "00:01:42"
+  },
+  {
+   "text": "上半年整體營收，利率是 22.7%。",
+   "ts": "00:10:51"
+  }
+ ],
  "financials": [
   {
    "label": "資本額",
-   "value": "85.6億",
+   "value": "85.6 億元",
    "src": "逐字稿 00:01:42"
   },
   {
-   "label": "Q1 EPS",
-   "value": "0.27",
-   "src": "逐字稿 00:08:45"
+   "label": "上半年整體利率",
+   "value": "22.7%",
+   "src": "逐字稿 00:10:57"
   }
  ],
  "outlook": [
   {
-   "text": "我們今年的目標是能希望90天方向走",
+   "text": "我們今年的目標是能希望 90 天方向走（指 CCC day）。",
    "ts": "00:13:29"
   },
   {
-   "text": "AI的營收佔比合併的角度,如果是2025當然會佔30",
-   "ts": "00:15:07"
+   "text": "如果是 2025 當然會佔 30%（指 AI 營收佔比合併的角度）。",
+   "ts": "00:15:13"
   },
   {
-   "text": "第二季來講 目前AI的相關 第二季佔29%應該是沒有問題",
+   "text": "第二季來講目前 AI 的相關第二季佔 29%應該是沒有問題。",
    "ts": "00:15:25"
   },
   {
-   "text": "33kW 已經量產 已經開始量產",
+   "text": "33kW 已經量產、已經開始量產。",
    "ts": "00:16:03"
   },
   {
-   "text": "72kW預計在第三季 目前正在開發25kW PSU",
+   "text": "72kW 預計在第三季，目前正在開發 25kW PSU，預計相關的安規、預計 sample 成本比較量產。",
    "ts": "00:16:27"
-  },
-  {
-   "text": "預計相關的安規 預計SAMPLE成本比較量成",
-   "ts": "00:16:46"
   }
  ],
  "qa": [],
@@ -639,19 +644,19 @@
  },
  "sections_meta": {
   "model": "gemini-3.5-flash-lite",
-  "generated_at": "2026-11-18T12:29:55+08:00",
+  "generated_at": "2026-11-18T13:30:14+08:00",
   "calls": 1,
   "retries": 0,
-  "seconds": 1.6,
+  "seconds": 3.1,
   "in_tokens": 2058,
-  "out_tokens": 382,
+  "out_tokens": 471,
   "financials_in": 2,
   "financials_kept": 2,
   "financials_dropped": [],
   "highlights_dropped": [],
   "text_numbers_unverified": 0,
   "shortfall": [
-   "重點0",
+   "重點2",
    "財務2",
    "問答0"
   ]
