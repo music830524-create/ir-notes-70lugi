@@ -34201,9 +34201,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/1560-20260811.json",
+   "summarized": true
   },
   {
    "id": "5225-20260810",
