@@ -1,0 +1,2685 @@
+{
+ "id": "3167-20260818",
+ "model": {
+  "asr": "faster-whisper-medium",
+  "llm": "gemini-3.5-flash-lite"
+ },
+ "generated_at": "2026-11-19T08:24:10+08:00",
+ "audio_duration_s": 1597.1,
+ "timing": {
+  "download_s": 353.1,
+  "extract_s": 1.1,
+  "glossary_s": 0.0,
+  "transcribe_s": 1262.0,
+  "postprocess_s": 0.3,
+  "total_s": 1616.5
+ },
+ "rtf": 0.79,
+ "char_count": 8734,
+ "highlights": [
+  {
+   "text": "大量技術擁有自有控制器與軟體等核心競爭力，主力發展PCB製造機器與半導體檢測量測機器兩大發展機器。",
+   "ts": "00:02:01"
+  },
+  {
+   "text": "半導體事業處已於8月1日分割為獨立法律實體TLSmart，大量將保留TLSmart過半數股權。",
+   "ts": "00:17:32"
+  }
+ ],
+ "financials": [
+  {
+   "label": "2025年市場分佈-中國",
+   "value": "69%",
+   "src": "逐字稿 00:14:09"
+  },
+  {
+   "label": "2025年市場分佈-東南亞",
+   "value": "22%",
+   "src": "逐字稿 00:14:12"
+  },
+  {
+   "label": "2025年市場分佈-台灣",
+   "value": "10%",
+   "src": "逐字稿 00:14:16"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "預期未來幾年先進封裝的年複合成長率（CAGR）超過20%到30%。",
+   "ts": "00:05:46"
+  },
+  {
+   "text": "今年產能規劃標準機可達400台每月，優化機可達300台每月，預計今年底前每月會再增加50台新產能。",
+   "ts": "00:11:52"
+  }
+ ],
+ "qa": [],
+ "transcript": [
+  {
+   "speaker": "發言人",
+   "ts": "00:00:00",
+   "start": 0.3,
+   "end": 11.3,
+   "zh": "大量技術是全球最有效的技術製造者,以及全球最有效的技術製造者。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:11",
+   "start": 11.3,
+   "end": 15.3,
+   "zh": "所以現在是我們的機會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:15",
+   "start": 15.3,
+   "end": 33.66,
+   "zh": "謝謝你邀請我來大量技術大會。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:33",
+   "start": 33.66,
+   "end": 37.66,
+   "zh": "首先,我向大家介紹自己的團隊。",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:37",
+   "start": 37.66,
+   "end": 42.66,
+   "zh": "I'm Eric, General Manager of Daliang Technology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:42",
+   "start": 42.66,
+   "end": 46.66,
+   "zh": "Jackie Chien is General Manager",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:46",
+   "start": 46.66,
+   "end": 49.66,
+   "zh": "Take care of Nanjing Daliang in China",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:49",
+   "start": 49.66,
+   "end": 53.66,
+   "zh": "Gary Lee is General Manager of Daliang Smart",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:53",
+   "start": 53.66,
+   "end": 56.66,
+   "zh": "which just spun off from Daliang Technology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:56",
+   "start": 56.66,
+   "end": 59.66,
+   "zh": "It's a major headquarters on semiconductor",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:00:59",
+   "start": 59.66,
+   "end": 65.54,
+   "zh": "AOI and technology machines",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:05",
+   "start": 65.54,
+   "end": 68.54,
+   "zh": "Actually for Daliang Technology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:08",
+   "start": 68.54,
+   "end": 72.3,
+   "zh": "這是我們兩大發展機器",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:12",
+   "start": 72.3,
+   "end": 75.54,
+   "zh": "首先是PCB製造機器",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:15",
+   "start": 75.54,
+   "end": 80.54,
+   "zh": "包括鑽輪、輪圈、鑽輪機器",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:20",
+   "start": 80.54,
+   "end": 82.54,
+   "zh": "可以看到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:23",
+   "start": 83.54,
+   "end": 87.54,
+   "zh": "機器的精準度越來越高",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:27",
+   "start": 87.54,
+   "end": 92.54,
+   "zh": "根據客戶的高速、高頻率",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:32",
+   "start": 92.54,
+   "end": 97.54,
+   "zh": "另一種是輸入電池機器和充電器",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:37",
+   "start": 97.54,
+   "end": 105.6,
+   "zh": "chapters are the course of the higher integrity density of the semiconductor law.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:45",
+   "start": 105.6,
+   "end": 111.62,
+   "zh": "So the inspection, the measurement machine now is making more important.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:51",
+   "start": 111.62,
+   "end": 116.18,
+   "zh": "It's the kind of gatekeeper of the semiconductor area.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:01:56",
+   "start": 116.18,
+   "end": 121.26,
+   "zh": "So but here and I think I would like to show is that our major foundation is",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:01",
+   "start": 121.26,
+   "end": 126.24,
+   "zh": "proprietary controller and solar stacks we have.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:06",
+   "start": 126.24,
+   "end": 130.08,
+   "zh": "這是我們大型的競爭力",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:10",
+   "start": 130.08,
+   "end": 137.38,
+   "zh": "我們在製造我們的自家軟件和控制系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:17",
+   "start": 137.38,
+   "end": 140.54,
+   "zh": "這就是PCB Part 9",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:20",
+   "start": 140.54,
+   "end": 145.94,
+   "zh": "PCB Drilling 我們有最高的PCB",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:25",
+   "start": 145.94,
+   "end": 150.74,
+   "zh": "G-Machine 最高的PCB",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:30",
+   "start": 150.74,
+   "end": 156.58,
+   "zh": "還有機械動作系統 特有的材質",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:36",
+   "start": 156.58,
+   "end": 162.5,
+   "zh": "Mapping for the details of the images inside the SuHong",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:42",
+   "start": 162.5,
+   "end": 164.58,
+   "zh": "So this is the so-called star measure",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:44",
+   "start": 164.58,
+   "end": 167.06,
+   "zh": "It's our TM series",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:47",
+   "start": 167.06,
+   "end": 170.18,
+   "zh": "And for a PCB locking machine",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:50",
+   "start": 170.18,
+   "end": 173.54,
+   "zh": "This is a standard one",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:53",
+   "start": 173.54,
+   "end": 176.34,
+   "zh": "And the other premium one is the CCB series",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:56",
+   "start": 176.34,
+   "end": 179.06,
+   "zh": "For higher precision alignment",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:02:59",
+   "start": 179.06,
+   "end": 182.98,
+   "zh": "And each quarter we have not only single station",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:02",
+   "start": 182.98,
+   "end": 185.14,
+   "zh": "But have a multi-station within",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:05",
+   "start": 185.14,
+   "end": 195.48,
+   "zh": "We have a circle of different process steps and then we can combine with automation depends on customers' requirements.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:15",
+   "start": 195.48,
+   "end": 205.18,
+   "zh": "This slide shows I would like to share the more base of competitive strengths.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:25",
+   "start": 205.18,
+   "end": 215.38,
+   "zh": "It comes from vertical integrations, especially intelligence, control logic, and emotions.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:35",
+   "start": 215.38,
+   "end": 218.78,
+   "zh": "我們的策略是很清楚的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:38",
+   "start": 218.78,
+   "end": 220.82,
+   "zh": "我們把硬件出售",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:40",
+   "start": 220.82,
+   "end": 226.58,
+   "zh": "我們把硬件出售以優秀的供應者",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:46",
+   "start": 226.58,
+   "end": 230.18,
+   "zh": "和優秀的功能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:50",
+   "start": 230.18,
+   "end": 236.68,
+   "zh": "不僅是速度、桌面、感應器、CCD相機",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:03:56",
+   "start": 236.68,
+   "end": 240.48,
+   "zh": "最重要的是我們有自己的平衡",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:00",
+   "start": 240.48,
+   "end": 242.84,
+   "zh": "我們自己的智慧系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:02",
+   "start": 242.84,
+   "end": 246.88,
+   "zh": "來自我們的控制系統和動態控制系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:06",
+   "start": 246.88,
+   "end": 252.4,
+   "zh": "所以我們有主要的三個優點",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:12",
+   "start": 252.4,
+   "end": 256.68,
+   "zh": "首先是我們完全控制了技術模式",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:16",
+   "start": 256.68,
+   "end": 260.44,
+   "zh": "我們可以發展自己的機器",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:20",
+   "start": 260.44,
+   "end": 263.4,
+   "zh": "根據客戶的需求",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:23",
+   "start": 263.4,
+   "end": 267.8,
+   "zh": "這可以馬上達到客戶的需求",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:27",
+   "start": 267.8,
+   "end": 278.6,
+   "zh": "And second, we can have a precisely-tuned tailor-to-run mechanical characteristics on machines.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:38",
+   "start": 278.6,
+   "end": 289.6,
+   "zh": "And so, it's independent of supplier release cycles that we don't need to wait for the supplier's upgrade of the controller system.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:49",
+   "start": 289.6,
+   "end": 293.7,
+   "zh": "Because we build our own controller systems by our own self.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:04:53",
+   "start": 293.7,
+   "end": 302.09,
+   "zh": "Scalable expansion now in diamond technologies",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:02",
+   "start": 302.09,
+   "end": 304.25,
+   "zh": "Here are three sectors",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:04",
+   "start": 304.25,
+   "end": 306.01,
+   "zh": "One is early production",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:06",
+   "start": 306.01,
+   "end": 309.77,
+   "zh": "The production one is grass edge quarter machines",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:09",
+   "start": 309.77,
+   "end": 313.33,
+   "zh": "This is not only for air grasses coating",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:13",
+   "start": 313.33,
+   "end": 318.05,
+   "zh": "But also for semiconductor coating to stress",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:18",
+   "start": 318.05,
+   "end": 319.37,
+   "zh": "Suspension",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:19",
+   "start": 319.37,
+   "end": 323.81,
+   "zh": "When we using a grass core or interposer",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:23",
+   "start": 323.81,
+   "end": 326.69,
+   "zh": "During to the many different layers",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:26",
+   "start": 326.69,
+   "end": 329.59,
+   "zh": "特別是不同的物質",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:29",
+   "start": 329.59,
+   "end": 332.83,
+   "zh": "陽光 interface 智能材質",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:32",
+   "start": 332.83,
+   "end": 337.21,
+   "zh": "因為生物的差異",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:37",
+   "start": 337.21,
+   "end": 339.65,
+   "zh": "所以 最後的烹飪",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:39",
+   "start": 339.65,
+   "end": 342.15,
+   "zh": "極端的空間和散熱",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:42",
+   "start": 342.15,
+   "end": 346.65,
+   "zh": "更為有壓力問題的挑戰",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:46",
+   "start": 346.65,
+   "end": 355.25,
+   "zh": "And the other is for airplaces now is a very huge common annual growth rate in the next few years.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:05:57",
+   "start": 357.25,
+   "end": 366.25,
+   "zh": "Order marketing research I think is over 20 to 30 percent of the annual growth rate in the next few years.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:07",
+   "start": 367.05,
+   "end": 373.05,
+   "zh": "And for the line blocking issue is much more important for the airplaces now.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:13",
+   "start": 373.05,
+   "end": 378.97,
+   "zh": "這是因為我們想確保",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:18",
+   "start": 378.97,
+   "end": 380.89,
+   "zh": "這不是一種直光",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:20",
+   "start": 380.89,
+   "end": 382.11,
+   "zh": "而是一種反射",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:22",
+   "start": 382.11,
+   "end": 385.07,
+   "zh": "因此產生了濃鬱的照片",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:25",
+   "start": 385.07,
+   "end": 388.57,
+   "zh": "亮面和紅色的藝術",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:28",
+   "start": 388.57,
+   "end": 391.05,
+   "zh": "另一方面是為了確保",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:31",
+   "start": 391.05,
+   "end": 397.21,
+   "zh": "環境上的濃鬱和濕漉",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:37",
+   "start": 397.21,
+   "end": 398.25,
+   "zh": "而第四方面是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:38",
+   "start": 398.25,
+   "end": 400.45,
+   "zh": "Pine Line 2的製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:40",
+   "start": 400.45,
+   "end": 405.73,
+   "zh": "We have more probes in our StubMapper",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:45",
+   "start": 405.73,
+   "end": 409.01,
+   "zh": "from the originally single probe for mapping",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:49",
+   "start": 409.01,
+   "end": 412.61,
+   "zh": "and now we have four times for inspection",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:52",
+   "start": 412.61,
+   "end": 414.29,
+   "zh": "so we have a higher throughput",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:54",
+   "start": 414.29,
+   "end": 418.21,
+   "zh": "because we have multi probe StubMapper machine",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:06:58",
+   "start": 418.21,
+   "end": 424.48,
+   "zh": "and the other one is the precision router",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:04",
+   "start": 424.48,
+   "end": 428.8,
+   "zh": "this is especially for the optical modules",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:08",
+   "start": 428.8,
+   "end": 449.32,
+   "zh": "Modules from 800 GHz up to 1.8 terabit",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:29",
+   "start": 449.32,
+   "end": 459.32,
+   "zh": "Now it's asking for more precise of the accuracy and precisely of the distance between the bombing pad to the bore edge",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:39",
+   "start": 459.32,
+   "end": 470.32,
+   "zh": "So from 800 less than 50 microns is up to less than 25 microns for the 1.6 terabit article modules",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:50",
+   "start": 470.32,
+   "end": 478.77,
+   "zh": "Milano 羅曼 傑克 阿比可 馬格拉斯",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:07:58",
+   "start": 478.77,
+   "end": 487.46,
+   "zh": "Motorology 機器 第四大四大電子電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:07",
+   "start": 487.46,
+   "end": 492.42,
+   "zh": "Motorology Machine 第四大四大電子電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:12",
+   "start": 492.42,
+   "end": 498.46,
+   "zh": "Motorology Machine 第四大四大電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:18",
+   "start": 498.46,
+   "end": 499.44,
+   "zh": "Motorology Machine 第四大四大電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:19",
+   "start": 499.44,
+   "end": 503.72,
+   "zh": "這裡顯示 這是一般的標準測試",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:23",
+   "start": 503.72,
+   "end": 509.52,
+   "zh": "在測試後 每個測試座的測試程序都會有不同的圖案",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:29",
+   "start": 509.52,
+   "end": 518.56,
+   "zh": "因為在大型測試台 每個測試座都會有不同的圖案",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:38",
+   "start": 518.56,
+   "end": 526.0,
+   "zh": "所以如果你想測試背鑽 必須要知道每個測試座的詳細",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:46",
+   "start": 526.0,
+   "end": 528.44,
+   "zh": "我們使用了TN-4系列",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:48",
+   "start": 528.44,
+   "end": 532.76,
+   "zh": "去核心每個詳細的資料",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:52",
+   "start": 532.76,
+   "end": 535.04,
+   "zh": "然後我們能夠具體地",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:55",
+   "start": 535.04,
+   "end": 536.4,
+   "zh": "實際上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:56",
+   "start": 536.4,
+   "end": 537.44,
+   "zh": "達到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:57",
+   "start": 537.44,
+   "end": 538.56,
+   "zh": "精準度是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:08:58",
+   "start": 538.56,
+   "end": 540.8,
+   "zh": "Pi-Pi-2-Ni-O",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:00",
+   "start": 540.8,
+   "end": 542.8,
+   "zh": "去控制別的服務",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:02",
+   "start": 542.8,
+   "end": 544.4,
+   "zh": "而別的服務現在",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:04",
+   "start": 544.4,
+   "end": 546.56,
+   "zh": "有著很大的影響",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:06",
+   "start": 546.56,
+   "end": 548.0,
+   "zh": "在執行",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:08",
+   "start": 548.0,
+   "end": 549.44,
+   "zh": "執行",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:09",
+   "start": 549.44,
+   "end": 551.04,
+   "zh": "執行",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:13",
+   "start": 553.96,
+   "end": 556.24,
+   "zh": "尤其是 AI 服務",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:16",
+   "start": 556.24,
+   "end": 559.24,
+   "zh": "224 GHz 電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:19",
+   "start": 559.24,
+   "end": 562.24,
+   "zh": "這是 Plasma S2 電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:22",
+   "start": 562.24,
+   "end": 564.24,
+   "zh": "現在是必須的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:24",
+   "start": 564.24,
+   "end": 566.24,
+   "zh": "根據 Micro S 頻率",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:26",
+   "start": 566.24,
+   "end": 575.96,
+   "zh": "這是 premium CTC Router",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:35",
+   "start": 575.96,
+   "end": 577.96,
+   "zh": "這是我剛才提到的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:37",
+   "start": 577.96,
+   "end": 579.96,
+   "zh": "電池大小",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:39",
+   "start": 579.96,
+   "end": 581.96,
+   "zh": "現在為 800 GHz 電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:41",
+   "start": 581.96,
+   "end": 583.96,
+   "zh": "少於 50 MHz 電池",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:43",
+   "start": 583.96,
+   "end": 586.96,
+   "zh": "電池產量已經達到大小",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:46",
+   "start": 586.96,
+   "end": 588.96,
+   "zh": "現在正在尋找",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:48",
+   "start": 588.96,
+   "end": 592.96,
+   "zh": "1.6TB ARTICAL MATERIAL",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:52",
+   "start": 592.96,
+   "end": 594.96,
+   "zh": "現在我們已經準備了",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:54",
+   "start": 594.96,
+   "end": 596.96,
+   "zh": "提供25 microns的精準",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:09:56",
+   "start": 596.96,
+   "end": 600.96,
+   "zh": "和距離從Ominpac到4H",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:00",
+   "start": 600.96,
+   "end": 605.93,
+   "zh": "第三個是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:05",
+   "start": 605.93,
+   "end": 606.93,
+   "zh": "Ratio New Engines",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:06",
+   "start": 606.93,
+   "end": 609.93,
+   "zh": "這是我們的標準充電器",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:09",
+   "start": 609.93,
+   "end": 610.93,
+   "zh": "和充電器",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:10",
+   "start": 610.93,
+   "end": 612.93,
+   "zh": "這是一個",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:12",
+   "start": 612.93,
+   "end": 614.93,
+   "zh": "貨幣高速路線",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:14",
+   "start": 614.93,
+   "end": 616.93,
+   "zh": "我們看到CCP",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:16",
+   "start": 616.93,
+   "end": 618.93,
+   "zh": "有很高的速度",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:18",
+   "start": 618.93,
+   "end": 621.93,
+   "zh": "非常高速度的情況",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:21",
+   "start": 621.93,
+   "end": 626.85,
+   "zh": "是為了透過和穩定性而設計的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:27",
+   "start": 627.85,
+   "end": 629.63,
+   "zh": "即使是一個貨幣",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:29",
+   "start": 629.63,
+   "end": 633.81,
+   "zh": "它仍然在每年增長約3%至5%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:34",
+   "start": 634.43,
+   "end": 636.89,
+   "zh": "因為貨幣的需求很集中",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:37",
+   "start": 637.51,
+   "end": 639.05,
+   "zh": "大多數的貨幣",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:39",
+   "start": 639.05,
+   "end": 641.53,
+   "zh": "是由大型PCB製造者",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:42",
+   "start": 642.31,
+   "end": 644.53,
+   "zh": "而不是小型品牌",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:44",
+   "start": 644.53,
+   "end": 651.09,
+   "zh": "我剛才在這裡提到的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:52",
+   "start": 652.51,
+   "end": 655.01,
+   "zh": "我提到的H-Coders",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:10:55",
+   "start": 655.01,
+   "end": 661.35,
+   "zh": "甚至是雷霆的貢獻,並不及大量的貢獻",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:01",
+   "start": 661.35,
+   "end": 667.13,
+   "zh": "我們期望將來能成為一名明確的雷霆貢獻者",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:07",
+   "start": 667.13,
+   "end": 673.29,
+   "zh": "特別是將來的煙磅和雷霆煲產業",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:13",
+   "start": 673.29,
+   "end": 675.29,
+   "zh": "以及AIR煙的需求",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:15",
+   "start": 675.29,
+   "end": 677.81,
+   "zh": "其他雷霆是大量的瓦斯",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:17",
+   "start": 677.81,
+   "end": 685.57,
+   "zh": "Span of August 1st Semi-conductor Business Unit",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:25",
+   "start": 685.57,
+   "end": 689.73,
+   "zh": "Original hold in",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:29",
+   "start": 689.73,
+   "end": 695.93,
+   "zh": "After IPO is a project",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:35",
+   "start": 695.93,
+   "end": 701.73,
+   "zh": "大量 will remain the major state-wide TLSmart",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:41",
+   "start": 701.73,
+   "end": 703.13,
+   "zh": "completes IPO",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:43",
+   "start": 703.13,
+   "end": 712.55,
+   "zh": "This slide I would like to show you for the manufacturing capacities we have",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:52",
+   "start": 712.55,
+   "end": 714.99,
+   "zh": "如果是一個標準的模式",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:11:54",
+   "start": 714.99,
+   "end": 720.95,
+   "zh": "其實現在所有的能量都可以達到 400 個月的優惠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:00",
+   "start": 720.95,
+   "end": 725.95,
+   "zh": "而為了優惠模式,我們可以達到 300 個月的優惠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:05",
+   "start": 725.95,
+   "end": 729.55,
+   "zh": "所以這其實意味著客戶的需求",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:09",
+   "start": 729.55,
+   "end": 734.05,
+   "zh": "已經達到 300 到 400 個月的優惠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:14",
+   "start": 734.05,
+   "end": 737.45,
+   "zh": "在今年結束之前",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:17",
+   "start": 737.45,
+   "end": 745.05,
+   "zh": "我們已經增加了50個新的合作夥伴",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:25",
+   "start": 745.05,
+   "end": 748.05,
+   "zh": "這裡顯示工廠和工廠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:28",
+   "start": 748.05,
+   "end": 757.04,
+   "zh": "這裡是新的混合物",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:37",
+   "start": 757.04,
+   "end": 759.04,
+   "zh": "我特別想說",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:39",
+   "start": 759.04,
+   "end": 761.04,
+   "zh": "在早期的工廠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:41",
+   "start": 761.04,
+   "end": 765.04,
+   "zh": "從2023年到2024年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:45",
+   "start": 765.04,
+   "end": 769.44,
+   "zh": "2024年小幅增長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:49",
+   "start": 769.44,
+   "end": 773.44,
+   "zh": "特別是2025年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:53",
+   "start": 773.44,
+   "end": 776.44,
+   "zh": "大約$8.00",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:56",
+   "start": 776.44,
+   "end": 779.44,
+   "zh": "今年首半年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:12:59",
+   "start": 779.44,
+   "end": 782.44,
+   "zh": "成功達到$9.00",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:02",
+   "start": 782.44,
+   "end": 784.44,
+   "zh": "在冠軍領域",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:04",
+   "start": 784.44,
+   "end": 789.44,
+   "zh": "根據股市的建築",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:09",
+   "start": 789.44,
+   "end": 798.48,
+   "zh": "今天要說的是 原本 貴賓產品是我們的貴賓貴賓的貴賓",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:18",
+   "start": 798.48,
+   "end": 805.84,
+   "zh": "從2025年開始 你可以看到 價值模式 越來越高",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:25",
+   "start": 805.84,
+   "end": 809.44,
+   "zh": "甚至比貴賓產品的貴賓貴賓更大",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:29",
+   "start": 809.44,
+   "end": 817.44,
+   "zh": "其實並不是為了 賺錢的價值 而是為了貴賓貴賓的價值",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:37",
+   "start": 817.44,
+   "end": 834.44,
+   "zh": "Shiproom 2 Premium Mix ASB Index If commodity is baseline, premium models will be double.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:13:54",
+   "start": 834.44,
+   "end": 841.44,
+   "zh": "YLTN 4 Series will be more than 3 times for ASB.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:01",
+   "start": 841.44,
+   "end": 845.28,
+   "zh": "2020年25年市場分佈",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:05",
+   "start": 845.28,
+   "end": 849.64,
+   "zh": "中國是我們的主要收入",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:09",
+   "start": 849.64,
+   "end": 852.7,
+   "zh": "達到69%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:12",
+   "start": 852.7,
+   "end": 856.24,
+   "zh": "南東亞洲達到22%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:16",
+   "start": 856.24,
+   "end": 860.8,
+   "zh": "台灣達到10%",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:20",
+   "start": 860.8,
+   "end": 867.4,
+   "zh": "我們繼續增長市場的市場增長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:27",
+   "start": 867.4,
+   "end": 878.4,
+   "zh": "We are targeting to higher premium, especially for the metrology machines, combined with premium drilling machines.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:38",
+   "start": 878.4,
+   "end": 887.49,
+   "zh": "Here is the competitive landscape of our machines.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:14:47",
+   "start": 887.49,
+   "end": 901.49,
+   "zh": "For metrology, now 大量 is the sole provider in the industry, and this is exclusive for our CCP high-end drilling machines.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:01",
+   "start": 901.49,
+   "end": 908.89,
+   "zh": "我們電腦的競爭者不擁有這類機械的機械",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:08",
+   "start": 908.89,
+   "end": 911.89,
+   "zh": "特別是電子機械",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:11",
+   "start": 911.89,
+   "end": 915.89,
+   "zh": "所以我們建立了電子機械",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:15",
+   "start": 915.89,
+   "end": 919.89,
+   "zh": "而我們的高級機械越來越嚴格",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:19",
+   "start": 919.89,
+   "end": 922.89,
+   "zh": "這是因為它們是獨立的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:22",
+   "start": 922.89,
+   "end": 927.89,
+   "zh": "它們要把電子機械的輸入到電子機械",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:27",
+   "start": 927.89,
+   "end": 932.77,
+   "zh": "混合在一起 能夠進入市場",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:34",
+   "start": 934.21,
+   "end": 939.01,
+   "zh": "標準的Router是約30%的購入",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:39",
+   "start": 939.01,
+   "end": 943.86,
+   "zh": "現在已經是市場領域",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:43",
+   "start": 943.86,
+   "end": 948.18,
+   "zh": "而Premium Router是約40%的購入",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:48",
+   "start": 948.18,
+   "end": 951.7,
+   "zh": "現在已經是市場領域",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:51",
+   "start": 951.7,
+   "end": 958.16,
+   "zh": "在這時期的運作時刻更新",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:15:58",
+   "start": 958.16,
+   "end": 962.32,
+   "zh": "I would like to share the scaling capacity",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:02",
+   "start": 962.32,
+   "end": 970.8,
+   "zh": "The capacity expansion is from 300 to 400 units per month",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:10",
+   "start": 970.8,
+   "end": 973.28,
+   "zh": "It's a monthly in-house production",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:13",
+   "start": 973.28,
+   "end": 978.64,
+   "zh": "Lifted by approximately about 33% increase",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:18",
+   "start": 978.64,
+   "end": 985.44,
+   "zh": "And also generate about 50 units per month in the fourth quarter this year",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:25",
+   "start": 985.44,
+   "end": 992.08,
+   "zh": "增加了我們在新的產品上的效果",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:32",
+   "start": 992.08,
+   "end": 995.68,
+   "zh": "因為我們有新的策略",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:35",
+   "start": 995.68,
+   "end": 999.52,
+   "zh": "而模擬體驗的領域是很困難的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:39",
+   "start": 999.52,
+   "end": 1004.4,
+   "zh": "因為我們用了2.0Mbps的模擬體驗",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:44",
+   "start": 1004.4,
+   "end": 1007.44,
+   "zh": "它們仍然在檢測中",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:47",
+   "start": 1007.44,
+   "end": 1013.44,
+   "zh": "所以確實的學位是由AI伺服器提供的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:53",
+   "start": 1013.44,
+   "end": 1018.47,
+   "zh": "高NPCB Router Momentum 高NPCB Router Momentum",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:16:58",
+   "start": 1018.47,
+   "end": 1023.35,
+   "zh": "是CNC Standout Demand from the Artecom Arterial segment",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:03",
+   "start": 1023.35,
+   "end": 1028.15,
+   "zh": "It's the second growth factor alongside of Metrology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:08",
+   "start": 1028.15,
+   "end": 1031.75,
+   "zh": "And here for the most important thing is that",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:11",
+   "start": 1031.75,
+   "end": 1036.71,
+   "zh": "Actually the demand and the bordering customer",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:16",
+   "start": 1036.71,
+   "end": 1043.19,
+   "zh": "Is not rely on any SQL program",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:23",
+   "start": 1043.19,
+   "end": 1052.4,
+   "zh": "進一步增長 由PCI-E FACTS溶解到工廠",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:32",
+   "start": 1052.4,
+   "end": 1065.32,
+   "zh": "大量Smart是半導體商業",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:45",
+   "start": 1065.32,
+   "end": 1073.24,
+   "zh": "今年過年 計劃在台灣的PC市場上",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:17:53",
+   "start": 1073.24,
+   "end": 1081.32,
+   "zh": "FOR INTO IPO, we will be retaining over 60% ownership stake in Dalian Smart",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:01",
+   "start": 1081.32,
+   "end": 1089.86,
+   "zh": "OK, let me go to Gary Dalian Smart",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:09",
+   "start": 1089.86,
+   "end": 1104.74,
+   "zh": "I want to show you about Dalian Advanced Smart Corporation",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:24",
+   "start": 1104.74,
+   "end": 1110.34,
+   "zh": "Refroge, as TL SMART for short",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:30",
+   "start": 1110.34,
+   "end": 1118.78,
+   "zh": "As Eric mentioned just now, 大量技術系統原本有兩種生產單位",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:38",
+   "start": 1118.78,
+   "end": 1125.78,
+   "zh": "One is for PCE unit, another one is for semi-conductor business unit",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:45",
+   "start": 1125.78,
+   "end": 1138.78,
+   "zh": "Since August 1st, the semi-conductor business unit was split off as an individual legal entity, as TLSmart",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:18:58",
+   "start": 1138.78,
+   "end": 1146.46,
+   "zh": "我們也專注於滑浮器 檢查和操作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:06",
+   "start": 1146.46,
+   "end": 1153.1,
+   "zh": "我們擁有高速 精準 機械設計",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:13",
+   "start": 1153.1,
+   "end": 1157.1,
+   "zh": "我們也擁有進一步的動態技術",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:17",
+   "start": 1157.1,
+   "end": 1164.54,
+   "zh": "我們也擁有高精準滑浮器和智能智能",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:24",
+   "start": 1164.54,
+   "end": 1169.06,
+   "zh": "Intelligent System Integration 智能系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:29",
+   "start": 1169.06,
+   "end": 1175.26,
+   "zh": "這四個組織是我們的主要能力",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:35",
+   "start": 1175.26,
+   "end": 1180.94,
+   "zh": "Semi-conductor Ecosystem 偵測",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:40",
+   "start": 1180.94,
+   "end": 1185.54,
+   "zh": "We define it as front-end, middle-end, and back-end",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:45",
+   "start": 1185.54,
+   "end": 1190.78,
+   "zh": "For the front-end process, as you may know, the leading company is a company team",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:50",
+   "start": 1190.78,
+   "end": 1194.78,
+   "zh": "And focus on the boundary And the middle end and the back end",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:19:54",
+   "start": 1194.78,
+   "end": 1200.08,
+   "zh": "Original For the offset, focus on the back end",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:00",
+   "start": 1200.08,
+   "end": 1205.08,
+   "zh": "Cut to the advanced packaging process, AIMR2",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:05",
+   "start": 1205.08,
+   "end": 1213.98,
+   "zh": "So the offset for all over their process to middle end process",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:13",
+   "start": 1213.98,
+   "end": 1217.88,
+   "zh": "And front end process maker like a company team",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:17",
+   "start": 1217.88,
+   "end": 1222.38,
+   "zh": "MetrologyMACHINE Series 中央製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:22",
+   "start": 1222.38,
+   "end": 1227.38,
+   "zh": "Semiconductor Process Request 製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:27",
+   "start": 1227.38,
+   "end": 1230.38,
+   "zh": "MetrologyMACHINE Series 中央製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:30",
+   "start": 1230.38,
+   "end": 1233.38,
+   "zh": "MetrologyMACHINE Series 中央製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:33",
+   "start": 1233.38,
+   "end": 1236.88,
+   "zh": "AOI MACHINE Series 中央製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:36",
+   "start": 1236.88,
+   "end": 1240.88,
+   "zh": "Automation MACHINE Series 中央製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:40",
+   "start": 1240.88,
+   "end": 1246.38,
+   "zh": "MetrologyMACHINE Series 中央製作",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:46",
+   "start": 1246.38,
+   "end": 1251.26,
+   "zh": "This is our product line-up for the advanced package application.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:51",
+   "start": 1251.26,
+   "end": 1257.66,
+   "zh": "So you can see, as you may know, the 2.5D or 3D, we add CoWoS.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:20:57",
+   "start": 1257.66,
+   "end": 1261.1,
+   "zh": "CoWoS means wave on the substrate.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:01",
+   "start": 1261.1,
+   "end": 1266.46,
+   "zh": "And the semiconductor process is a multiple process flow.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:06",
+   "start": 1266.46,
+   "end": 1270.7,
+   "zh": "So in order to fulfill the customer request,",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:10",
+   "start": 1270.7,
+   "end": 1278.1,
+   "zh": "We propose our COW and OS machine for metrology and inspection.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:18",
+   "start": 1278.1,
+   "end": 1283.2,
+   "zh": "For example, the OS process is frost jetting.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:23",
+   "start": 1283.2,
+   "end": 1288.7,
+   "zh": "After the frost jetting, we also propose frost jetting to AOI.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:28",
+   "start": 1288.7,
+   "end": 1299.6,
+   "zh": "Now, this machine is fully utilized by our customers, like Company A, the number one OS company.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:39",
+   "start": 1299.6,
+   "end": 1310.88,
+   "zh": "FrostJetAOI 2.5E 100% 適合整個品牌",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:50",
+   "start": 1310.88,
+   "end": 1318.68,
+   "zh": "FrostJetAOI、DiamondAOI、UnderfieldAOI、Rear-to-RearAOI",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:21:58",
+   "start": 1318.68,
+   "end": 1322.48,
+   "zh": "是背鑽的整體配置",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:02",
+   "start": 1322.48,
+   "end": 1329.12,
+   "zh": "COW下面是如眾所知兩個到貨只要檢查",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:09",
+   "start": 1329.12,
+   "end": 1331.14,
+   "zh": "首先是HBM",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:11",
+   "start": 1331.14,
+   "end": 1334.14,
+   "zh": "又另外是SOC和Szięk",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:14",
+   "start": 1334.14,
+   "end": 1336.1,
+   "zh": "HBM的程序是",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:16",
+   "start": 1336.1,
+   "end": 1341.36,
+   "zh": "但手機沿 zeom T完成了",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:21",
+   "start": 1341.36,
+   "end": 1341.78,
+   "zh": "HBM也 immune Ms.Haime的HBM",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:21",
+   "start": 1341.78,
+   "end": 1347.32,
+   "zh": "ju CX , MineCom 就有新型是淺 следующ",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:27",
+   "start": 1347.32,
+   "end": 1355.14,
+   "zh": "顯示 可以 gesch開HVN檢查",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:35",
+   "start": 1355.34,
+   "end": 1358.84,
+   "zh": "HVN的檢查後",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:38",
+   "start": 1358.84,
+   "end": 1364.48,
+   "zh": "我們 Gonzalez 昇 contains красив的Q-AOI",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:44",
+   "start": 1364.48,
+   "end": 1368.88,
+   "zh": "30I.It",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:48",
+   "start": 1368.88,
+   "end": 1373.88,
+   "zh": "5I 立AOI",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:53",
+   "start": 1373.88,
+   "end": 1375.16,
+   "zh": "所以我們可以看到",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:55",
+   "start": 1375.16,
+   "end": 1376.8,
+   "zh": "我們的機器是為了",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:22:56",
+   "start": 1376.8,
+   "end": 1382.16,
+   "zh": "使用COW的每個過程",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:02",
+   "start": 1382.16,
+   "end": 1384.76,
+   "zh": "而由於AI模式",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:04",
+   "start": 1384.76,
+   "end": 1388.24,
+   "zh": "是2.5E-3D造的",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:08",
+   "start": 1388.24,
+   "end": 1391.4,
+   "zh": "所以產品是為了SOIC",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:11",
+   "start": 1391.4,
+   "end": 1393.36,
+   "zh": "所以為了SOIC",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:13",
+   "start": 1393.36,
+   "end": 1396.48,
+   "zh": "我們也擁有CMP Pattern Metrology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:16",
+   "start": 1396.48,
+   "end": 1398.28,
+   "zh": "Step-Hide Metrology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:18",
+   "start": 1398.28,
+   "end": 1399.64,
+   "zh": "Waver Bound Shift",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:19",
+   "start": 1399.64,
+   "end": 1402.28,
+   "zh": "H-Profile Metrology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:22",
+   "start": 1402.28,
+   "end": 1407.28,
+   "zh": "MetroIC 車子 個體 OkC.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:30",
+   "start": 1410.28,
+   "end": 1415.28,
+   "zh": "wish you may know Wichi A.I. Chip",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:35",
+   "start": 1415.28,
+   "end": 1418.28,
+   "zh": "is the dimension is getting bigger and bigger",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:38",
+   "start": 1418.28,
+   "end": 1420.28,
+   "zh": "The traditional the wafer",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:40",
+   "start": 1420.28,
+   "end": 1422.28,
+   "zh": "wafer type intercloser",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:42",
+   "start": 1422.28,
+   "end": 1424.28,
+   "zh": "the utilization is not good enough",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:44",
+   "start": 1424.28,
+   "end": 1428.28,
+   "zh": "so another process from the",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:48",
+   "start": 1428.28,
+   "end": 1430.28,
+   "zh": "intercloser from wafer fold,to panel fold",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:23:50",
+   "start": 1430.28,
+   "end": 1460.28,
+   "zh": "Panel 4To supportPanel 4 Interprocessor",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:20",
+   "start": 1460.28,
+   "end": 1464.98,
+   "zh": "Compact CoPoS ProSets 可供應用",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:26",
+   "start": 1466.04,
+   "end": 1468.62,
+   "zh": "Fanout POP ProSets 可供應用",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:29",
+   "start": 1469.34,
+   "end": 1473.84,
+   "zh": "Fanout POP AORI 電源系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:33",
+   "start": 1473.84,
+   "end": 1476.94,
+   "zh": "Fanout POP 電源系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:38",
+   "start": 1478.48,
+   "end": 1480.88,
+   "zh": "CPO 智能系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:40",
+   "start": 1480.88,
+   "end": 1482.38,
+   "zh": "Silicon Fontanis 智能系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:42",
+   "start": 1482.38,
+   "end": 1485.34,
+   "zh": "COPG Optics 智能系統",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:45",
+   "start": 1485.34,
+   "end": 1498.64,
+   "zh": "In order to fulfill the customer request, we also propose the inspection and solder and clean machine integration solution for the CPO.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:24:58",
+   "start": 1498.64,
+   "end": 1505.44,
+   "zh": "Now, this machine has the qualification by our customer as well.",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:05",
+   "start": 1505.44,
+   "end": 1511.76,
+   "zh": "Metrochip Benchmark 面鑽",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:11",
+   "start": 1511.76,
+   "end": 1523.52,
+   "zh": "Metrochip Benchmark 面鑽",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:32",
+   "start": 1532.84,
+   "end": 1535.84,
+   "zh": "Gene Devin Metrology 群函",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:35",
+   "start": 1535.84,
+   "end": 1539.6,
+   "zh": "Simphin Profile and all-worn Metrology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:39",
+   "start": 1539.6,
+   "end": 1545.4,
+   "zh": "Bundle Shield Metrology and Panel Sides Bundle Shield and edge Profile Metrology",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:45",
+   "start": 1545.4,
+   "end": 1552.2,
+   "zh": "So we have a full range of these kinds of indicators for Metrology machines",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:52",
+   "start": 1552.2,
+   "end": 1557.42,
+   "zh": "Compared to companies K and KU",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:25:57",
+   "start": 1557.42,
+   "end": 1560.44,
+   "zh": "So this is our customer list",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:00",
+   "start": 1560.44,
+   "end": 1565.44,
+   "zh": "我們利潤的50%是來自法律和國家",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:05",
+   "start": 1565.44,
+   "end": 1569.4,
+   "zh": "而50%是來自舊金融",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:09",
+   "start": 1569.4,
+   "end": 1574.4,
+   "zh": "每年都在增長得很快",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:14",
+   "start": 1574.4,
+   "end": 1578.4,
+   "zh": "從去年到今年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:18",
+   "start": 1578.4,
+   "end": 1580.4,
+   "zh": "看來在下個年",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:20",
+   "start": 1580.4,
+   "end": 1583.4,
+   "zh": "我們有了增長的增長",
+   "en": null
+  },
+  {
+   "speaker": "發言人",
+   "ts": "00:26:23",
+   "start": 1583.4,
+   "end": 1587.4,
+   "zh": "希望AIM的增長能夠繼續增長",
+   "en": null
+  }
+ ],
+ "pipeline": {
+  "prompt": "大量法說會。游善溥、Eric Yu、王作京、Laurie Wang、李賢銘、Gary Lee、Jackie Chien、TLSmart、CoWoS、SoIC、CoPoS、FOPLP、CPO、B/B Ratio、背鑽。",
+  "hotwords": "大量 游善溥 Eric Yu 王作京 Laurie Wang 李賢銘 Gary Lee Jackie Chien TLSmart CoWoS SoIC CoPoS FOPLP CPO B/B Ratio 背鑽 StubMapper LayerMapper 營收",
+  "opencc": "s2tw+臺->台",
+  "company_file": true,
+  "termfix_global": 17,
+  "termfix_company": 20,
+  "homophone": true,
+  "fixstats": {
+   "Metrogy": 4,
+   "COWAS": 2
+  },
+  "dropped_segments": 3
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-19T08:24:24+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 10.2,
+  "in_tokens": 7006,
+  "out_tokens": 430,
+  "financials_in": 3,
+  "financials_kept": 3,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "重點2",
+   "財務3",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
+}

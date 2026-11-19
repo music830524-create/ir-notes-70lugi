@@ -1,0 +1,324 @@
+[00:00:00] 大量技術是全球最有效的技術製造者,以及全球最有效的技術製造者。
+[00:00:11] 所以現在是我們的機會。
+[00:00:15] 謝謝你邀請我來大量技術大會。
+[00:00:33] 首先,我向大家介紹自己的團隊。
+[00:00:37] I'm Eric, General Manager of Daliang Technology
+[00:00:42] Jackie Chien is General Manager
+[00:00:46] Take care of Nanjing Daliang in China
+[00:00:49] Gary Lee is General Manager of Daliang Smart
+[00:00:53] which just spun off from Daliang Technology
+[00:00:56] It's a major headquarters on semiconductor
+[00:00:59] AOI and technology machines
+[00:01:05] Actually for Daliang Technology
+[00:01:08] 這是我們兩大發展機器
+[00:01:12] 首先是PCB製造機器
+[00:01:15] 包括鑽輪、輪圈、鑽輪機器
+[00:01:20] 可以看到
+[00:01:23] 機器的精準度越來越高
+[00:01:27] 根據客戶的高速、高頻率
+[00:01:32] 另一種是輸入電池機器和充電器
+[00:01:37] chapters are the course of the higher integrity density of the semiconductor law.
+[00:01:45] So the inspection, the measurement machine now is making more important.
+[00:01:51] It's the kind of gatekeeper of the semiconductor area.
+[00:01:56] So but here and I think I would like to show is that our major foundation is
+[00:02:01] proprietary controller and solar stacks we have.
+[00:02:06] 這是我們大型的競爭力
+[00:02:10] 我們在製造我們的自家軟件和控制系統
+[00:02:17] 這就是PCB Part 9
+[00:02:20] PCB Drilling 我們有最高的PCB
+[00:02:25] G-Machine 最高的PCB
+[00:02:30] 還有機械動作系統 特有的材質
+[00:02:36] Mapping for the details of the images inside the SuHong
+[00:02:42] So this is the so-called star measure
+[00:02:44] It's our TM series
+[00:02:47] And for a PCB locking machine
+[00:02:50] This is a standard one
+[00:02:53] And the other premium one is the CCB series
+[00:02:56] For higher precision alignment
+[00:02:59] And each quarter we have not only single station
+[00:03:02] But have a multi-station within
+[00:03:05] We have a circle of different process steps and then we can combine with automation depends on customers' requirements.
+[00:03:15] This slide shows I would like to share the more base of competitive strengths.
+[00:03:25] It comes from vertical integrations, especially intelligence, control logic, and emotions.
+[00:03:35] 我們的策略是很清楚的
+[00:03:38] 我們把硬件出售
+[00:03:40] 我們把硬件出售以優秀的供應者
+[00:03:46] 和優秀的功能
+[00:03:50] 不僅是速度、桌面、感應器、CCD相機
+[00:03:56] 最重要的是我們有自己的平衡
+[00:04:00] 我們自己的智慧系統
+[00:04:02] 來自我們的控制系統和動態控制系統
+[00:04:06] 所以我們有主要的三個優點
+[00:04:12] 首先是我們完全控制了技術模式
+[00:04:16] 我們可以發展自己的機器
+[00:04:20] 根據客戶的需求
+[00:04:23] 這可以馬上達到客戶的需求
+[00:04:27] And second, we can have a precisely-tuned tailor-to-run mechanical characteristics on machines.
+[00:04:38] And so, it's independent of supplier release cycles that we don't need to wait for the supplier's upgrade of the controller system.
+[00:04:49] Because we build our own controller systems by our own self.
+[00:04:53] Scalable expansion now in diamond technologies
+[00:05:02] Here are three sectors
+[00:05:04] One is early production
+[00:05:06] The production one is grass edge quarter machines
+[00:05:09] This is not only for air grasses coating
+[00:05:13] But also for semiconductor coating to stress
+[00:05:18] Suspension
+[00:05:19] When we using a grass core or interposer
+[00:05:23] During to the many different layers
+[00:05:26] 特別是不同的物質
+[00:05:29] 陽光 interface 智能材質
+[00:05:32] 因為生物的差異
+[00:05:37] 所以 最後的烹飪
+[00:05:39] 極端的空間和散熱
+[00:05:42] 更為有壓力問題的挑戰
+[00:05:46] And the other is for airplaces now is a very huge common annual growth rate in the next few years.
+[00:05:57] Order marketing research I think is over 20 to 30 percent of the annual growth rate in the next few years.
+[00:06:07] And for the line blocking issue is much more important for the airplaces now.
+[00:06:13] 這是因為我們想確保
+[00:06:18] 這不是一種直光
+[00:06:20] 而是一種反射
+[00:06:22] 因此產生了濃鬱的照片
+[00:06:25] 亮面和紅色的藝術
+[00:06:28] 另一方面是為了確保
+[00:06:31] 環境上的濃鬱和濕漉
+[00:06:37] 而第四方面是
+[00:06:38] Pine Line 2的製作
+[00:06:40] We have more probes in our StubMapper
+[00:06:45] from the originally single probe for mapping
+[00:06:49] and now we have four times for inspection
+[00:06:52] so we have a higher throughput
+[00:06:54] because we have multi probe StubMapper machine
+[00:06:58] and the other one is the precision router
+[00:07:04] this is especially for the optical modules
+[00:07:08] Modules from 800 GHz up to 1.8 terabit
+[00:07:29] Now it's asking for more precise of the accuracy and precisely of the distance between the bombing pad to the bore edge
+[00:07:39] So from 800 less than 50 microns is up to less than 25 microns for the 1.6 terabit article modules
+[00:07:50] Milano 羅曼 傑克 阿比可 馬格拉斯
+[00:07:58] Motorology 機器 第四大四大電子電池
+[00:08:07] Motorology Machine 第四大四大電子電池
+[00:08:12] Motorology Machine 第四大四大電池
+[00:08:18] Motorology Machine 第四大四大電池
+[00:08:19] 這裡顯示 這是一般的標準測試
+[00:08:23] 在測試後 每個測試座的測試程序都會有不同的圖案
+[00:08:29] 因為在大型測試台 每個測試座都會有不同的圖案
+[00:08:38] 所以如果你想測試背鑽 必須要知道每個測試座的詳細
+[00:08:46] 我們使用了TN-4系列
+[00:08:48] 去核心每個詳細的資料
+[00:08:52] 然後我們能夠具體地
+[00:08:55] 實際上
+[00:08:56] 達到
+[00:08:57] 精準度是
+[00:08:58] Pi-Pi-2-Ni-O
+[00:09:00] 去控制別的服務
+[00:09:02] 而別的服務現在
+[00:09:04] 有著很大的影響
+[00:09:06] 在執行
+[00:09:08] 執行
+[00:09:09] 執行
+[00:09:13] 尤其是 AI 服務
+[00:09:16] 224 GHz 電池
+[00:09:19] 這是 Plasma S2 電池
+[00:09:22] 現在是必須的
+[00:09:24] 根據 Micro S 頻率
+[00:09:26] 這是 premium CTC Router
+[00:09:35] 這是我剛才提到的
+[00:09:37] 電池大小
+[00:09:39] 現在為 800 GHz 電池
+[00:09:41] 少於 50 MHz 電池
+[00:09:43] 電池產量已經達到大小
+[00:09:46] 現在正在尋找
+[00:09:48] 1.6TB ARTICAL MATERIAL
+[00:09:52] 現在我們已經準備了
+[00:09:54] 提供25 microns的精準
+[00:09:56] 和距離從Ominpac到4H
+[00:10:00] 第三個是
+[00:10:05] Ratio New Engines
+[00:10:06] 這是我們的標準充電器
+[00:10:09] 和充電器
+[00:10:10] 這是一個
+[00:10:12] 貨幣高速路線
+[00:10:14] 我們看到CCP
+[00:10:16] 有很高的速度
+[00:10:18] 非常高速度的情況
+[00:10:21] 是為了透過和穩定性而設計的
+[00:10:27] 即使是一個貨幣
+[00:10:29] 它仍然在每年增長約3%至5%
+[00:10:34] 因為貨幣的需求很集中
+[00:10:37] 大多數的貨幣
+[00:10:39] 是由大型PCB製造者
+[00:10:42] 而不是小型品牌
+[00:10:44] 我剛才在這裡提到的
+[00:10:52] 我提到的H-Coders
+[00:10:55] 甚至是雷霆的貢獻,並不及大量的貢獻
+[00:11:01] 我們期望將來能成為一名明確的雷霆貢獻者
+[00:11:07] 特別是將來的煙磅和雷霆煲產業
+[00:11:13] 以及AIR煙的需求
+[00:11:15] 其他雷霆是大量的瓦斯
+[00:11:17] Span of August 1st Semi-conductor Business Unit
+[00:11:25] Original hold in
+[00:11:29] After IPO is a project
+[00:11:35] 大量 will remain the major state-wide TLSmart
+[00:11:41] completes IPO
+[00:11:43] This slide I would like to show you for the manufacturing capacities we have
+[00:11:52] 如果是一個標準的模式
+[00:11:54] 其實現在所有的能量都可以達到 400 個月的優惠
+[00:12:00] 而為了優惠模式,我們可以達到 300 個月的優惠
+[00:12:05] 所以這其實意味著客戶的需求
+[00:12:09] 已經達到 300 到 400 個月的優惠
+[00:12:14] 在今年結束之前
+[00:12:17] 我們已經增加了50個新的合作夥伴
+[00:12:25] 這裡顯示工廠和工廠
+[00:12:28] 這裡是新的混合物
+[00:12:37] 我特別想說
+[00:12:39] 在早期的工廠
+[00:12:41] 從2023年到2024年
+[00:12:45] 2024年小幅增長
+[00:12:49] 特別是2025年
+[00:12:53] 大約$8.00
+[00:12:56] 今年首半年
+[00:12:59] 成功達到$9.00
+[00:13:02] 在冠軍領域
+[00:13:04] 根據股市的建築
+[00:13:09] 今天要說的是 原本 貴賓產品是我們的貴賓貴賓的貴賓
+[00:13:18] 從2025年開始 你可以看到 價值模式 越來越高
+[00:13:25] 甚至比貴賓產品的貴賓貴賓更大
+[00:13:29] 其實並不是為了 賺錢的價值 而是為了貴賓貴賓的價值
+[00:13:37] Shiproom 2 Premium Mix ASB Index If commodity is baseline, premium models will be double.
+[00:13:54] YLTN 4 Series will be more than 3 times for ASB.
+[00:14:01] 2020年25年市場分佈
+[00:14:05] 中國是我們的主要收入
+[00:14:09] 達到69%
+[00:14:12] 南東亞洲達到22%
+[00:14:16] 台灣達到10%
+[00:14:20] 我們繼續增長市場的市場增長
+[00:14:27] We are targeting to higher premium, especially for the metrology machines, combined with premium drilling machines.
+[00:14:38] Here is the competitive landscape of our machines.
+[00:14:47] For metrology, now 大量 is the sole provider in the industry, and this is exclusive for our CCP high-end drilling machines.
+[00:15:01] 我們電腦的競爭者不擁有這類機械的機械
+[00:15:08] 特別是電子機械
+[00:15:11] 所以我們建立了電子機械
+[00:15:15] 而我們的高級機械越來越嚴格
+[00:15:19] 這是因為它們是獨立的
+[00:15:22] 它們要把電子機械的輸入到電子機械
+[00:15:27] 混合在一起 能夠進入市場
+[00:15:34] 標準的Router是約30%的購入
+[00:15:39] 現在已經是市場領域
+[00:15:43] 而Premium Router是約40%的購入
+[00:15:48] 現在已經是市場領域
+[00:15:51] 在這時期的運作時刻更新
+[00:15:58] I would like to share the scaling capacity
+[00:16:02] The capacity expansion is from 300 to 400 units per month
+[00:16:10] It's a monthly in-house production
+[00:16:13] Lifted by approximately about 33% increase
+[00:16:18] And also generate about 50 units per month in the fourth quarter this year
+[00:16:25] 增加了我們在新的產品上的效果
+[00:16:32] 因為我們有新的策略
+[00:16:35] 而模擬體驗的領域是很困難的
+[00:16:39] 因為我們用了2.0Mbps的模擬體驗
+[00:16:44] 它們仍然在檢測中
+[00:16:47] 所以確實的學位是由AI伺服器提供的
+[00:16:53] 高NPCB Router Momentum 高NPCB Router Momentum
+[00:16:58] 是CNC Standout Demand from the Artecom Arterial segment
+[00:17:03] It's the second growth factor alongside of Metrology
+[00:17:08] And here for the most important thing is that
+[00:17:11] Actually the demand and the bordering customer
+[00:17:16] Is not rely on any SQL program
+[00:17:23] 進一步增長 由PCI-E FACTS溶解到工廠
+[00:17:32] 大量Smart是半導體商業
+[00:17:45] 今年過年 計劃在台灣的PC市場上
+[00:17:53] FOR INTO IPO, we will be retaining over 60% ownership stake in Dalian Smart
+[00:18:01] OK, let me go to Gary Dalian Smart
+[00:18:09] I want to show you about Dalian Advanced Smart Corporation
+[00:18:24] Refroge, as TL SMART for short
+[00:18:30] As Eric mentioned just now, 大量技術系統原本有兩種生產單位
+[00:18:38] One is for PCE unit, another one is for semi-conductor business unit
+[00:18:45] Since August 1st, the semi-conductor business unit was split off as an individual legal entity, as TLSmart
+[00:18:58] 我們也專注於滑浮器 檢查和操作
+[00:19:06] 我們擁有高速 精準 機械設計
+[00:19:13] 我們也擁有進一步的動態技術
+[00:19:17] 我們也擁有高精準滑浮器和智能智能
+[00:19:24] Intelligent System Integration 智能系統
+[00:19:29] 這四個組織是我們的主要能力
+[00:19:35] Semi-conductor Ecosystem 偵測
+[00:19:40] We define it as front-end, middle-end, and back-end
+[00:19:45] For the front-end process, as you may know, the leading company is a company team
+[00:19:50] And focus on the boundary And the middle end and the back end
+[00:19:54] Original For the offset, focus on the back end
+[00:20:00] Cut to the advanced packaging process, AIMR2
+[00:20:05] So the offset for all over their process to middle end process
+[00:20:13] And front end process maker like a company team
+[00:20:17] MetrologyMACHINE Series 中央製作
+[00:20:22] Semiconductor Process Request 製作
+[00:20:27] MetrologyMACHINE Series 中央製作
+[00:20:30] MetrologyMACHINE Series 中央製作
+[00:20:33] AOI MACHINE Series 中央製作
+[00:20:36] Automation MACHINE Series 中央製作
+[00:20:40] MetrologyMACHINE Series 中央製作
+[00:20:46] This is our product line-up for the advanced package application.
+[00:20:51] So you can see, as you may know, the 2.5D or 3D, we add CoWoS.
+[00:20:57] CoWoS means wave on the substrate.
+[00:21:01] And the semiconductor process is a multiple process flow.
+[00:21:06] So in order to fulfill the customer request,
+[00:21:10] We propose our COW and OS machine for metrology and inspection.
+[00:21:18] For example, the OS process is frost jetting.
+[00:21:23] After the frost jetting, we also propose frost jetting to AOI.
+[00:21:28] Now, this machine is fully utilized by our customers, like Company A, the number one OS company.
+[00:21:39] FrostJetAOI 2.5E 100% 適合整個品牌
+[00:21:50] FrostJetAOI、DiamondAOI、UnderfieldAOI、Rear-to-RearAOI
+[00:21:58] 是背鑽的整體配置
+[00:22:02] COW下面是如眾所知兩個到貨只要檢查
+[00:22:09] 首先是HBM
+[00:22:11] 又另外是SOC和Szięk
+[00:22:14] HBM的程序是
+[00:22:16] 但手機沿 zeom T完成了
+[00:22:21] HBM也 immune Ms.Haime的HBM
+[00:22:21] ju CX , MineCom 就有新型是淺 следующ
+[00:22:27] 顯示 可以 gesch開HVN檢查
+[00:22:35] HVN的檢查後
+[00:22:38] 我們 Gonzalez 昇 contains красив的Q-AOI
+[00:22:44] 30I.It
+[00:22:48] 5I 立AOI
+[00:22:53] 所以我們可以看到
+[00:22:55] 我們的機器是為了
+[00:22:56] 使用COW的每個過程
+[00:23:02] 而由於AI模式
+[00:23:04] 是2.5E-3D造的
+[00:23:08] 所以產品是為了SOIC
+[00:23:11] 所以為了SOIC
+[00:23:13] 我們也擁有CMP Pattern Metrology
+[00:23:16] Step-Hide Metrology
+[00:23:18] Waver Bound Shift
+[00:23:19] H-Profile Metrology
+[00:23:22] MetroIC 車子 個體 OkC.
+[00:23:30] wish you may know Wichi A.I. Chip
+[00:23:35] is the dimension is getting bigger and bigger
+[00:23:38] The traditional the wafer
+[00:23:40] wafer type intercloser
+[00:23:42] the utilization is not good enough
+[00:23:44] so another process from the
+[00:23:48] intercloser from wafer fold,to panel fold
+[00:23:50] Panel 4To supportPanel 4 Interprocessor
+[00:24:20] Compact CoPoS ProSets 可供應用
+[00:24:26] Fanout POP ProSets 可供應用
+[00:24:29] Fanout POP AORI 電源系統
+[00:24:33] Fanout POP 電源系統
+[00:24:38] CPO 智能系統
+[00:24:40] Silicon Fontanis 智能系統
+[00:24:42] COPG Optics 智能系統
+[00:24:45] In order to fulfill the customer request, we also propose the inspection and solder and clean machine integration solution for the CPO.
+[00:24:58] Now, this machine has the qualification by our customer as well.
+[00:25:05] Metrochip Benchmark 面鑽
+[00:25:11] Metrochip Benchmark 面鑽
+[00:25:32] Gene Devin Metrology 群函
+[00:25:35] Simphin Profile and all-worn Metrology
+[00:25:39] Bundle Shield Metrology and Panel Sides Bundle Shield and edge Profile Metrology
+[00:25:45] So we have a full range of these kinds of indicators for Metrology machines
+[00:25:52] Compared to companies K and KU
+[00:25:57] So this is our customer list
+[00:26:00] 我們利潤的50%是來自法律和國家
+[00:26:05] 而50%是來自舊金融
+[00:26:09] 每年都在增長得很快
+[00:26:14] 從去年到今年
+[00:26:18] 看來在下個年
+[00:26:20] 我們有了增長的增長
+[00:26:23] 希望AIM的增長能夠繼續增長
