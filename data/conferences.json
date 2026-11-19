@@ -10460,8 +10460,8 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
+   "transcript_status": "done",
+   "detail": "detail/8358-20261116.json",
    "summarized": false
   },
   {
