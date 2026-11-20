@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T20:40:07+00:00",
+ "generated_at": "2026-11-20T03:21:15+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -151,6 +151,37 @@
     "source": null
    },
    "website": "https://www.cas-well.com/about/investors/investor-conference/",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "5701-20261127",
+   "code": "5701",
+   "name": "劍湖山",
+   "date": "2026-11-27",
+   "time": "14:00",
+   "market": "上櫃",
+   "industry": null,
+   "host": null,
+   "host_source": null,
+   "place": "雲林縣古坑鄉永光村大湖口67-8號",
+   "mops_summary": "壹、公司簡介與主要業務 貳、相關產業概況與市場趨勢 參、兩大事業部營運概況與未來營運發展策略 肆、財務概況與財務計畫 伍、本公司ESG企業社會責任及公司治理辦理情形",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.janfusun.com.tw/",
    "in_mops": true,
    "in_twse_vod": false,
    "held": false,
@@ -1587,6 +1618,37 @@
    "summarized": false
   },
   {
+   "id": "1446-20261124",
+   "code": "1446",
+   "name": "宏和",
+   "date": "2026-11-24",
+   "time": "16:00",
+   "market": "上市",
+   "industry": null,
+   "host": "元大證券",
+   "host_source": "mops_summary",
+   "place": "線上法說會",
+   "mops_summary": "本公司受邀參加元大證券舉辦之線上法說會，報告本公司 營運狀況。",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.hongho.com.tw",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
    "id": "6213-20261124",
    "code": "6213",
    "name": "聯茂",
@@ -2512,6 +2574,37 @@
    "held": false,
    "has_video": false,
    "has_slides": true,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "2412-20261124",
+   "code": "2412",
+   "name": "中華電",
+   "date": "2026-11-24",
+   "time": "09:00",
+   "market": "上市",
+   "industry": null,
+   "host": null,
+   "host_source": null,
+   "place": "台北",
+   "mops_summary": "會議由UBS主辦",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.cht.com.tw/chtir",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
@@ -3499,6 +3592,37 @@
     "source": null
    },
    "website": "https://www.liwanli.com.tw/tw/",
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": true,
+   "has_video": false,
+   "has_slides": false,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "2613-20261120",
+   "code": "2613",
+   "name": "中櫃",
+   "date": "2026-11-20",
+   "time": "15:00",
+   "market": "上市",
+   "industry": null,
+   "host": "富邦證券",
+   "host_source": "mops_summary",
+   "place": "線上法人說明會",
+   "mops_summary": "本公司受邀參加富邦證券舉辦之線上法人說明會，說明115年第三季營運概況",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": "https://www.cctcorp.com.tw/investor.php",
    "in_mops": true,
    "in_twse_vod": false,
    "held": true,
@@ -6017,8 +6141,8 @@
    "place": "線上法人說明會",
    "mops_summary": "本公司受邀參加富邦證券於2026年11月19日舉辦之上市公司財務業務概況座談會，會中將說明本公司2026年第三季營運概況。 線上報名網址 https://fubonseca.webex.com/weblink/register/rf7c25117d0595bfdddafb02e21d953e9",
    "slides": {
-    "zh": null,
-    "en": null
+    "zh": "https://mopsov.twse.com.tw/nas/STR/994120261120M001.pdf",
+    "en": "https://mopsov.twse.com.tw/nas/STR/994120261120E001.pdf"
    },
    "video": {
     "url": "https://irconference.twse.com.tw/9941_44_20261119_ch.mp4",
@@ -6030,7 +6154,7 @@
    "in_twse_vod": true,
    "held": true,
    "has_video": true,
-   "has_slides": false,
+   "has_slides": true,
    "transcript_status": "pending",
    "detail": null,
    "summarized": false
@@ -7378,7 +7502,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
