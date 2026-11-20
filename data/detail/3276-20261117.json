@@ -2,7 +2,7 @@
  "id": "3276-20261117",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-21T02:28:00+08:00",
  "audio_duration_s": 684.9,
@@ -16,9 +16,27 @@
  },
  "rtf": 0.907,
  "char_count": 1433,
- "highlights": [],
+ "highlights": [
+  {
+   "text": "因為今年第三季有很明顯的漲價效應反映，油墨料與基板CCL漲幅大，公司陸續向客戶反應售價，使第三季EPS表現與第二季差異蠻大。",
+   "ts": "00:02:49"
+  },
+  {
+   "text": "子公司宇環科技手上的客戶交易量比較平穩，營收反應沒有那麼好，但集團營業費用成本控管一直維持很低，售價上來後獲利呈現效果會提前上升。",
+   "ts": "00:04:13"
+  },
+  {
+   "text": "光電與NB一直是集團穩定的基本盤，車用市場認證期長達三到五年；其他產品線包含SSD、RAM-C、機器手臂等小量多樣的業務，為未來目標擴大佔比的方向。",
+   "ts": "00:05:04"
+  }
+ ],
  "financials": [],
- "outlook": [],
+ "outlook": [
+  {
+   "text": "未來志超發展方向不會一窩蜂投入設備去做AI伺服器或低軌衛星相關伺服器，而是利用現有設備，去搶市場上其他廠商跑去做AI後釋出的HDI製程及傳統板製程訂單。",
+   "ts": "00:08:25"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -888,5 +906,24 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 0
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-21T02:31:27+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 41.8,
+  "in_tokens": 2768,
+  "out_tokens": 339,
+  "financials_in": 0,
+  "financials_kept": 0,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "財務0",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
