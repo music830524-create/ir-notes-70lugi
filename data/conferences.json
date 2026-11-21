@@ -8947,9 +8947,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/4439-20261118.json",
+   "summarized": true
   },
   {
    "id": "3402-20261118",
