@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T09:55:00+00:00",
+ "generated_at": "2026-11-22T17:51:10+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -2853,6 +2853,37 @@
    "held": false,
    "has_video": false,
    "has_slides": true,
+   "transcript_status": "none",
+   "detail": null,
+   "summarized": false
+  },
+  {
+   "id": "8101-20261124",
+   "code": "8101",
+   "name": "華冠",
+   "date": "2026-11-24",
+   "time": "14:00",
+   "market": "上市",
+   "industry": null,
+   "host": "福邦證券",
+   "host_source": "mops_summary",
+   "place": "線上法人說明會",
+   "mops_summary": "https://gfortune.webex.com/gfortune-tc/j.php?MTID=mef04c359cbe8f8bbfa4b8cee56d1dce8 本公司受邀參加福邦證券舉辦之線上法人說明會。",
+   "slides": {
+    "zh": null,
+    "en": null
+   },
+   "video": {
+    "url": null,
+    "kind": null,
+    "source": null
+   },
+   "website": null,
+   "in_mops": true,
+   "in_twse_vod": false,
+   "held": false,
+   "has_video": false,
+   "has_slides": false,
    "transcript_status": "none",
    "detail": null,
    "summarized": false
