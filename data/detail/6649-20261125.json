@@ -2,7 +2,7 @@
  "id": "6649-20261125",
  "model": {
   "asr": "faster-whisper-medium",
-  "llm": null
+  "llm": "gemini-3.5-flash-lite"
  },
  "generated_at": "2026-11-25T23:11:13+08:00",
  "audio_duration_s": 1449.7,
@@ -16,9 +16,37 @@
  },
  "rtf": 1.616,
  "char_count": 5422,
- "highlights": [],
- "financials": [],
- "outlook": [],
+ "highlights": [
+  {
+   "text": "台生材成立於 2012 年 11 月，2019 年 6 月掛牌上櫃，目前資本額為 4.2 億元，公司及製造廠坐落於竹北生醫科技園區。",
+   "ts": "00:02:00"
+  },
+  {
+   "text": "公司主要業務包含自有品牌人工腦膜（泡沫式人工腦膜）及 CDMO 業務（腦中風取栓耗材與神經血管導絲）。",
+   "ts": "00:02:16"
+  },
+  {
+   "text": "今年前三季營運受第一、二季客戶調整訂單影響而較去年衰退，但在產能與良率提升下，第三季起出貨與營收、毛利率、EPS 皆逐漸回溫並恢復正常成長趨勢。",
+   "ts": "00:14:37"
+  }
+ ],
+ "financials": [
+  {
+   "label": "資本額",
+   "value": "4.2 億元",
+   "src": "逐字稿 00:02:07"
+  }
+ ],
+ "outlook": [
+  {
+   "text": "人工腦膜部分，2027 年將持續確保供貨穩定、協助經銷商拓展醫院及醫生使用率，並與醫生合作累積臨床使用經驗與數據。",
+   "ts": "00:17:16"
+  },
+  {
+   "text": "取栓耗材與導絲部分，隨著第三季起出貨恢復正常、廠房擴建與製程改善到位，預期 2027 年將隨著市場開拓逐漸放量，迎來穩健成長。",
+   "ts": "00:18:24"
+  }
+ ],
  "qa": [],
  "transcript": [
   {
@@ -2816,5 +2844,24 @@
   "homophone": true,
   "fixstats": {},
   "dropped_segments": 3
- }
+ },
+ "sections_meta": {
+  "model": "gemini-3.5-flash-lite",
+  "generated_at": "2026-11-26T07:17:12+08:00",
+  "calls": 1,
+  "retries": 0,
+  "seconds": 11.2,
+  "in_tokens": 7790,
+  "out_tokens": 457,
+  "financials_in": 1,
+  "financials_kept": 1,
+  "financials_dropped": [],
+  "highlights_dropped": [],
+  "text_numbers_unverified": 0,
+  "shortfall": [
+   "財務1",
+   "問答0"
+  ]
+ },
+ "sections_note": "重點／財務／展望／問答由 AI（gemini-3.5-flash-lite）依簡報與逐字稿整理；財務與重點數字已比對原文（含億／百萬／萬／千元換算），對不上的已剔除。逐字稿為語音辨識，專有名詞可能有誤。 這次列出的項目偏少，未再重送。"
 }
