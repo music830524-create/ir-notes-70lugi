@@ -1,5 +1,5 @@
 {
- "sum_fails": 1,
- "last_fail": "2026-11-26T19:25:39+08:00",
+ "sum_fails": 2,
+ "last_fail": "2026-11-26T23:46:24+08:00",
  "stage": "summarize"
 }
