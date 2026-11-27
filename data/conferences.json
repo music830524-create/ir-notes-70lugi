@@ -1339,7 +1339,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -4922,7 +4922,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -5236,7 +5236,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
