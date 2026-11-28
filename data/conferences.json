@@ -1901,8 +1901,8 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
+   "transcript_status": "done",
+   "detail": "detail/4154-20261127.json",
    "summarized": false
   },
   {
@@ -1996,9 +1996,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/2924-20261127.json",
+   "summarized": true
   },
   {
    "id": "2719-20261127",
@@ -2027,9 +2027,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/2719-20261127.json",
+   "summarized": true
   },
   {
    "id": "2468-20261127",
@@ -2090,9 +2090,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/2313-20261127.json",
+   "summarized": true
   },
   {
    "id": "2017-20261127",
@@ -2121,9 +2121,9 @@
    "held": true,
    "has_video": true,
    "has_slides": false,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/2017-20261127.json",
+   "summarized": true
   },
   {
    "id": "1603-20261127",
@@ -2152,9 +2152,9 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
-   "detail": null,
-   "summarized": false
+   "transcript_status": "done",
+   "detail": "detail/1603-20261127.json",
+   "summarized": true
   },
   {
    "id": "1541-20261127",
@@ -4921,7 +4921,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
@@ -5235,7 +5235,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "manual",
+   "transcript_status": "pending",
    "detail": null,
    "summarized": false
   },
