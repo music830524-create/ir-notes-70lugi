@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T22:44:18+00:00",
+ "generated_at": "2026-11-28T07:52:45+00:00",
  "sources": [
   "TWSE WebPro 影音 categoryId 148/101 的 mp4，170 為站外連結",
   "MOPS 法人說明會公告 (t100sb02_1，行事曆與簡報，不含影片)"
@@ -1330,8 +1330,7 @@
     "url": "https://www.kc-uppertech.com/invest-corporate.html",
     "kind": "offsite",
     "source": "twse_vod",
-    "offsite": true,
-    "resolved_mp4": "https://www.kc-uppertech.com/download/invest-corporate/115/堃昶20261127法說會.MP4"
+    "offsite": true
    },
    "website": "https://www.kc-uppertech.com/invest-corporate.html",
    "in_mops": true,
@@ -4922,7 +4921,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
@@ -5236,7 +5235,7 @@
    "held": true,
    "has_video": true,
    "has_slides": true,
-   "transcript_status": "pending",
+   "transcript_status": "manual",
    "detail": null,
    "summarized": false
   },
